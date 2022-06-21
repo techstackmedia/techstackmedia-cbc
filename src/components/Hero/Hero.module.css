@@ -1,0 +1,12 @@
+.hero {
+  background: linear-gradient(
+    160.04deg,
+    rgba(0, 153, 220, 0.517551) 44.75%,
+    rgba(0, 153, 220, 0) 70.9%
+  );
+}
+
+.hero div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}

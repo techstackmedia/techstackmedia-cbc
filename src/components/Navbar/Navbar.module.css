@@ -1,7 +1,12 @@
+.navbar {
+  margin: 0;
+}
+
 .navbar ul {
   display: flex;
   justify-content: space-between;
-  margin-left: -30px;
+  align-items: center;
+  height: 97px;
 }
 
 .navbar div {
@@ -14,6 +19,14 @@
 }
 
 .navbar a {
-  color: #000;
+  color: #474747;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 3px;
 }

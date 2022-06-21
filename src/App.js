@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
+import Home from "./pages/Home/Home";
 
-const Home = () => {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default App;
