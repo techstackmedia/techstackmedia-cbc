@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdSearch } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
+
 import {
   NavbarLeftInterface as navLeft,
   NavbarRightInterface as navRight,
