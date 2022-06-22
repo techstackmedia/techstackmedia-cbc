@@ -4,9 +4,105 @@
     rgba(0, 153, 220, 0.517551) 44.75%,
     rgba(0, 153, 220, 0) 70.9%
   );
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 600px;
 }
 
-.hero div:nth-child(1) {
+.jumbotron {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cbc {
+  margin-left: 40px;
+}
+
+.cbc h1 {
+  font-size: 64px;
+}
+
+.cbc h3 {
+  font-size: 34px;
+}
+
+.cbc p {
+  font-size: 24px;
+  width: 70%;
+  line-height: 1.7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subsidiaries {
+  display: inline-flex;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: #0099dc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.subsidiaries svg {
+  margin-left: 5px;
+}
+
+.hero img {
+  width: 500px;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  width: 700px;
+  margin-right: 40px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+}
+
+.about a {
+  color: #fff;
+}
+
+.bullet {
+  display: flex;
+}
+
+.tower {
+  position: relative;
+}
+
+.bullet {
+  position: absolute;
+  margin-left: calc(50% - 50px);
+  margin-top: 20px;
+}
+
+.bullet div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 3px;
+  border: 1px solid #726f6f;
+}
+
+.bullet div:last-child {
+  background-color: #0099DC;
 }

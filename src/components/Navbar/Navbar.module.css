@@ -1,5 +1,5 @@
 .navbar {
-  margin: 0;
+  height: 97px;
 }
 
 .navbar ul {
@@ -18,6 +18,15 @@
   list-style-type: none;
 }
 
+.arrow,
+.search {
+  margin-right: 50px;
+}
+
+.navLeft {
+  margin-left: 50px;
+}
+
 .navbar a {
   color: #474747;
   text-decoration: none;
@@ -25,8 +34,13 @@
   font-size: 14px;
 }
 
-.navbar svg {
+.arrowDown {
   width: 24px;
   height: 24px;
-  margin-top: 3px;
+}
+
+.search {
+  width: 34px;
+  height: 34px;
+  margin-top: 5px;
 }

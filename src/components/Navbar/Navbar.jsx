@@ -16,23 +16,23 @@ const Navbar = () => {
   const nR = navLeft.map((item) => {
     return (
       <>
-        <li>
+        <li key={item} className={navbar.navLeft}>
           <Link to={`/${item}`}>{item.toUpperCase()}</Link>
         </li>
       </>
     );
   });
 
-  const nL = navRight.map((item) => {
+  const nL = navRight.map((item, index) => {
     return (
-      <>
+      <div key={item}>
         <li>
           <Link to={`/${item}`}>{item.toUpperCase()}</Link>
         </li>
-        <div className={navbar.arrow}>
-          <MdKeyboardArrowDown />
+        <div key={index} className={navbar.arrow}>
+          <MdKeyboardArrowDown className={navbar.arrowDown} />
         </div>
-      </>
+      </div>
     );
   });
 
@@ -40,7 +40,7 @@ const Navbar = () => {
     <header className={navbar.navbar}>
       <nav>
         <ul>
-          <div>
+          <div className={navbar.item}>
             <li>
               <Link to="/">
                 <img width={148.47} height={71} src={logo} alt="cbc logo" />
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           <div>
             <li>
-              <MdSearch />
+              <MdSearch className={navbar.search} />
             </li>
             {nL}
           </div>
