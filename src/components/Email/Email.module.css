@@ -1,0 +1,47 @@
+.email {
+  background-color: #fff;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  border-radius: 33.045px;
+  padding: 20px;
+  box-shadow: 1.59251px -3.18501px 3.18501px rgba(0, 0, 0, 0.25);
+}
+
+.email h2,
+.email p {
+  margin-bottom: 10px;
+}
+
+.inputButton {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+.email input {
+  height: 43px;
+  border-radius: 15.34px;
+  text-indent: 20px;
+  border: 1px solid #f0f0f0;
+  background-color: #f2f2f2;
+  width: 300px;
+}
+
+.email button {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  margin-top: 5px;
+  border-radius: 12.6783px;
+  background-color: #0099dc;
+  border: 1px solid #0099dc;
+  color: #fff;
+  padding: 7px;
+  box-shadow: 0px 3.18501px 3.18501px rgba(0, 0, 0, 0.25);
+}
+
+.email button svg {
+  margin-left: 3px;
+}

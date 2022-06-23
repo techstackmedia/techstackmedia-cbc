@@ -5,6 +5,7 @@ import Business from "../../components/Business/Business";
 import School from "../../components/School/School";
 import RecentUpdates from "../../components/RecentUpdates/RecentUpdates";
 import CoperateClienet from "../../components/CoperateClients/CoperateClients";
+import Email from "../../components/Email/Email";
 
 const Home = ({ card, card1 }) => {
   return (
@@ -17,6 +18,7 @@ const Home = ({ card, card1 }) => {
         <School card1={card1} />
       </section>
       <CoperateClienet />
+      <Email />
       <Footer />
     </>
   );
