@@ -82,10 +82,93 @@ const CardRecentUpdateInterface = [
   },
 ];
 
+// const imageId = Array.from({ length: 22 }, (_, i) => i + 1);
+// console.log(imageId);
+
+const CoperateClientsInerface = [
+  {
+    id: 1,
+    image: "../images/image1.svg",
+  },
+  {
+    id: 2,
+    image: "../images/image2.svg",
+  },
+  {
+    id: 3,
+    image: "../images/image3.svg",
+  },
+  {
+    id: 4,
+    image: "../images/image4.svg",
+  },
+  {
+    id: 5,
+    image: "../images/image5.svg",
+  },
+  {
+    id: 6,
+    image: "../images/image6.svg",
+  },
+  {
+    id: 7,
+    image: "../images/image7.svg",
+  },
+  {
+    id: 8,
+    image: "../images/image8.svg",
+  },
+  {
+    id: 9,
+    image: "../images/image9.svg",
+  },
+  {
+    id: 10,
+    image: "../images/image10.svg",
+  },
+  {
+    id: 11,
+    image: "../images/image11.svg",
+  },
+  {
+    id: 12,
+    image: "../images/image12.svg",
+  },
+  {
+    id: 13,
+    image: "../images/image13.svg",
+  },
+  {
+    id: 14,
+    image: "../images/image14.svg",
+  },
+  {
+    id: 15,
+    image: "../images/image15.svg",
+  },
+  {
+    id: 16,
+    image: "../images/image16.svg",
+  },
+  {
+    id: 17,
+    image: "../images/image17.svg",
+  },
+  {
+    id: 18,
+    image: "../images/image18.svg",
+  },
+  {
+    id: 19,
+    image: "../images/image19.svg",
+  },
+];
+
 export {
   NavbarLeftInterface,
   NavbarRightInterface,
   CardBusinessInterface,
   CardSchoolInterface,
   CardRecentUpdateInterface,
+  CoperateClientsInerface,
 };

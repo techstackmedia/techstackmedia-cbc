@@ -1,0 +1,30 @@
+.coperate {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.imgs {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.coperate img {
+  height: 70px;
+  width: 70px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  color: #474747;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}

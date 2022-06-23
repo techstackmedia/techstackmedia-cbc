@@ -19,4 +19,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
   font-size: 16px;
+  background-color: #00b3ff13;
+}
+
+img {
+  object-fit: contain;
 }
