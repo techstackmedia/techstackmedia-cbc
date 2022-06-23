@@ -6,6 +6,8 @@
   border-radius: 33.045px;
   padding: 20px;
   box-shadow: 1.59251px -3.18501px 3.18501px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 70px;
 }
 
 .email h2,
