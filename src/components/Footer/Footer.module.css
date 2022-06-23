@@ -28,8 +28,10 @@
 }
 
 .item svg {
-  margin-right: 3px;
+  margin-right: 5px;
   color: #0099dc;
+  width: 20px;
+  height: 20px;
 }
 
 .item span {
