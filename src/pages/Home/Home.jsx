@@ -2,13 +2,19 @@ import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import Footer from "../../components/Footer/Footer";
 import Business from "../../components/Business/Business";
+import School from "../../components/School/School";
+import RecentUpdates from "../../components/RecentUpdates/RecentUpdates";
 
-const Home = () => {
+const Home = ({ card, card1 }) => {
   return (
     <>
       <Navbar />
       <Hero />
-      <Business />
+      <section>
+        <Business card={card} />
+        <RecentUpdates />
+        <School card1={card1} />
+      </section>
       <Footer />
     </>
   );

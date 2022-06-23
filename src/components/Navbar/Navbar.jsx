@@ -6,7 +6,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import {
   NavbarLeftInterface as navLeft,
   NavbarRightInterface as navRight,
-} from "../../Interfaces/NavbarInterface";
+} from "../../Interfaces/Interfaces";
 import navbar from "./Navbar.module.css";
 import logo from "../../logo.svg";
 
