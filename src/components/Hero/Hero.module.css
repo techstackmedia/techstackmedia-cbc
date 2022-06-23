@@ -1,7 +1,7 @@
 .hero {
   background: linear-gradient(
-    160.04deg,
-    rgba(0, 153, 220, 0.517551) 44.75%,
+    170deg,
+    rgba(0, 153, 220, 0.517551) 50.75%,
     rgba(0, 153, 220, 0) 70.9%
   );
   color: #fff;
@@ -104,5 +104,5 @@
 }
 
 .bullet div:last-child {
-  background-color: #0099DC;
+  background-color: #0099dc;
 }

@@ -17,3 +17,7 @@
 .cards img {
   width: 100%;
 }
+
+.recentUpdates p {
+  font-size: 14px;
+}
