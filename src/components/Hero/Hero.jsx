@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import { IoIosArrowDropright } from "react-icons/io";
-import { MdPlayArrow } from "react-icons/md";
-import cbcTower from "../../images/cbc.png";
-import hero from "./Hero.module.css";
+import { Link } from 'react-router-dom';
+import { IoIosArrowDropright } from 'react-icons/io';
+import { MdPlayArrow } from 'react-icons/md';
+import cbcTower from '../../images/cbc.png';
+import hero from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <section className={hero.hero}>
+    <div className={hero.hero}>
       <div className={hero.jumbotron}>
         <div className={hero.cbc}>
           <h1>CBC</h1>
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

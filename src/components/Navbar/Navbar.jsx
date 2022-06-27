@@ -38,7 +38,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className={navbar.navbar}>
+    <div className={navbar.navbar}>
       <nav>
         <ul>
           <div className={navbar.item}>
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 

@@ -1,13 +1,10 @@
 .hero {
-  background: linear-gradient(
-    170deg,
-    rgba(0, 153, 220, 0.517551) 50.75%,
-    rgba(0, 153, 220, 0) 70.9%
-  );
+  background-image: url('../../images/Carousel.png');
   color: #fff;
   display: flex;
   align-items: center;
   height: 600px;
+  object-fit: cover;
 }
 
 .jumbotron {
@@ -60,6 +57,7 @@
   position: relative;
   width: 700px;
   margin-right: 40px;
+  visibility: hidden;
 }
 
 .about {
@@ -92,6 +90,7 @@
   position: absolute;
   margin-left: calc(50% - 50px);
   margin-top: 20px;
+  visibility: hidden;
 }
 
 .bullet div {

@@ -10,8 +10,10 @@ import Footer from '../../components/Footer/Footer';
 const Home = ({ card, card1 }) => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <header>
+        <Navbar />
+        <Hero />
+      </header>
       <section>
         <Business card={card} />
         <RecentUpdates />
