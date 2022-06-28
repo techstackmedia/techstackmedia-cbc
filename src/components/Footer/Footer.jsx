@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { MdLocationPin } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
-import { MdLocalPhone } from "react-icons/md";
-import footer from "./Footer.module.css";
+import { Link } from 'react-router-dom';
+import { MdLocationPin } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
+import { MdLocalPhone } from 'react-icons/md';
+import footer from './Footer.module.css';
 
 const Footer = () => {
   let imageId = Array.from({ length: 4 }, (_, i) => i + 1);
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className={footer.content}>
           <div className={footer.media}>
             <div className={footer.item}>
-              <MdLocationPin />{" "}
+              <MdLocationPin />{' '}
               <span>
                 CBC Towers, 10/11 Olubunmi Owa Street, Lekki Phase 1, Lekki,
                 Lagos
@@ -37,7 +37,6 @@ const Footer = () => {
             <div className={footer.item}>
               <MdLocalPhone /> <span>+234-0909-499-8830</span>
             </div>
-            <div className={footer.socialMedia}>{images}</div>
           </div>
         </div>
       </div>
@@ -65,7 +64,10 @@ const Footer = () => {
           <Link to="/terms">Terms and Conditions</Link>
         </div>
       </div>
-      <div className={footer.copyright}>&copy; 2022 CBC emea. All Rights Reserved</div>
+      <div className={footer.socialMedia}>{images}</div>
+      <div className={footer.copyright}>
+        &copy; 2022 CBC emea. All Rights Reserved
+      </div>
     </footer>
   );
 };
