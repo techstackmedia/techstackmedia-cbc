@@ -1,6 +1,12 @@
 .navbar {
   height: 97px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .navbar ul {

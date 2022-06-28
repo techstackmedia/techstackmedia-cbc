@@ -3,7 +3,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-  height: 600px;
+  /* height: 600px; */
   object-fit: cover;
   -o-object-fit: cover;
   -moz-object-fit: cover;
@@ -21,6 +21,7 @@
 
 .cbc h1 {
   font-size: 64px;
+  margin-top: 97px;
 }
 
 .cbc h3 {
@@ -36,7 +37,6 @@
 }
 
 .subsidiaries {
-  display: inline-flex;
   background-color: #fff;
   color: #000;
   text-decoration: none;
@@ -50,6 +50,7 @@
 
 .subsidiaries svg {
   margin-left: 5px;
+  margin-top: 3px;
 }
 
 .hero img {
@@ -63,7 +64,6 @@
 }
 
 .about {
-  display: flex;
   align-items: center;
 }
 

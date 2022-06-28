@@ -10,9 +10,15 @@ import Footer from '../../components/Footer/Footer';
 const Home = ({ card, card1 }) => {
   return (
     <>
-      <header>
+      <header style={{ position: 'relative' }}>
         <Navbar />
-        <Hero />
+        <Hero
+          heading="CBC"
+          title="EMEA GROUP"
+          para="the largest Information technology, telecommunication, energy, power, security and surveillance solutions provider in Nigeria.
+
+"
+        />
       </header>
       <section>
         <Business card={card} />

@@ -1,25 +1,36 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { MdPlayArrow } from 'react-icons/md';
 import cbcTower from '../../images/cbc.png';
 import hero from './Hero.module.css';
 
-const Hero = () => {
+const Hero = ({ heading, title, para }) => {
+  const { pathname } = useLocation();
+
   return (
-    <div className={hero.hero}>
+    <div
+      className={hero.hero}
+      style={{
+        height: pathname !== '/' ? 300 : 600,
+      }}
+    >
       <div className={hero.jumbotron}>
         <div className={hero.cbc}>
-          <h1>CBC</h1>
-          <h3>EMEA Group</h3>
-          <p>
-            the largest Information technology, telecommunication, energy,
-            power, security and surveillance solutions provider in Nigeria.
-          </p>
+          <h1>{heading}</h1>
+          <h3>{title}</h3>
+          <p>{para}</p>
 
-          <Link className={hero.subsidiaries} to="/subsidiaries">
+          <Link
+            className={hero.subsidiaries}
+            to="/subsidiaries"
+            style={{ display: pathname !== '/' ? 'none' : 'inline-flex' }}
+          >
             Explore our Solution <IoIosArrowDropright />
           </Link>
-          <div className={hero.about}>
+          <div
+            className={hero.about}
+            style={{ display: pathname !== '/' ? 'none' : 'flex' }}
+          >
             <MdPlayArrow color="#0099DC" />
             <Link to="/about">What's CBC about?</Link>
           </div>
