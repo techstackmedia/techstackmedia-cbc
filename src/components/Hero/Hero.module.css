@@ -3,10 +3,6 @@
   color: #fff;
   display: flex;
   align-items: center;
-  /* height: 600px; */
-  object-fit: cover;
-  -o-object-fit: cover;
-  -moz-object-fit: cover;
 }
 
 .jumbotron {
