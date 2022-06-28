@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, NavLink } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -17,15 +17,15 @@ const Navbar = () => {
 
   const { pathname } = useLocation();
   const style = {
-    color: pathname !== '/' ? '#fff' : undefined,
+    color: pathname !== '/' ? 'red' : undefined,
   };
   const nR = navLeft.map((item) => {
     return (
       <>
         <li key={item} className={navbar.navLeft}>
-          <Link to={`/${item}`} style={style}>
+          <NavLink to={`/${item}`} style={style}>
             {item.toUpperCase()}
-          </Link>
+          </NavLink>
         </li>
       </>
     );

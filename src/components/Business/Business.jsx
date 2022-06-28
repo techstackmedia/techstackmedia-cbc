@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import business from "./Business.module.css";
-import { IoIosArrowDropright } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { IoIosArrowDropright } from 'react-icons/io';
+import business from './Business.module.css';
+import { CardBusinessInterface as cardBusiness } from '../../Interfaces/Interfaces';
 
-const Business = ({ card }) => {
-  console.log(card);
-  const cardList = card.map((item) => {
+const Business = () => {
+  const cardList = cardBusiness.map((item) => {
     return (
       <div className={business.card}>
         <img src={item.image} alt={`${item.title} cbc avatar`} />

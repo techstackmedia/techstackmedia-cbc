@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { CardSchoolInterface as cardSchool } from '../../Interfaces/Interfaces';
 import business from "../Business/Business.module.css";
 import { IoIosArrowDropright } from "react-icons/io";
 
-const School = ({ card1 }) => {
-  const cardList = card1.map((item) => {
+const School = () => {
+  const cardList = cardSchool.map((item) => {
     return (
       <div className={business.card}>
         <img src={item.image} alt={`${item.title} cbc avatar`} />

@@ -7,7 +7,7 @@ import CoperateClienet from '../../components/CoperateClients/CoperateClients';
 import Email from '../../components/Email/Email';
 import Footer from '../../components/Footer/Footer';
 
-const Home = ({ card, card1 }) => {
+const Home = () => {
   return (
     <>
       <header style={{ position: 'relative' }}>
@@ -21,9 +21,9 @@ const Home = ({ card, card1 }) => {
         />
       </header>
       <section>
-        <Business card={card} />
+        <Business />
         <RecentUpdates />
-        <School card1={card1} />
+        <School />
       </section>
       <CoperateClienet />
       <Email />
