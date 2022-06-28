@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/css/main.98e7aac6.css",
+    "main.js": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/js/main.10773752.js",
+    "static/media/Carousel.png": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/media/Carousel.bc15c39eaa95326c6480.png",
+    "static/media/cbc.png": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/media/cbc.d80a1d4ce6187c2134d4.png",
+    "static/media/logo.svg": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/media/logo.d02be40b49b9b664b4adb2006622941f.svg",
+    "index.html": "/wp-content/reactpress/apps/techstackmedia-cbc/build/index.html",
+    "main.98e7aac6.css.map": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/css/main.98e7aac6.css.map",
+    "main.10773752.js.map": "/wp-content/reactpress/apps/techstackmedia-cbc/build/static/js/main.10773752.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98e7aac6.css",
+    "static/js/main.10773752.js"
+  ]
+}
