@@ -14,7 +14,13 @@ const Hero = ({ heading, title, para }) => {
         height: pathname !== '/' ? 300 : 600,
       }}
     >
-      <div className={hero.jumbotron}>
+      <div
+        className={hero.jumbotron}
+        style={{
+          alignItems: pathname !== '/' ? 'flex-end' : undefined,
+          marginTop: pathname !== '/' ? -207 : undefined,
+        }}
+      >
         <div className={hero.cbc}>
           <h1>{heading}</h1>
           <h3>{title}</h3>
