@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={footer.media} key={media}>
         <Link to="">
           <img
-            src={require(`../../../public/assets/media${media}.svg`)}
+            src={require(`../../images/media${media}.svg`)}
             alt={`logo ${media}`}
             width={60}
             height={60}
