@@ -1,8 +1,6 @@
-import { useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-
 import {
   NavbarLeftInterface as navLeft,
   NavbarRightInterface as navRight,
@@ -15,7 +13,6 @@ const Navbar = () => {
   const style = {
     color: pathname !== '/' ? '#fff' : undefined,
   };
-  /*const index = pathname === document.title ? '/': undefined' */
   const nR = navLeft.map((item) => {
     return (
       <li key={item} className={navbar.navLeft}>
