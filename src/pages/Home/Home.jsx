@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Hero from '../../components/Hero/Hero';
 import Business from '../../components/Business/Business';
@@ -8,6 +9,9 @@ import Email from '../../components/Email/Email';
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Home | CBC';
+  });
   return (
     <>
       <header style={{ position: 'relative' }}>

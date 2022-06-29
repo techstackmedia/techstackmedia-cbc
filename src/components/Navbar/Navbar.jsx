@@ -11,14 +11,11 @@ import navbar from './Navbar.module.css';
 import logo from '../../logo.svg';
 
 const Navbar = () => {
-  useEffect(() => {
-    document.title = 'Home | CBC';
-  });
-
   const { pathname } = useLocation();
   const style = {
     color: pathname !== '/' ? '#fff' : undefined,
   };
+  /*const index = pathname === document.title ? '/': undefined' */
   const nR = navLeft.map((item) => {
     return (
       <li key={item} className={navbar.navLeft}>
