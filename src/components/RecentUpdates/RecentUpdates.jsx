@@ -3,7 +3,7 @@ import recentUpdates from './RecentUpdates.module.css';
 const RecentUpdates = () => {
   const cardList = cardRecent.map((item) => {
     return (
-      <div className={recentUpdates.cards} key={item}>
+      <div className={recentUpdates.cards} key={item.id}>
         <div>
           <img
             src={require(`../../images/rectangle${item.id}.png`)}

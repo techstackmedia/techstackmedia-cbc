@@ -6,7 +6,7 @@ import business from './Business.module.css';
 const Business = () => {
   const cardList = cardBusiness.map((item) => {
     return (
-      <div className={business.card} key={item}>
+      <div className={business.card} key={item.id}>
         <img
           src={require(`../../images/business${item.id}.png`)}
           alt={`${item.title} cbc avatar`}

@@ -6,7 +6,7 @@ import { IoIosArrowDropright } from 'react-icons/io';
 const School = () => {
   const cardList = cardSchool.map((item) => {
     return (
-      <div className={business.card} key={item}>
+      <div className={business.card} key={item.id}>
         <img
           src={require(`../../images/school${item.id}.png`)}
           alt={`school avatar ${item.id}`}

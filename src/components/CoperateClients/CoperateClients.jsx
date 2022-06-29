@@ -4,7 +4,7 @@ import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Inte
 const CoperateClienet = () => {
   const images = coperateClient.map((img) => {
     return (
-      <div className={coperate.imgs}>
+      <div className={coperate.imgs} key={img}>
         <img
           src={require(`../../images/image${img}.svg`)}
           alt={`logo ${img.id}`}
