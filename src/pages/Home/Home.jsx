@@ -15,9 +15,7 @@ const Home = () => {
         <Hero
           heading="CBC"
           title="EMEA GROUP"
-          para="the largest Information technology, telecommunication, energy, power, security and surveillance solutions provider in Nigeria.
-
-"
+          para="the largest Information technology, telecommunication, energy, power, security and surveillance solutions provider in Nigeria."
         />
       </header>
       <section>

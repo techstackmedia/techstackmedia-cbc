@@ -1,5 +1,7 @@
 .foot {
   background: rgba(144, 221, 255, 0.2);
+  position: relative;
+  z-index: 0;
 }
 .footer {
   height: 150px;

@@ -9,6 +9,7 @@
   position: relative;
   top: 70px;
   margin-bottom: 0;
+  z-index: 1;
 }
 
 .email h2,

@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const { pathname } = useLocation();
   const style = {
-    color: pathname !== '/' ? 'red' : undefined,
+    color: pathname !== '/' ? '#fff' : undefined,
   };
   const nR = navLeft.map((item) => {
     return (

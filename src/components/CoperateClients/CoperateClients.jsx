@@ -1,13 +1,13 @@
-import coperate from "./CoperateClients.module.css";
+import coperate from './CoperateClients.module.css';
+import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Interfaces';
 
 const CoperateClienet = () => {
-  let imageId = Array.from({ length: 19 }, (_, i) => i + 1);
-  const images = imageId.map((img, index) => {
+  const images = coperateClient.map((img) => {
     return (
       <div className={coperate.imgs}>
         <img
-          src={`../../../assets/image${index + 1}.svg`}
-          alt={`logo ${index + 1}`}
+          src={require(`../../images/image${img}.svg`)}
+          alt={`logo ${img.id}`}
           width={60}
           height={60}
         />

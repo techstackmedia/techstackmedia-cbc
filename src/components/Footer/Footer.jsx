@@ -1,26 +1,41 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MdLocationPin } from 'react-icons/md';
 import { MdEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
+import { SocialMediaInterface as socialMedia } from '../../Interfaces/Interfaces';
+import { FooterLinkInterface as footerLink } from '../../Interfaces/Interfaces';
 import footer from './Footer.module.css';
 
 const Footer = () => {
-  let imageId = Array.from({ length: 4 }, (_, i) => i + 1);
-  const images = imageId.map((media, index) => {
+  const { pathname } = useLocation();
+  const images = socialMedia.map((media) => {
     return (
       <div className={footer.media}>
-        <img
-          src={`../../../assets/media${index + 1}.svg`}
-          alt={`logo ${index + 1}`}
-          width={60}
-          height={60}
-        />
+        <Link to="">
+          <img
+            src={require(`../../../public/assets/media${media}.svg`)}
+            alt={`logo ${media}`}
+            width={60}
+            height={60}
+          />
+        </Link>
+      </div>
+    );
+  });
+
+  const footerLinks = footerLink.map((footer) => {
+    return (
+      <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
+        <Link to={`/${footer}`}>{footer}</Link>
       </div>
     );
   });
 
   return (
-    <footer className={footer.foot}>
+    <footer
+      className={footer.foot}
+      style={{ marginTop: pathname !== '/' ? -80 : undefined }}
+    >
       <div className={footer.footer}>
         <div className={footer.content}>
           <div className={footer.media}>
@@ -41,29 +56,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className={footer.links}>
-        <div>
-          <Link to="/about">About Us</Link>
-        </div>
-        <div>
-          <Link to="/leadership">Leadership</Link>
-        </div>
-        <div>
-          <Link to="/services">Services</Link>
-        </div>
-        <div>
-          <Link to="/subsidiaries">Subsidiaries</Link>
-        </div>
-        <div>
-          <Link to="/careers">Careers</Link>
-        </div>
-        <div>
-          <Link to="/privacy">Privacy Policy</Link>
-        </div>
-        <div>
-          <Link to="/terms">Terms and Conditions</Link>
-        </div>
-      </div>
+      <div className={footer.links}>{footerLinks}</div>
       <div className={footer.socialMedia}>{images}</div>
       <div className={footer.copyright}>
         &copy; 2022 CBC emea. All Rights Reserved
