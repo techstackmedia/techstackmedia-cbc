@@ -11,7 +11,7 @@ const Hero = ({ heading, title, para }) => {
     <div
       className={hero.hero}
       style={{
-        height: pathname !== '/' ? 300 : '100vh',
+        height: pathname !== '/' ? 300 : undefined,
       }}
     >
       <div

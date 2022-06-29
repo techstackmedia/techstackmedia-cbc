@@ -13,7 +13,7 @@ const Home = () => {
       <header style={{ position: 'relative' }}>
         <Navbar />
         <Hero
-          heading="CBC"
+          heading="Higher Services"
           title="EMEA GROUP"
           para="the largest Information technology, telecommunication, energy, power, security and surveillance solutions provider in Nigeria."
         />

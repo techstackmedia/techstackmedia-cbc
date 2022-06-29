@@ -10,7 +10,7 @@ const Footer = () => {
   const { pathname } = useLocation();
   const images = socialMedia.map((media) => {
     return (
-      <div className={footer.media}>
+      <div className={footer.media} key={media}>
         <Link to="">
           <img
             src={require(`../../../public/assets/media${media}.svg`)}

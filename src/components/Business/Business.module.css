@@ -7,7 +7,7 @@
 
 .card {
   width: 23%;
-  height: 326px;
+  /* height: 326px; */
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,7 @@
 .text p {
   height: 70px;
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .title {
