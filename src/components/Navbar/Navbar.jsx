@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Link, Outlet, useLocation, NavLink } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -23,9 +23,9 @@ const Navbar = () => {
     return (
       <>
         <li key={item} className={navbar.navLeft}>
-          <NavLink to={`/${item}`} style={style}>
+          <Link to={`/${item}`} style={style}>
             {item.toUpperCase()}
-          </NavLink>
+          </Link>
         </li>
       </>
     );

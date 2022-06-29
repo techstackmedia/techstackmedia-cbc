@@ -26,7 +26,14 @@ const Footer = () => {
   const footerLinks = footerLink.map((footer) => {
     return (
       <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
-        <Link to={`/${footer}`}>{footer}</Link>
+        <Link
+          to={`/${footer
+            .toLowerCase()
+            .replace('privacy policy', 'privacy')
+            .replace(' and conditions', '')}`}
+        >
+          {footer}
+        </Link>
       </div>
     );
   });
