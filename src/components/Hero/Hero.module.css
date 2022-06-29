@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  background-position: bottom center;
 }
 
 .jumbotron {
@@ -76,10 +77,6 @@
 
 .about a {
   color: #fff;
-}
-
-.bullet {
-  display: flex;
 }
 
 .tower {

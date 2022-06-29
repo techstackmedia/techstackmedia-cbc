@@ -21,13 +21,11 @@ const Navbar = () => {
   };
   const nR = navLeft.map((item) => {
     return (
-      <>
-        <li key={item} className={navbar.navLeft}>
-          <Link to={`/${item}`} style={style}>
-            {item.toUpperCase()}
-          </Link>
-        </li>
-      </>
+      <li key={item} className={navbar.navLeft}>
+        <Link to={`/${item}`} style={style}>
+          {item.toUpperCase()}
+        </Link>
+      </li>
     );
   });
   const nL = navRight.map((item, index) => {
@@ -48,7 +46,7 @@ const Navbar = () => {
   return (
     <div
       className={navbar.navbar}
-      style={{ backgroundColor: pathname !== '/' ? 'transparent' : '#fff' }}
+      style={{ backgroundColor: pathname !== '/' ? 'transparent' : undefined }}
     >
       <nav>
         <ul>

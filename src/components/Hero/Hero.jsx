@@ -11,7 +11,7 @@ const Hero = ({ heading, title, para }) => {
     <div
       className={hero.hero}
       style={{
-        height: pathname !== '/' ? 300 : 600,
+        height: pathname !== '/' ? 300 : '100vh',
       }}
     >
       <div
@@ -48,13 +48,6 @@ const Hero = ({ heading, title, para }) => {
             height={604.85}
             alt="cbc tower building"
           />
-          <div className={hero.bullet}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
         </div>
       </div>
     </div>

@@ -1,11 +1,14 @@
-import { CardRecentUpdateInterface as cardRecent } from "../../Interfaces/Interfaces";
-import recentUpdates from "./RecentUpdates.module.css";
+import { CardRecentUpdateInterface as cardRecent } from '../../Interfaces/Interfaces';
+import recentUpdates from './RecentUpdates.module.css';
 const RecentUpdates = () => {
   const cardList = cardRecent.map((item) => {
     return (
-      <div className={recentUpdates.cards}>
+      <div className={recentUpdates.cards} key={item}>
         <div>
-          <img src={item.image} alt={`${item.image} avatar`} />
+          <img
+            src={require(`../../images/rectangle${item.id}.png`)}
+            alt={`avatar ${item.id}`}
+          />
         </div>
         <p>{item.text}</p>
       </div>
