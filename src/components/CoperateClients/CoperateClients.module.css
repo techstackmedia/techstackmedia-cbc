@@ -1,9 +1,8 @@
 .coperate {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   flex-wrap: wrap;
   margin: 40px auto;
-  width: 90%;
 }
 
 .imgs {
@@ -15,6 +14,7 @@
 .coperate img {
   height: 70px;
   width: 60%;
+  padding: 10px;
 }
 
 .clients {

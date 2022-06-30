@@ -4,7 +4,6 @@ import Home from './pages/Home/Home';
 import About from './pages/About';
 
 const App = () => {
-  // const [color] = useState('#0099dc');
 
   return (
     <BrowserRouter>

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { MdPlayArrow } from 'react-icons/md';
@@ -52,6 +53,17 @@ const Hero = ({ heading, title, para }) => {
       </div>
     </div>
   );
+};
+
+Hero.defaultProps = {
+  title: 'About Us',
+};
+
+Hero.prototype = {
+  heading: PropTypes.string,
+  title: PropTypes.string,
+  para: PropTypes.string,
+
 };
 
 export default Hero;
