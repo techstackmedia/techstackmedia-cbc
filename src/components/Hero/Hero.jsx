@@ -61,9 +61,8 @@ Hero.defaultProps = {
 
 Hero.prototype = {
   heading: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   para: PropTypes.string,
-
 };
 
 export default Hero;

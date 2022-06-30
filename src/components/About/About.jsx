@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AboutFocusInterface as aboutFocus } from '../../Interfaces/Interfaces';
 import RecentUpdates from '../RecentUpdates/RecentUpdates';
-import about from './AboutFocus.module.css';
+import about from './About.module.css';
 
 const About = () => {
   const aboutList = aboutFocus.map((aboutItem) => {
