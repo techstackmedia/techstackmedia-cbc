@@ -14,7 +14,7 @@ const Home = () => {
   });
   return (
     <>
-      <header style={{ position: 'relative' }}>
+      <header>
         <Navbar />
         <Hero
           heading="Higher Services"

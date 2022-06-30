@@ -8,6 +8,9 @@ import footer from './Footer.module.css';
 
 const Footer = () => {
   const { pathname } = useLocation();
+  const styleFooterHeight = {
+    height: pathname === '/about' ? '80px' : undefined,
+  };
   const images = socialMedia.map((media) => {
     return (
       <div className={footer.media} key={media}>
@@ -43,7 +46,7 @@ const Footer = () => {
       className={footer.foot}
       style={{ marginTop: pathname !== '/' ? -80 : undefined }}
     >
-      <div className={footer.footer}>
+      <div className={footer.footer} style={styleFooterHeight}>
         <div className={footer.content}>
           <div className={footer.media}>
             <div className={footer.item}>

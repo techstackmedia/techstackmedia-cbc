@@ -7,10 +7,12 @@ const Business = () => {
   const cardList = cardBusiness.map((item) => {
     return (
       <div className={business.card} key={item.id}>
-        <img
-          src={require(`../../images/business${item.id}.png`)}
-          alt={`${item.title} cbc avatar`}
-        />
+        <div className={business.img}>
+          <img
+            src={require(`../../images/business${item.id}.jpg`)}
+            alt={`${item.title} cbc avatar`}
+          />
+        </div>
         <div className={business.text}>
           <h4>{item.title}</h4>
           <p>{item.text}</p>

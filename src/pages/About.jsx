@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer/Footer';
+import AboutFocus from '../components/About/AboutFocus';
 
 const About = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const About = () => {
         <Navbar />
         <Hero title="About Us" />
       </header>
+      <AboutFocus />
       <Footer />
     </>
   );

@@ -1,12 +1,12 @@
 .recentUpdates {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10%;
+  margin: 20px 5%;
   flex-wrap: wrap;
 }
 
 .text {
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 20px;
   color: #474747;
 }
@@ -16,6 +16,7 @@
 
 .cards img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .recentUpdates p {

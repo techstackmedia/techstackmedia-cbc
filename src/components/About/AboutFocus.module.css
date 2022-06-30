@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  width: calc(100% - 40px);
+  margin: 20px auto;
+}
+
+.about::-webkit-scrollbar-thumb {
+  width: 0;
+}
+
+.focus {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #afe7ff33;
+}
+
+.focus p,
+.focus h2,
+.focus .link {
+  padding: 10px;
+}
+
+.img {
+  width: 50%;
+}
+
+.img {
+  border-bottom: 4px solid #000;
+}
+
+.img img,
+.focus {
+  height: auto;
+  width: 100%;
+}
+
+.moments {
+  text-align: center;
+}

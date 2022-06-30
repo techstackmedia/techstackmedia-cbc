@@ -7,10 +7,12 @@ const School = () => {
   const cardList = cardSchool.map((item) => {
     return (
       <div className={business.card} key={item.id}>
-        <img
-          src={require(`../../images/school${item.id}.png`)}
-          alt={`school avatar ${item.id}`}
-        />
+        <div className={business.img}>
+          <img
+            src={require(`../../images/business${item.id}.jpg`)}
+            alt={`${item.title} cbc avatar`}
+          />
+        </div>
         <div className={business.text}>
           <h4>{item.title}</h4>
           <p>{item.text}</p>

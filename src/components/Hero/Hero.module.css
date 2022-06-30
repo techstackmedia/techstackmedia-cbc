@@ -3,7 +3,6 @@
   color: #fff;
   display: flex;
   align-items: center;
-  position: relative;
   z-index: 1;
   background-position: center;
   background-size: cover;
@@ -18,7 +17,7 @@
 }
 
 .cbc {
-  margin-left: 40px;
+  margin-left: 5%;
 }
 
 .cbc h1 {
