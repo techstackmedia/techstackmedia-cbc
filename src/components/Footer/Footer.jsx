@@ -26,7 +26,6 @@ const Footer = () => {
       </div>
     );
   });
-
   const footerLinks = footerLink.map((footer) => {
     return (
       <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
