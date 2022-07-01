@@ -2,21 +2,26 @@ import { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import leadership from './LeaderShip.module.css';
-import { leadershipInterface as leader } from '../../Interfaces/Interfaces';
+import { leadershipBDInterface as leaderBD } from '../../Interfaces/Interfaces';
+import { leadershipSMInterface as leaderSM } from '../../Interfaces/Interfaces';
 
 const Leadership = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
   const [borderSM, setBorderSM] = useState('');
+  const [displayBD, setDisplayBD] = useState('block');
+  const [displaySM, setDisplaySM] = useState('none');
 
   const handleClickBorderSM = () => {
     if (borderSM === '') {
       setBorderSM('3px solid #0073a6') || setBorderBD('');
+      setDisplayBD('none') || setDisplaySM('block');
     }
   };
 
   const handleClickBorderBD = () => {
     if (borderBD === '') {
       setBorderBD('3px solid #0073a6') || setBorderSM('');
+      setDisplayBD('block') || setDisplaySM('none');
     }
   };
 
@@ -28,12 +33,20 @@ const Leadership = () => {
     borderBottom: borderSM,
   };
 
-  const leaderList = leader.map((item) => {
+  const styleDisplayBD = {
+    display: displayBD,
+  };
+
+  const styleDisplaySM = {
+    display: displaySM,
+  };
+
+  const leaderBDList = leaderBD.map((item) => {
     return (
       <div className={leadership.board} key={item.id}>
         <div>
           <img
-            src={require(`../../images/leadership${item.id}.jpg`)}
+            src={require(`../../images/leadershipBD${item.id}.jpg`)}
             alt=""
             width={250}
             height={250}
@@ -47,6 +60,27 @@ const Leadership = () => {
       </div>
     );
   });
+
+  const leaderSMList = leaderSM.map((item) => {
+    return (
+      <div className={leadership.board} key={item.id}>
+        <div>
+          <img
+            src={require(`../../images/leadershipSM${item.id}.jpg`)}
+            alt=""
+            width={250}
+            height={250}
+          />
+        </div>
+        <div className={leadership.para}>
+          <h3>{item.heading}</h3>
+          <p>{item.para1}</p>
+          <p>{item.para2}</p>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <>
       <header className={leadership.leadership}>
@@ -65,7 +99,12 @@ const Leadership = () => {
           </ul>
         </nav>
       </header>
-      <section className={leadership.section1}>{leaderList}</section>
+      <section className={leadership.section1} style={styleDisplayBD}>
+        {leaderBDList}
+      </section>
+      <section className={leadership.section2} style={styleDisplaySM}>
+        {leaderSMList}
+      </section>
     </>
   );
 };

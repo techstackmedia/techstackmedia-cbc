@@ -12,7 +12,8 @@
   color: #474747;
 }
 
-.section1 {
+.section1,
+.section2 {
   width: 90%;
   margin: auto;
   margin-bottom: 120px;
@@ -31,7 +32,7 @@
 .board img {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  height: 50%;
+  height: 30%;
   width: 100%;
 }
 

@@ -1,4 +1,4 @@
-const NavbarLeftInterface = ['about', 'blog', 'contact']
+const NavbarLeftInterface = ['about', 'blog', 'contact'];
 const NavbarRightInterface = ['subsidiaries', 'products'];
 const CardBusinessInterface = [
   {
@@ -136,7 +136,58 @@ const AboutFocusInterface = [
   },
 ];
 
-const leadershipInterface = [
+const leadershipBDInterface = [
+  {
+    id: 1,
+    heading: 'Leadership',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
+  },
+
+  {
+    id: 2,
+    heading: 'Mentorship',
+    para1:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+    para2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+  },
+  {
+    id: 3,
+    heading: 'Partnership',
+    para1:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
+    para2:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, veniam optio delectus placeat fuga est!',
+  },
+  {
+    id: 4,
+    heading: 'Sportmanship',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+  },
+  {
+    id: 5,
+    heading: 'Friendship',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
+  },
+
+  {
+    id: 6,
+    heading: 'Relationship',
+    para1:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+    para2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+  },
+];
+
+const leadershipSMInterface = [
   {
     id: 1,
     heading: 'Leadership',
@@ -197,5 +248,6 @@ export {
   SocialMediaInterface,
   FooterLinkInterface,
   AboutFocusInterface,
-  leadershipInterface,
+  leadershipBDInterface,
+  leadershipSMInterface,
 };
