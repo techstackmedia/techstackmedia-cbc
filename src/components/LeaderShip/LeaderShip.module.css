@@ -12,9 +12,10 @@
   color: #474747;
 }
 
-.section {
+.section1 {
   width: 90%;
   margin: auto;
+  margin-bottom: 120px;
 }
 
 .board {
@@ -32,8 +33,6 @@
   border-top-right-radius: 6px;
   height: 50%;
   width: 100%;
-  margin: 0;
-  border-bottom: none;
 }
 
 .para {
@@ -44,6 +43,10 @@
   margin-top: -4px;
   height: 290px;
   overflow-y: auto;
+}
+
+.para::-webkit-scrollbar {
+  display: none;
 }
 
 .para h3,

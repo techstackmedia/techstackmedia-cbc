@@ -9,7 +9,8 @@ import footer from './Footer.module.css';
 const Footer = () => {
   const { pathname } = useLocation();
   const styleFooterHeight = {
-    height: pathname === '/about' ? '80px' : undefined,
+    height:
+      pathname === '/about' ? 80 : pathname === '/leadership' ? 80 : undefined,
   };
   const images = socialMedia.map((media) => {
     return (
@@ -50,7 +51,7 @@ const Footer = () => {
         <div className={footer.content}>
           <div className={footer.media}>
             <div className={footer.item}>
-              <MdLocationPin />{' '}
+              <MdLocationPin />
               <span>
                 CBC Towers, 10/11 Olubunmi Owa Street, Lekki Phase 1, Lekki,
                 Lagos

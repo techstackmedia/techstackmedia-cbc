@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import leadership from './LeaderShip.module.css';
-import img from '../../images/business1.jpg';
+import { leadershipInterface as leader } from '../../Interfaces/Interfaces';
 
 const Leadership = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
@@ -27,6 +27,26 @@ const Leadership = () => {
   const styleBorderSM = {
     borderBottom: borderSM,
   };
+
+  const leaderList = leader.map((item) => {
+    return (
+      <div className={leadership.board} key={item.id}>
+        <div>
+          <img
+            src={require(`../../images/leadership${item.id}.jpg`)}
+            alt=""
+            width={250}
+            height={250}
+          />
+        </div>
+        <div className={leadership.para}>
+          <h3>{item.heading}</h3>
+          <p>{item.para1}</p>
+          <p>{item.para2}</p>
+        </div>
+      </div>
+    );
+  });
   return (
     <>
       <header className={leadership.leadership}>
@@ -45,87 +65,7 @@ const Leadership = () => {
           </ul>
         </nav>
       </header>
-      <section className={leadership.section}>
-        <div className={leadership.board}>
-          <div>
-            <img src={img} alt="" width={250} height={250} />
-          </div>
-          <div className={leadership.para}>
-            <h3>Leadership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              minima, repudiandae aliquid consequuntur necessitatibus in
-              voluptatem quia, nostrum laboriosam quaerat optio autem doloribus,
-              reiciendis expedita.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div className={leadership.board}>
-          <div>
-            <img src={img} alt="" width={250} height={250} />
-          </div>
-          <div className={leadership.para}>
-            <h3>Leadership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              minima, repudiandae aliquid consequuntur necessitatibus in
-              voluptatem quia, nostrum laboriosam quaerat optio autem doloribus,
-              reiciendis expedita.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div className={leadership.board}>
-          <div>
-            <img src={img} alt="" width={250} height={250} />
-          </div>
-          <div className={leadership.para}>
-            <h3>Leadership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              minima, repudiandae aliquid consequuntur necessitatibus in
-              voluptatem quia, nostrum laboriosam quaerat optio autem doloribus,
-              reiciendis expedita.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div className={leadership.board}>
-          <div>
-            <img src={img} alt="" width={250} height={250} />
-          </div>
-          <div className={leadership.para}>
-            <h3>Leadership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              minima, repudiandae aliquid consequuntur necessitatibus in
-              voluptatem quia, nostrum laboriosam quaerat optio autem doloribus,
-              reiciendis expedita.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div className={leadership.board}>
-          <div>
-            <img src={img} alt="" width={250} height={250} />
-          </div>
-          <div className={leadership.para}>
-            <h3>Leadership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              minima, repudiandae aliquid consequuntur necessitatibus in
-              voluptatem quia, nostrum laboriosam quaerat optio autem doloribus,
-              reiciendis expedita.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </section>
+      <section className={leadership.section1}>{leaderList}</section>
     </>
   );
 };
