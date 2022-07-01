@@ -30,12 +30,10 @@ const About = () => {
       </div>
     );
   });
-  const removed  = aboutList.pop()
+  const removed = aboutList.pop();
   return (
     <>
-      <section className={about.section}>
-        {aboutList}
-      </section>
+      <section className={about.section}>{aboutList}</section>
       <h1 className={about.moments}>Moments in CBC</h1>
       <div className={about.removed}>{removed}</div>
       <RecentUpdates />
