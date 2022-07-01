@@ -27,6 +27,7 @@
 
 .cbc h3 {
   font-size: 34px;
+  width: 300px;
 }
 
 .cbc p {
@@ -55,7 +56,7 @@
 }
 
 .hero img {
-  width: 500px;
+  width: 0;
   height: 450px;
   width: 100%;
   position: relative;
