@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import leadership from './LeaderShip.module.css';
@@ -37,14 +36,13 @@ const Leadership = () => {
         <nav>
           <ul className={leadership.ul}>
             <li
-              className={leadership.active}
               style={styleBorderBD}
               onClick={handleClickBorderBD}
             >
-              <Link to="">Board of Directors</Link>
+              Board of Directors
             </li>
             <li style={styleBorderSM} onClick={handleClickBorderSM}>
-              <Link to="">Subsidiaries Management</Link>
+              Subsidiaries Management
             </li>
           </ul>
         </nav>
