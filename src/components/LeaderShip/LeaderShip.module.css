@@ -11,3 +11,42 @@
   font-weight: 600;
   color: #474747;
 }
+
+.section {
+  width: 90%;
+  margin: auto;
+}
+
+.board {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  position: relative;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.board img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 50%;
+  width: 100%;
+  margin: 0;
+  border-bottom: none;
+}
+
+.para {
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-top: -4px;
+  height: 290px;
+  overflow-y: auto;
+}
+
+.para h3,
+.para p {
+  padding: 15px;
+}
