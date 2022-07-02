@@ -6,7 +6,7 @@ const Subsidiaries = () => {
   const [cardFlip, setCardFlip] = useState({
     transform: 'rotateY(0)',
     transformStyle: 'preserve-3d',
-    backgroundColor: undefined,
+    backgroundColor: '#d9d9d9',
     isFlip: false,
   });
 
@@ -22,13 +22,7 @@ const Subsidiaries = () => {
   };
 
   const flipped = cardFlip.isFlip ? (
-    <div
-      style={{
-        display: 'inlineFlex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-      }}
-    >
+    <div className={subsidiaries.flipped}>
       <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
         CBC GEDU TECHNOLOGIES
       </h4>
