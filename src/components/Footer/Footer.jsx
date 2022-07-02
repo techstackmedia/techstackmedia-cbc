@@ -10,7 +10,16 @@ const Footer = () => {
   const { pathname } = useLocation();
   const styleFooterHeight = {
     height:
-      pathname === '/about' ? 80 : pathname === '/leadership' ? 80 : undefined,
+      pathname === '/about'
+        ? 80
+        : pathname === '/leadership'
+        ? 80
+        : pathname === '/subsidiaries'
+        ? 80
+        : undefined,
+  };
+  const styleFooterAbout = {
+    marginTop: pathname === '/' ? 0 : undefined,
   };
   const images = socialMedia.map((media) => {
     return (
@@ -42,10 +51,7 @@ const Footer = () => {
   });
 
   return (
-    <footer
-      className={footer.foot}
-      style={{ marginTop: pathname !== '/' ? -80 : undefined }}
-    >
+    <footer className={footer.foot} style={styleFooterAbout}>
       <div className={footer.footer} style={styleFooterHeight}>
         <div className={footer.content}>
           <div className={footer.media}>
