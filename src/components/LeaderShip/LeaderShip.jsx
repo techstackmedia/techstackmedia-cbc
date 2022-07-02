@@ -64,7 +64,7 @@ const Leadership = () => {
   const leaderSMList = leaderSM.map((item) => {
     return (
       <div className={leadership.board} key={item.id}>
-        <div>
+        <div className={leadership.img}>
           <img
             src={require(`../../images/leadershipSM${item.id}.jpg`)}
             alt=""
