@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import subsidiaries from './Subsidiaries.module.css';
 
@@ -15,20 +15,44 @@ const Subsidiaries = () => {
       return {
         ...prev,
         transform: 'rotateY(180deg)',
-        backgroundColor: 'transparent',
+        backgroundColor: '#fff',
         isFlip: !cardFlip.isFlip,
       };
     });
   };
 
-  const handleCardClick = () => {
-    handleCardClickFlip();
-  };
-
   const flipped = cardFlip.isFlip ? (
-    <h3 style={{ transform: 'rotateY(180deg)' }}>CBC GEDU TECHNOLOGIES</h3>
+    <div
+      style={{
+        display: 'inlineFlex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}
+    >
+      <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
+        CBC GEDU TECHNOLOGIES
+      </h4>
+      <p>
+        Established in 1984 as City Business Computers, The CBC EMEA Group is an
+        Information Technology Conglomerate with over 3 decades of experience in
+        design, supply and implementation of turnkey IT, communications and
+        security solutions in Africa. With a stable and experienced Board, the
+        CBC Group looks, forward to more decades of providing excellent service
+        and building the nation.
+      </p>
+      <Link
+        to=""
+        style={{
+          transform: 'rotateY(180deg)',
+          display: 'block',
+          margin: '0 5px',
+        }}
+      >
+        Read More...
+      </Link>
+    </div>
   ) : (
-    <h3>Hello</h3>
+    <h3>CBC GEDU TECHNOLOGIES</h3>
   );
 
   return (
@@ -37,7 +61,7 @@ const Subsidiaries = () => {
         <div
           className={subsidiaries.item}
           style={cardFlip}
-          onClick={handleCardClick}
+          onClick={handleCardClickFlip}
         >
           {flipped}
         </div>

@@ -22,10 +22,22 @@
   transition: all 0.6s ease-in;
 }
 
-.item:hover {
-  /* background-color: transparent; */
-  /* transform: rotateY(180deg);
-  transform: preserve-3d;
-  transform-style: preserve-3d;
-  background-color: #fff; */
+.item p {
+  height: 180px;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  margin: 20px 5px 20px;
+}
+
+.item p::-webkit-scrollbar {
+  display: none;
+}
+
+.item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0073a6;
+  transform: rotateY(180deg);
+  display: block;
+  margin: 0 5px;
 }
