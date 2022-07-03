@@ -7,6 +7,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  perspective: 2000px;
+  flex-wrap: wrap; 
 }
 
 .item {
@@ -20,7 +22,6 @@
   margin: 20px 0;
   cursor: pointer;
   transition: all 0.6s ease-in;
-  flex-wrap: wrap;
 }
 
 .flipped {

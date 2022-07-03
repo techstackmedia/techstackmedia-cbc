@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
+import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSchoolInterface as cardSchool } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
-import { IoIosArrowDropright } from 'react-icons/io';
 
 const School = () => {
   const cardList = cardSchool.map((item) => {
@@ -9,7 +9,7 @@ const School = () => {
       <div className={business.card} key={item.id}>
         <div className={business.img}>
           <img
-            src={require(`../../images/business${item.id}.jpg`)}
+            src={require(`../../images/school${item.id}.jpg`)}
             alt={`${item.title} cbc avatar`}
           />
         </div>
