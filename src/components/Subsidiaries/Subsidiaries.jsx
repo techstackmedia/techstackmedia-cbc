@@ -5,24 +5,19 @@ import subsidiaries from './Subsidiaries.module.css';
 
 const Subsidiaries = () => {
   const [cardFlip, setCardFlip] = useState({
-    transform: 'rotateY(0)',
     transformStyle: 'preserve-3d',
     backgroundColor: '#d9d9d9',
     isFlip: false,
   });
-
   const handleCardClick = () => {
-    if (!cardFlip.isFlip) {
-      setCardFlip((prev) => {
-        return {
-          ...prev,
-          transform: 'rotateY(180deg)',
-          backgroundColor: '#fff',
-          isFlip: !cardFlip.isFlip,
-        };
-      });
-    }
-    
+    setCardFlip((prev) => {
+      return {
+        ...prev,
+        transform: 'rotateY(180deg)',
+        backgroundColor: '#fff',
+        isFlip: !cardFlip.isFlip,
+      };
+    });
   };
 
   const flipped = cardFlip.isFlip
@@ -47,7 +42,6 @@ const Subsidiaries = () => {
           <div
             key={item.id}
             className={subsidiaries.item}
-            style={cardFlip}
             onClick={() => handleCardClick(item.id)}
           >
             <h3>{item.subHeading}</h3>
