@@ -16,6 +16,7 @@ const Subsidiaries = () => {
         transform: 'rotateY(180deg)',
         backgroundColor: '#fff',
         isFlip: !prev.isFlip,
+        id,
       };
     });
   };
