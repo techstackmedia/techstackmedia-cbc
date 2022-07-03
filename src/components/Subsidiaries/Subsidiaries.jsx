@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { subsidiariesInterface as subSidiaries } from '../../Interfaces/Interfaces';
 import subsidiaries from './Subsidiaries.module.css';
 
@@ -11,15 +11,18 @@ const Subsidiaries = () => {
     isFlip: false,
   });
 
-  const handleCardClickFlip = () => {
-    setCardFlip((prev) => {
-      return {
-        ...prev,
-        transform: 'rotateY(180deg)',
-        backgroundColor: '#fff',
-        isFlip: !cardFlip.isFlip,
-      };
-    });
+  const handleCardClick = () => {
+    if (!cardFlip.isFlip) {
+      setCardFlip((prev) => {
+        return {
+          ...prev,
+          transform: 'rotateY(180deg)',
+          backgroundColor: '#fff',
+          isFlip: !cardFlip.isFlip,
+        };
+      });
+    }
+    
   };
 
   const flipped = cardFlip.isFlip
@@ -29,12 +32,10 @@ const Subsidiaries = () => {
             key={item.id}
             className={subsidiaries.item}
             style={cardFlip}
-            onClick={handleCardClickFlip}
+            onClick={() => handleCardClick(item.id)}
           >
             <div className={subsidiaries.flipped}>
-              <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
-                {item.subHeading}
-              </h4>
+              <h4>{item.subHeading}</h4>
               <p>{item.para}</p>
               <Link to="">Read More...</Link>
             </div>
@@ -47,7 +48,7 @@ const Subsidiaries = () => {
             key={item.id}
             className={subsidiaries.item}
             style={cardFlip}
-            onClick={handleCardClickFlip}
+            onClick={() => handleCardClick(item.id)}
           >
             <h3>{item.subHeading}</h3>
           </div>
