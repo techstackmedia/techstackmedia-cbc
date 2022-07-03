@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { subsidiariesInterface as subSidiaries } from '../../Interfaces/Interfaces';
 import subsidiaries from './Subsidiaries.module.css';
 
 const Subsidiaries = () => {
@@ -24,29 +25,13 @@ const Subsidiaries = () => {
   const flipped = cardFlip.isFlip ? (
     <div className={subsidiaries.flipped}>
       <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
-        CBC GEDU TECHNOLOGIES
+        {subSidiaries[0].subHeading}
       </h4>
-      <p>
-        Established in 1984 as City Business Computers, The CBC EMEA Group is an
-        Information Technology Conglomerate with over 3 decades of experience in
-        design, supply and implementation of turnkey IT, communications and
-        security solutions in Africa. With a stable and experienced Board, the
-        CBC Group looks, forward to more decades of providing excellent service
-        and building the nation.
-      </p>
-      <Link
-        to=""
-        style={{
-          transform: 'rotateY(180deg)',
-          display: 'block',
-          margin: '0 5px',
-        }}
-      >
-        Read More...
-      </Link>
+      <p>{subSidiaries[0].para}</p>
+      <Link to="">Read More...</Link>
     </div>
   ) : (
-    <h3>CBC GEDU TECHNOLOGIES</h3>
+    <h3>{subSidiaries[0].subHeading}</h3>
   );
 
   return (

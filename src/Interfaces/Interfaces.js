@@ -238,6 +238,40 @@ const leadershipSMInterface = [
   },
 ];
 
+const subsidiariesInterface = [
+  {
+    id: 1,
+    subHeading: 'CBC GEDU TECHNOLOGIES',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+    
+  },
+  {
+    id: 2,
+    subHeading: 'CBC INFRASTRUCTURE',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+  },
+  {
+    id: 3,
+    subHeading: 'CBC NETCOMMS',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+  },
+  {
+    id: 4,
+    subHeading: 'CBC ENERGY',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+  },
+  {
+    id: 5,
+    subHeading: 'CBC PROPERTIES',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+  },
+  {
+    id: 6,
+    subHeading: 'CBC SURVEILLANCE',
+    para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
+  },
+];
+
 export {
   NavbarLeftInterface,
   NavbarRightInterface,
@@ -250,4 +284,5 @@ export {
   AboutFocusInterface,
   leadershipBDInterface,
   leadershipSMInterface,
+  subsidiariesInterface,
 };

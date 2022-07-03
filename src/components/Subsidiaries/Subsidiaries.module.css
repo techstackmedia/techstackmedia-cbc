@@ -28,6 +28,11 @@
   justify-content: space-between;
 }
 
+.flipped h4 {
+  transform: rotateY(180deg);
+  margin: 0 5px;
+}
+
 .item p {
   height: 180px;
   transform: rotateY(180deg);
