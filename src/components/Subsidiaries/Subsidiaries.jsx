@@ -22,44 +22,41 @@ const Subsidiaries = () => {
     });
   };
 
-  const flipped = cardFlip.isFlip ? (
-    <div className={subsidiaries.flipped}>
-      <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
-        {subSidiaries[0].subHeading}
-      </h4>
-      <p>{subSidiaries[0].para}</p>
-      <Link to="">Read More...</Link>
-    </div>
-  ) : (
-    <h3>{subSidiaries[0].subHeading}</h3>
-  );
+  const flipped = cardFlip.isFlip
+    ? subSidiaries.map((item) => {
+        return (
+          <div
+            key={item.id}
+            className={subsidiaries.item}
+            style={cardFlip}
+            onClick={handleCardClickFlip}
+          >
+            <div className={subsidiaries.flipped}>
+              <h4 style={{ transform: 'rotateY(180deg)', margin: '0 5px' }}>
+                {item.subHeading}
+              </h4>
+              <p>{item.para}</p>
+              <Link to="">Read More...</Link>
+            </div>
+          </div>
+        );
+      })
+    : subSidiaries.map((item) => {
+        return (
+          <div
+            key={item.id}
+            className={subsidiaries.item}
+            style={cardFlip}
+            onClick={handleCardClickFlip}
+          >
+            <h3>{item.subHeading}</h3>
+          </div>
+        );
+      });
 
   return (
     <section className={subsidiaries.section}>
-      <div className={subsidiaries.subsidiaries}>
-        <div
-          className={subsidiaries.item}
-          style={cardFlip}
-          onClick={handleCardClickFlip}
-        >
-          {flipped}
-        </div>
-        <div className={subsidiaries.item}>
-          <h3>CBC INFRASTRUCTURE</h3>
-        </div>
-        <div className={subsidiaries.item}>
-          <h3>CBC NETCOMMS</h3>
-        </div>
-        <div className={subsidiaries.item}>
-          <h3>CBC ENERGY</h3>
-        </div>
-        <div className={subsidiaries.item}>
-          <h3>CBC PROPERTIES</h3>
-        </div>
-        <div className={subsidiaries.item}>
-          <h3>CBC SURVEILLANCE</h3>
-        </div>
-      </div>
+      <div className={subsidiaries.subsidiaries}>{flipped}</div>
     </section>
   );
 };
