@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { MdLocationPin } from 'react-icons/md';
 import { MdEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
@@ -46,6 +46,7 @@ const Footer = () => {
         >
           {footer}
         </Link>
+        <Outlet />
       </div>
     );
   });

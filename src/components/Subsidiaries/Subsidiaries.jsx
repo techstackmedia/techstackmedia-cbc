@@ -9,7 +9,7 @@ const Subsidiaries = () => {
     backgroundColor: '#d9d9d9',
     isFlip: false,
   });
-  const handleCardClick = () => {
+  const handleCardClick = (id) => {
     setCardFlip((prev) => {
       return {
         ...prev,
