@@ -15,11 +15,10 @@ const Subsidiaries = () => {
         ...prev,
         transform: 'rotateY(180deg)',
         backgroundColor: '#fff',
-        isFlip: !cardFlip.isFlip,
+        isFlip: !prev.isFlip,
       };
     });
   };
-
   const flipped = cardFlip.isFlip
     ? subSidiaries.map((item) => {
         return (
