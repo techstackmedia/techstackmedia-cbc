@@ -10,13 +10,11 @@ const Footer = () => {
   const { pathname } = useLocation();
   const styleFooterHeight = {
     height:
-      pathname === '/about'
-        ? 80
-        : pathname === '/leadership'
-        ? 80
-        : pathname === '/subsidiaries'
-        ? 80
-        : undefined,
+      pathname === '/about' ? 80 : 
+      pathname === '/leadership'? 80 : 
+      pathname === '/subsidiaries' ? 80 : 
+      pathname === '/products' ? 80 :
+      undefined
   };
   const styleFooterAbout = {
     marginTop: pathname === '/' ? 0 : undefined,
