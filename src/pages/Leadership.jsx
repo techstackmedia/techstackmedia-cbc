@@ -1,6 +1,6 @@
+import { useEffect } from 'react';
 import LeaderShip from '../components/LeaderShip/LeaderShip';
 import Footer from '../components/Footer/Footer';
-import { useEffect } from 'react';
 
 const Leadership = () => {
   useEffect(() => {
