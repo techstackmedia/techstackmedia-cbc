@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import Hero from '../components/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
 import School from '../components/School/School';
+import Connectivity from '../components/Connectivity/Connectivity';
 
 const Products = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Products = () => {
       <Hero title="Our Products" />
       <Business />
       <School />
+      <Connectivity />
       <Footer />
     </>
   );

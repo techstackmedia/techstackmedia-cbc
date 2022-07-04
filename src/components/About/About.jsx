@@ -5,9 +5,12 @@ import about from './About.module.css';
 
 const About = () => {
   const aboutList = aboutFocus.map((aboutItem) => {
+    const style = {
+      order: aboutItem.id % 2 === 0 ? 1 : 0,
+    };
     return (
       <div className={about.about} key={aboutItem.id}>
-        <div className={about.img}>
+        <div className={about.img} style={style}>
           <img
             src={require(`../../images/about${aboutItem.id}.png`)}
             alt="about"

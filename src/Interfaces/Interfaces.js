@@ -23,6 +23,29 @@ const CardBusinessInterface = [
   },
 ];
 
+const CardConnectivityInterface = [
+  {
+    id: 1,
+    title: 'ClickSAT',
+    text: 'Get as high as 100Mbps on one modem for your business and home use. ',
+  },
+  {
+    id: 2,
+    title: 'Bluenet',
+    text: 'Superfast Broadband internet at incredibly high speeds.',
+  },
+  {
+    id: 3,
+    title: 'Sensaphone',
+    text: 'Remote monitoring system and auto dialers with real time alerts.',
+  },
+  {
+    id: 4,
+    title: 'iCOM',
+    text: 'Remote operations such as load shedding on connected transformers.',
+  },
+];
+
 const CardSchoolInterface = [
   {
     id: 1,
@@ -243,7 +266,6 @@ const subsidiariesInterface = [
     id: 1,
     subHeading: 'CBC GEDU TECHNOLOGIES',
     para: 'Established in 1984 as City Business Computers, The CBC EMEA Group is an Information Technology Conglomerate with over 3 decades of experience in design, supply and implementation of turnkey IT, communications and security solutions in Africa. With a stable and experienced Board, the CBC Group looks, forward to more decades of providing excellent service and building the nation.',
-    
   },
   {
     id: 2,
@@ -285,4 +307,5 @@ export {
   leadershipBDInterface,
   leadershipSMInterface,
   subsidiariesInterface,
+  CardConnectivityInterface,
 };
