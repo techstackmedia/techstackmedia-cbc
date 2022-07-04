@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Hero from '../Hero/Hero';
-import leadership from './LeaderShip.module.css';
+import blogNews from './BlogNews.module.css';
 import { leadershipBDInterface as leaderBD } from '../../Interfaces/Interfaces';
 import { leadershipSMInterface as leaderSM } from '../../Interfaces/Interfaces';
 
-const Leadership = () => {
+const BlogNews = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
   const [borderSM, setBorderSM] = useState('');
   const [displayBD, setDisplayBD] = useState('block');
@@ -43,7 +41,7 @@ const Leadership = () => {
 
   const leaderBDList = leaderBD.map((item) => {
     return (
-      <div className={leadership.board} key={item.id}>
+      <div className={blogNews.board} key={item.id}>
         <div>
           <img
             src={require(`../../images/leadershipBD${item.id}.jpg`)}
@@ -52,7 +50,7 @@ const Leadership = () => {
             height={250}
           />
         </div>
-        <div className={leadership.para}>
+        <div className={blogNews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
           <p>{item.para2}</p>
@@ -63,8 +61,8 @@ const Leadership = () => {
 
   const leaderSMList = leaderSM.map((item) => {
     return (
-      <div className={leadership.board} key={item.id}>
-        <div className={leadership.img}>
+      <div className={blogNews.board} key={item.id}>
+        <div className={blogNews.img}>
           <img
             src={require(`../../images/leadershipSM${item.id}.jpg`)}
             alt=""
@@ -72,7 +70,7 @@ const Leadership = () => {
             height={250}
           />
         </div>
-        <div className={leadership.para}>
+        <div className={blogNews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
           <p>{item.para2}</p>
@@ -83,30 +81,26 @@ const Leadership = () => {
 
   return (
     <>
-      <header className={leadership.leadership}>
-        <Navbar />
-        <Hero title="Our Leadership" />
-      </header>
       <header>
         <nav>
-          <ul className={leadership.ul}>
+          <ul className={blogNews.ul}>
             <li style={styleBorderBD} onClick={handleClickBorderBD}>
-              Board of Directors
+              {/* Board of Directors */}Blog
             </li>
             <li style={styleBorderSM} onClick={handleClickBorderSM}>
-              Subsidiaries Management
+              {/* Subsidiaries Management */}News
             </li>
           </ul>
         </nav>
       </header>
-      <section className={leadership.section1} style={styleDisplayBD}>
+      <section className={blogNews.section1} style={styleDisplayBD}>
         {leaderBDList}
       </section>
-      <section className={leadership.section2} style={styleDisplaySM}>
+      <section className={blogNews.section2} style={styleDisplaySM}>
         {leaderSMList}
       </section>
     </>
   );
 };
 
-export default Leadership;
+export default BlogNews;
