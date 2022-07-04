@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -28,13 +29,23 @@
 }
 
 .text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 10px;
+  height: 200px;
 }
 
 .text p {
   height: 60px;
   margin-top: 15px;
   margin-bottom: 20px;
+  max-height: 60%;
+  overflow-y: auto;
+}
+
+.text p::-webkit-scrollbar {
+  display: none;
 }
 
 .title {

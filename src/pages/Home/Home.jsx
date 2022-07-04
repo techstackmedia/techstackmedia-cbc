@@ -25,7 +25,7 @@ const Home = () => {
       <section>
         <Business />
         <RecentUpdates />
-        <School />
+        <School linkText="Explore"/>
       </section>
       <CoperateClienet />
       <Email />

@@ -18,7 +18,7 @@ const Business = () => {
           <p>{item.text}</p>
           <div>
             <Link to="/">
-              Learn More <IoIosArrowDropright />
+              Explore <IoIosArrowDropright />
             </Link>
           </div>
         </div>

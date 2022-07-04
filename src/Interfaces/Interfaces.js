@@ -22,31 +22,61 @@ const CardBusinessInterface = [
     text: 'Remote operations such as load shedding on connected transformers.',
   },
 ];
-
-const CardConnectivityInterface = [
+const CardSchoolInterface = [
   {
     id: 1,
-    title: 'ClickSAT',
+    title: 'EasyStudy',
     text: 'Get as high as 100Mbps on one modem for your business and home use. ',
   },
   {
     id: 2,
-    title: 'Bluenet',
+    title: 'BlueSlate 7',
     text: 'Superfast Broadband internet at incredibly high speeds.',
   },
   {
     id: 3,
-    title: 'Sensaphone',
+    title: 'C3 Micro Cloud',
     text: 'Remote monitoring system and auto dialers with real time alerts.',
   },
   {
     id: 4,
-    title: 'iCOM',
+    title: 'TeacherApp',
     text: 'Remote operations such as load shedding on connected transformers.',
   },
 ];
-
-const CardSchoolInterface = [
+const CardSubsidiariesProductsInterface = [
+  {
+    id: 1,
+    title: 'EasyStudy',
+    text: 'Get as high as 100Mbps on one modem for your business and home use. ',
+  },
+  {
+    id: 2,
+    title: 'BlueSlate 7',
+    text: 'Superfast Broadband internet at incredibly high speeds.',
+  },
+  {
+    id: 3,
+    title: 'C3 Micro Cloud',
+    text: 'Remote monitoring system and auto dialers with real time alerts.',
+  },
+  {
+    id: 4,
+    title: 'TeacherApp',
+    text: 'Remote operations such as load shedding on connected transformers.',
+  },
+  {
+    id: 5,
+    title: 'C3 Micro Cloud',
+    text: 'Remote monitoring system and auto dialers with real time alerts.',
+  },
+  {
+    id: 6,
+    title: 'TeacherApp',
+    text: 'Remote operations such as load shedding on connected transformers.',
+  },
+];
+const CardPartnerProductsInterface = [
   {
     id: 1,
     title: 'EasyStudy',
@@ -307,5 +337,6 @@ export {
   leadershipBDInterface,
   leadershipSMInterface,
   subsidiariesInterface,
-  CardConnectivityInterface,
+  CardSubsidiariesProductsInterface,
+  CardPartnerProductsInterface,
 };

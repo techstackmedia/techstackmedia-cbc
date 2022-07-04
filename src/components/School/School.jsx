@@ -3,7 +3,7 @@ import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSchoolInterface as cardSchool } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
 
-const School = () => {
+const School = ({ linkText }) => {
   const cardList = cardSchool.map((item) => {
     return (
       <div className={business.card} key={item.id}>
@@ -18,7 +18,7 @@ const School = () => {
           <p>{item.text}</p>
           <div>
             <Link to="/">
-              Learn More <IoIosArrowDropright />
+              {linkText} <IoIosArrowDropright />
             </Link>
           </div>
         </div>
