@@ -14,7 +14,7 @@
 
 .section1,
 .section2 {
-  width: 80%;
+  width: calc(80% - 60px);
   margin: auto;
 }
 
