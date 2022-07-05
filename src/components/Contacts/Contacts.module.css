@@ -41,7 +41,7 @@
 }
 
 .fullname {
-  width: 300px;
+  width: 350px;
   height: 30px;
   border-radius: 5px;
 }
@@ -54,7 +54,7 @@
 .emailPhoneNumber {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
