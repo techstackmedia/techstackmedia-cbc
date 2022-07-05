@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import blogNews from './BlogNews.module.css';
-import { leadershipBDInterface as leaderBD } from '../../Interfaces/Interfaces';
-import { leadershipSMInterface as leaderSM } from '../../Interfaces/Interfaces';
+import blognews from './BlogNews.module.css';
+import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
+import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
 const BlogNews = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
@@ -39,18 +39,18 @@ const BlogNews = () => {
     display: displaySM,
   };
 
-  const leaderBDList = leaderBD.map((item) => {
+  const leaderBDList = blogBlog.map((item) => {
     return (
-      <div className={blogNews.board} key={item.id}>
+      <div className={blognews.board} key={item.id}>
         <div>
           <img
-            src={require(`../../images/leadershipBD${item.id}.jpg`)}
+            src={require(`../../images/blogBlog${item.id}.jpg`)}
             alt=""
             width={250}
             height={250}
           />
         </div>
-        <div className={blogNews.para}>
+        <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
           <p>{item.para2}</p>
@@ -59,18 +59,18 @@ const BlogNews = () => {
     );
   });
 
-  const leaderSMList = leaderSM.map((item) => {
+  const leaderSMList = blogNews.map((item) => {
     return (
-      <div className={blogNews.board} key={item.id}>
-        <div className={blogNews.img}>
+      <div className={blognews.board} key={item.id}>
+        <div className={blognews.img}>
           <img
-            src={require(`../../images/leadershipSM${item.id}.jpg`)}
+            src={require(`../../images/blogNews${item.id}.jpg`)}
             alt=""
             width={250}
             height={250}
           />
         </div>
-        <div className={blogNews.para}>
+        <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
           <p>{item.para2}</p>
@@ -83,20 +83,20 @@ const BlogNews = () => {
     <>
       <header>
         <nav>
-          <ul className={blogNews.ul}>
+          <ul className={blognews.ul}>
             <li style={styleBorderBD} onClick={handleClickBorderBD}>
-              {/* Board of Directors */}Blog
+              Blog
             </li>
             <li style={styleBorderSM} onClick={handleClickBorderSM}>
-              {/* Subsidiaries Management */}News
+              News
             </li>
           </ul>
         </nav>
       </header>
-      <section className={blogNews.section1} style={styleDisplayBD}>
+      <section className={blognews.section1} style={styleDisplayBD}>
         {leaderBDList}
       </section>
-      <section className={blogNews.section2} style={styleDisplaySM}>
+      <section className={blognews.section2} style={styleDisplaySM}>
         {leaderSMList}
       </section>
     </>

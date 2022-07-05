@@ -189,14 +189,15 @@ const AboutFocusInterface = [
   },
 ];
 
-const leadershipBDInterface = [
+const blogNewsInterface = [
   {
     id: 1,
-    heading: 'Leadership',
+    heading: 'Title of Blog',
     para1:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+
     para2:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 
   {
@@ -205,89 +206,162 @@ const leadershipBDInterface = [
     para1:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
     para2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
   },
   {
     id: 3,
-    heading: 'Partnership',
-    para1:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
-    para2:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, veniam optio delectus placeat fuga est!',
-  },
-  {
-    id: 4,
-    heading: 'Sportmanship',
-    para1:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
-  },
-  {
-    id: 5,
-    heading: 'Friendship',
+    heading: 'Title of Blog',
     para1:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
     para2:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
+  },
+  {
+    id: 4,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+  {
+    id: 5,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 
   {
     id: 6,
-    heading: 'Relationship',
+    heading: 'Title of Blog',
     para1:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
     para2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+];
+
+const blogBlogInterface = [
+  {
+    id: 1,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+
+  {
+    id: 2,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+  {
+    id: 3,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+  {
+    id: 4,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+    para2:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+  {
+    id: 5,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+
+  {
+    id: 6,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+    para2:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+];
+
+const leadershipBDInterface = [
+  {
+    id: 1,
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+
+  {
+    id: 2,
+    heading: 'Mentorship',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+  {
+    id: 3,
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
+  },
+  {
+    id: 4,
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+  },
+  {
+    id: 5,
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 ];
 
 const leadershipSMInterface = [
   {
     id: 1,
-    heading: 'Leadership',
-    para1:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
-    para2:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 
   {
-    id: 2,
-    heading: 'Mentorship',
-    para1:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
-    para2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+    id: 1,
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
   {
     id: 3,
-    heading: 'Partnership',
-    para1:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
-    para2:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, veniam optio delectus placeat fuga est!',
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
   },
   {
     id: 4,
-    heading: 'Sportmanship',
-    para1:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
   },
   {
     id: 5,
-    heading: 'Friendship',
-    para1:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
-    para2:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus commodi eius inventore perferendis, fuga iste..',
-  },
-
-  {
-    id: 6,
-    heading: 'Relationship',
-    para1:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
-    para2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore doloribus temporibus?',
+    heading: 'GBADE ALABI',
+    office: 'Chief Executive Officier',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 ];
 
@@ -334,6 +408,8 @@ export {
   SocialMediaInterface,
   FooterLinkInterface,
   AboutFocusInterface,
+  blogNewsInterface,
+  blogBlogInterface,
   leadershipBDInterface,
   leadershipSMInterface,
   subsidiariesInterface,

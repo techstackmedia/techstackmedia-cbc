@@ -4,6 +4,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Subsidiaries from './pages/Subsidiaries';
 import Products from './pages/Products';
+import Leadership from './pages/Leadership';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/subsidiaries" element={<Subsidiaries />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/leadership" element={<Leadership />} />
       </Routes>
     </BrowserRouter>
   );
