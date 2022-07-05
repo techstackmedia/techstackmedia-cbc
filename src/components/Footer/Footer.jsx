@@ -12,7 +12,8 @@ const Footer = () => {
     height:
       pathname === '/about' ? 80 : 
       pathname === '/leadership'? 80 : 
-      pathname === '/blog' ? 80 : 
+      pathname === '/blog' ? 80 :
+      pathname === '/contact' ? 80 :  
       pathname === '/subsidiaries' ? 80 : 
       pathname === '/products' ? 80 :
       undefined

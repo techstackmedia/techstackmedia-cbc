@@ -1,0 +1,118 @@
+.section {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contacts {
+  width: 80%;
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0px 3.70361px 3.70361px rgba(0, 0, 0, 0.25);
+}
+
+.contacts h2 {
+  margin-bottom: 10px;
+}
+
+.contacts p {
+  line-height: 1.9;
+}
+.enquiries p {
+  margin-top: 50px;
+}
+
+.enquiries {
+  width: 80%;
+}
+
+.enquiries p {
+  width: 350px;
+  margin-left: calc(10% + 25px);
+  color: #0073a6;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.fullname {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.section form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.emailPhoneNumber {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+}
+
+.section input,
+.section textarea {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 5px;
+  background-color: #e4f8ff;
+  margin: 10px 0 5px 0;
+  text-indent: 10px;
+  height: 30px;
+}
+
+.section textarea {
+  resize: none;
+  height: 160px;
+}
+
+.contact {
+  box-shadow: 0px 3.70361px 3.70361px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  padding: 30px;
+  height: 230px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email,
+.number {
+  margin: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.contact svg {
+  color: #0099dc;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+}
+
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  cursor: pointer;
+}
