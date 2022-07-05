@@ -339,7 +339,7 @@ const leadershipSMInterface = [
   },
 
   {
-    id: 1,
+    id: 2,
     heading: 'GBADE ALABI',
     office: 'Chief Executive Officier',
     para:
