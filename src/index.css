@@ -20,11 +20,15 @@ body {
   background-color: #fff;
   font-size: 16px;
   background-color: #e5e5e5;
-  transition: all 2s ease-in;
 }
 
 img {
   -o-object-fit: contain;
   -moz-object-fit: contain;
   object-fit: contain;
+}
+
+section {
+  width: 90%;
+  margin: auto;
 }
