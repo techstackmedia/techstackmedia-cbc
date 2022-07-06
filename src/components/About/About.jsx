@@ -5,18 +5,28 @@ import about from './About.module.css';
 
 const About = () => {
   const aboutList = aboutFocus.map((aboutItem) => {
-    const style = {
+    const styleImg = {
       order: aboutItem.id % 2 === 0 ? 1 : 0,
       marginRight: aboutItem.id % 2 === 0 ? 'auto' : undefined,
     };
+
+    const styleImage = {
+      borderTopLeftRadius: aboutItem % 2 === 0 ? undefined : 8,
+      borderBottomRightRadius: aboutItem % 2 === 0 ? undefined : 8,
+    };
+
+    // const styleFocus = {
+    //   borderRadius: 8,
+    // };
     return (
       <div className={about.about} key={aboutItem.id}>
-        <div className={about.img} style={style}>
+        <div className={about.img} style={styleImg}>
           <img
             src={require(`../../images/about${aboutItem.id}.png`)}
             alt="about"
             width={70}
             height={50}
+            style={styleImage}
           />
         </div>
         <div className={about.focus}>
