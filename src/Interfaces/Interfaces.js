@@ -306,7 +306,7 @@ const leadershipBDInterface = [
 
   {
     id: 2,
-    heading: 'Mentorship',
+    heading: 'GBADE ALABI',
     office: 'Chief Executive Officier',
     para: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
   },
@@ -342,8 +342,7 @@ const leadershipSMInterface = [
     id: 2,
     heading: 'GBADE ALABI',
     office: 'Chief Executive Officier',
-    para:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
   {
     id: 3,

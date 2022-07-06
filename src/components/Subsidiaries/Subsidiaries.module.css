@@ -82,6 +82,8 @@
 
 .item p::-webkit-scrollbar {
   display: none;
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
 }
 
 .item a {

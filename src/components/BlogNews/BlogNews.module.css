@@ -50,6 +50,11 @@
   display: none;
 }
 
+.para {
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+}
+
 .para h3,
 .para p {
   padding: 15px;
