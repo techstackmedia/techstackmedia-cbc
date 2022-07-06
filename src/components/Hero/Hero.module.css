@@ -11,9 +11,12 @@
 }
 
 .jumbotron {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  display: inline-flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .cbc {
@@ -84,6 +87,7 @@
 
 .tower {
   position: relative;
+  /* display: none; */
 }
 
 .bullet {

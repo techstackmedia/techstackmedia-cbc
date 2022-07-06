@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet /*useLocation*/ } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import {
@@ -9,16 +9,16 @@ import navbar from './Navbar.module.css';
 import logo from '../../logo.svg';
 
 const Navbar = () => {
+  /*
   const { pathname } = useLocation();
   const style = {
     color: pathname !== '/' ? '#fff' : undefined,
   };
+  */
   const nR = navLeft.map((item) => {
     return (
       <li key={item} className={navbar.navLeft}>
-        <Link to={`/${item}`} style={style}>
-          {item.toUpperCase()}
-        </Link>
+        <Link to={`/${item}`} /*style={style}*/>{item.toUpperCase()}</Link>
       </li>
     );
   });
@@ -26,12 +26,10 @@ const Navbar = () => {
     return (
       <div key={item} style={{ position: 'relative', left: 40 }}>
         <li>
-          <Link to={`/${item}`} style={style}>
-            {item.toUpperCase()}
-          </Link>
+          <Link to={`/${item}`} /*style={style}*/>{item.toUpperCase()}</Link>
         </li>
         <div key={index} className={navbar.arrow}>
-          <MdKeyboardArrowDown className={navbar.arrowDown} style={style} />
+          <MdKeyboardArrowDown className={navbar.arrowDown} /*style={style}*/ />
         </div>
       </div>
     );
@@ -40,21 +38,21 @@ const Navbar = () => {
   return (
     <div
       className={navbar.navbar}
-      style={{ backgroundColor: pathname !== '/' ? 'transparent' : undefined }}
+      // style={{ backgroundColor: pathname !== '/' ? 'transparent' : undefined }}
     >
       <nav>
         <ul>
           <div className={navbar.item}>
             <li>
               <Link to="/">
-                <img width={148.47} height={71} src={logo} alt="cbc logo" />
+                <img width={100} height={100} src={logo} alt="cbc logo" />
               </Link>
             </li>
             {nR}
           </div>
           <div>
             <li>
-              <MdSearch className={navbar.search} style={style} />
+              <MdSearch className={navbar.search} /*style={style}*/ />
             </li>
             {nL}
           </div>

@@ -8,6 +8,10 @@ import hero from './Hero.module.css';
 const Hero = ({ heading, title, para }) => {
   const { pathname } = useLocation();
 
+  const styleCBC = {
+    marginLeft: pathname === '/' ? '5%' : undefined,
+  };
+
   return (
     <div
       className={hero.hero}
@@ -22,7 +26,7 @@ const Hero = ({ heading, title, para }) => {
           marginTop: pathname !== '/' ? -207 : undefined,
         }}
       >
-        <div className={hero.cbc}>
+        <div className={hero.cbc} style={styleCBC}>
           <h1>{heading}</h1>
           <h3>{title}</h3>
           <p>{para}</p>

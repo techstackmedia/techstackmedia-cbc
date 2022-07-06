@@ -1,12 +1,12 @@
 .navbar {
   height: 97px;
   background-color: #fff;
-  position: absolute;
+  /* position: absolute;
   left: 0;
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 2; */
 }
 
 .navbar nav {
@@ -56,7 +56,7 @@
 }
 
 .search {
-  width: 34px;
-  height: 34px;
+  width: 27px;
+  height: 27px;
   margin-top: 5px;
 }
