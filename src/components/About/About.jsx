@@ -7,6 +7,7 @@ const About = () => {
   const aboutList = aboutFocus.map((aboutItem) => {
     const style = {
       order: aboutItem.id % 2 === 0 ? 1 : 0,
+      marginRight: aboutItem.id % 2 === 0 ? 'auto' : undefined,
     };
     return (
       <div className={about.about} key={aboutItem.id}>

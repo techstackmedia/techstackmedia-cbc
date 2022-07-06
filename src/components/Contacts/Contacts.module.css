@@ -41,7 +41,6 @@
 }
 
 .fullname {
-  width: 350px;
   height: 30px;
   border-radius: 5px;
 }
@@ -49,13 +48,18 @@
 .section form {
   display: inline-flex;
   flex-direction: column;
+  width: 350px;
 }
 
 .emailPhoneNumber {
   display: flex;
   justify-content: space-between;
-  width: 350px;
   height: auto;
+}
+
+.email,
+.phoneNumber {
+  width: 45%;
 }
 
 .section input,
@@ -68,6 +72,7 @@
   text-indent: 10px;
   height: 40px;
   font-family: 'Montserrat';
+  outline: none;
 }
 
 .section textarea {

@@ -28,8 +28,6 @@
   font-size: 22px;
 }
 
-
-
 .item {
   background-position: center;
   background-size: cover;
@@ -60,9 +58,7 @@
   background-image: url('../../images/item6.jpg');
 }
 
-.item
-
-.flipped {
+.item .flipped {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,12 +74,12 @@
   transform: rotateY(180deg);
   overflow-y: auto;
   margin: 20px 5px 20px;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
 }
 
 .item p::-webkit-scrollbar {
   display: none;
-  scrollbar-width: 0;
-  scrollbar-color: transparent;
 }
 
 .item a {

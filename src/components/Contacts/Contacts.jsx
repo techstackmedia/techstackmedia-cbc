@@ -48,12 +48,14 @@ const Contacts = () => {
               name=""
               id={`${id}-email`}
               placeholder="Email"
+              className={contacts.email}
             />
             <input
               type="text"
               name=""
               id={`${id}-phoneNumber`}
               placeholder="Phone Number"
+              className={contacts.phoneNumber}
             />
           </div>
           <textarea placeholder="Message" rows={5} cols={15} />
