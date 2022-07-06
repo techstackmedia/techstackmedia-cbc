@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
 }
 
@@ -17,11 +16,14 @@
   /* align-items: center; */
   display: inline-flex;
   flex-direction: column;
-  height: 100vh;
+  justify-content: center;
 }
 
 .cbc {
   margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cbc h1 {
@@ -52,6 +54,10 @@
   margin-bottom: 20px;
   margin-top: 20px;
   font-weight: 600;
+  display: inline-flex;
+  text-align: center;
+  width: 18%;
+  justify-content: center;
 }
 
 .subsidiaries svg {
@@ -88,7 +94,7 @@
 
 .tower {
   position: relative;
-  /* display: none; */
+  display: none;
 }
 
 .bullet {

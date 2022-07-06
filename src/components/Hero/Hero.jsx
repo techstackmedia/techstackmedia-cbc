@@ -13,9 +13,6 @@ const Hero = ({ heading, title, para }) => {
   };
 
   const styleH3 = {
-    // position: absolute;
-    // left: 5%;
-    // bottom: 24px;
     position: pathname !== '/' ? 'absolute' : undefined,
     left: pathname !== '/' ? '5%' : undefined,
     bottom: pathname !== '/' ? 30 : undefined,
