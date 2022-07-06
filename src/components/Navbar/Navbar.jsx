@@ -24,7 +24,7 @@ const Navbar = () => {
   });
   const nL = navRight.map((item, index) => {
     return (
-      <div key={item}>
+      <div key={item} style={{ position: 'relative', left: 40 }}>
         <li>
           <Link to={`/${item}`} style={style}>
             {item.toUpperCase()}
