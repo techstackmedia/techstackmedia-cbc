@@ -92,6 +92,8 @@
   margin: 20px 5px 20px;
   scrollbar-width: none;
   scrollbar-color: transparent;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .item p::-webkit-scrollbar {
