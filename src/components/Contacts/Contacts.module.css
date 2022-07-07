@@ -5,7 +5,6 @@
 }
 
 .contacts {
-  width: 80%;
   background-color: #fff;
   margin: auto;
   padding: 30px;
@@ -29,14 +28,12 @@
 
 .enquiries p {
   width: 350px;
-  margin-left: calc(10% + 25px);
   color: #0073a6;
 }
 
 .forms {
   display: flex;
   justify-content: space-between;
-  width: 80%;
   margin: 10px auto;
 }
 
