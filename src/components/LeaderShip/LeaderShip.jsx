@@ -41,7 +41,7 @@ const LeaderShip = () => {
   const leadershipList1 = leadershipBD.map((leadershipItem) => {
     const styles = {
       order: leadershipItem.id % 2 === 1 ? 0 : 1,
-      marginRight: leadershipItem.id % 2 === 1 ? undefined : 'auto',
+      // marginRight: leadershipItem.id % 2 === 1 ? undefined : 'auto',
     };
     return (
       <div className={leadership.card} key={leadershipItem.id}>
