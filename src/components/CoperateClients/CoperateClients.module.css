@@ -2,7 +2,6 @@
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
-  margin: 40px auto;
 }
 
 .imgs {

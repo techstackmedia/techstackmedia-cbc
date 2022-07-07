@@ -1,12 +1,11 @@
 .recentUpdates {
   display: flex;
   justify-content: space-between;
-  margin: 20px 5%;
+  margin: 20px 0;
   flex-wrap: wrap;
 }
 
 .text {
-  margin-left: 5%;
   margin-top: 20px;
   color: #474747;
 }
