@@ -4,15 +4,23 @@ import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
-let PageSize = 3;
+let BlogPageSize = 3;
+let NewsPageSize = 3;
 
 const BlogNews = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * PageSize;
-    const lastPageIndex = firstPageIndex + PageSize;
+  const [currentBlogPage, setCurrentBlogPage] = useState(1);
+  const currentBlogTableData = useMemo(() => {
+    const firstPageIndex = (currentBlogPage - 1) * BlogPageSize;
+    const lastPageIndex = firstPageIndex + BlogPageSize;
     return blogBlog.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage]);
+  }, [currentBlogPage]);
+
+  const [currentNewsPage, setCurrentNewsPage] = useState(1);
+  const currentNewsTableData = useMemo(() => {
+    const firstPageIndex = (currentNewsPage - 1) * NewsPageSize;
+    const lastPageIndex = firstPageIndex + NewsPageSize;
+    return blogNews.slice(firstPageIndex, lastPageIndex);
+  }, [currentNewsPage]);
 
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
   const [borderSM, setBorderSM] = useState('');
@@ -49,7 +57,7 @@ const BlogNews = () => {
     display: displaySM,
   };
 
-  const leaderBDList = currentTableData.map((item) => {
+  const leaderBDList = currentBlogTableData.map((item) => {
     return (
       <div className={blognews.board} key={item.id}>
         <div>
@@ -69,7 +77,7 @@ const BlogNews = () => {
     );
   });
 
-  const leaderSMList = blogNews.map((item) => {
+  const leaderSMList = currentNewsTableData.map((item) => {
     return (
       <div className={blognews.board} key={item.id}>
         <div className={blognews.img}>
@@ -107,15 +115,21 @@ const BlogNews = () => {
         {leaderBDList}
         <Pagination
           className="pagination-bar"
-          currentPage={currentPage}
+          currentBlogPage={currentBlogPage}
           totalCount={blogBlog.length}
-          pageSize={PageSize}
-          onPageChange={(page) => setCurrentPage(page)}
+          pageSize={BlogPageSize}
+          onPageChange={(page) => setCurrentBlogPage(page)}
         />
       </section>
       <section className={blognews.section2} style={styleDisplaySM}>
         {leaderSMList}
-        {/* <Pagination /> */}
+        <Pagination
+          className="pagination-bar"
+          currentNewsPage={currentNewsPage}
+          totalCount={blogNews.length}
+          pageSize={NewsPageSize}
+          onPageChange={(page) => setCurrentNewsPage(page)}
+        />
       </section>
     </>
   );
