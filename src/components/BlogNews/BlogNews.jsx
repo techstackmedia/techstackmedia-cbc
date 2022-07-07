@@ -4,8 +4,8 @@ import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
-let BlogPageSize = 3;
-let NewsPageSize = 3;
+let BlogPageSize = 6;
+let NewsPageSize = 6;
 
 const BlogNews = () => {
   const [currentBlogPage, setCurrentBlogPage] = useState(1);
