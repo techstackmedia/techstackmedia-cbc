@@ -60,7 +60,7 @@ const BlogNews = () => {
   const leaderBDList = currentBlogTableData.map((item) => {
     return (
       <div className={blognews.board} key={item.id}>
-        <div>
+        <div className={blognews.img}>
           <img
             src={require(`../../images/blogBlog${item.id}.jpg`)}
             alt=""
