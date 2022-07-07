@@ -15,10 +15,12 @@ const Products = () => {
     <>
       <Navbar />
       <Hero title="Our Products" />
-      <Business linkText="Explore" />
-      <School linkText="Explore" />
-      <SubsidiariesProducts linkText="Explore" />
-      <PartnerProducts linkText="Explore" />
+      <section>
+        <Business linkText="Explore" />
+        <School linkText="Explore" />
+        <SubsidiariesProducts linkText="Explore" />
+        <PartnerProducts linkText="Explore" />
+      </section>
       <Footer />
     </>
   );

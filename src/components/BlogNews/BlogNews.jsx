@@ -6,13 +6,13 @@ import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 const BlogNews = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
   const [borderSM, setBorderSM] = useState('');
-  const [displayBD, setDisplayBD] = useState('block');
+  const [displayBD, setDisplayBD] = useState('flex');
   const [displaySM, setDisplaySM] = useState('none');
 
   const handleClickBorderSM = () => {
     if (borderSM === '') {
       setBorderSM('3px solid #0073a6') || setBorderBD('');
-      setDisplayBD('none') || setDisplaySM('block');
+      setDisplayBD('none') || setDisplaySM('flex');
     }
   };
 
