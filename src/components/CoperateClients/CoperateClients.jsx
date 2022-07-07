@@ -16,7 +16,7 @@ const CoperateClienet = () => {
   });
 
   return (
-    <section>
+    <section className={coperate.section}>
       <h2 className={coperate.clients}>Our Corporate Clients</h2>
       <div className={coperate.coperate}>{images}</div>
     </section>

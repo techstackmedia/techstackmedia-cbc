@@ -1,3 +1,7 @@
+.section {
+  position: relative;
+  top: 30px;
+}
 .coperate {
   display: flex;
   justify-content: stretch;
