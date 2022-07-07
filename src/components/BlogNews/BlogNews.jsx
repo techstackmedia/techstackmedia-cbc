@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import blognews from './BlogNews.module.css';
+import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
@@ -95,9 +96,11 @@ const BlogNews = () => {
       </header>
       <section className={blognews.section1} style={styleDisplayBD}>
         {leaderBDList}
+        {/* <Pagination /> */}
       </section>
       <section className={blognews.section2} style={styleDisplaySM}>
         {leaderSMList}
+        {/* <Pagination /> */}
       </section>
     </>
   );
