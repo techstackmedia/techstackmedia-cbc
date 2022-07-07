@@ -73,7 +73,7 @@ const Contacts = () => {
           <div>
             <p className={contacts.number}>
               <MdLocalPhone />
-              +234-0909-499-8830
+              +234-909-499-8830
             </p>
           </div>
           <div className={contacts.socialMedia}>
