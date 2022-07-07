@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 30px;
   list-style-type: none;
+  width: 100%;
 }
 .pagination-container .pagination-item {
   padding: 0 12px;

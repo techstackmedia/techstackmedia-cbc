@@ -1,10 +1,19 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import blognews from './BlogNews.module.css';
 import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
+let PageSize = 3;
+
 const BlogNews = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return blogBlog.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
   const [borderSM, setBorderSM] = useState('');
   const [displayBD, setDisplayBD] = useState('flex');
@@ -40,7 +49,7 @@ const BlogNews = () => {
     display: displaySM,
   };
 
-  const leaderBDList = blogBlog.map((item) => {
+  const leaderBDList = currentTableData.map((item) => {
     return (
       <div className={blognews.board} key={item.id}>
         <div>
@@ -96,7 +105,13 @@ const BlogNews = () => {
       </header>
       <section className={blognews.section1} style={styleDisplayBD}>
         {leaderBDList}
-        {/* <Pagination /> */}
+        <Pagination
+          className="pagination-bar"
+          currentPage={currentPage}
+          totalCount={blogBlog.length}
+          pageSize={PageSize}
+          onPageChange={(page) => setCurrentPage(page)}
+        />
       </section>
       <section className={blognews.section2} style={styleDisplaySM}>
         {leaderSMList}
