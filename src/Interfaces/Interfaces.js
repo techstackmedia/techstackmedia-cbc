@@ -241,6 +241,40 @@ const blogNewsInterface = [
     para2:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
+  {
+    id: 7,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+
+  {
+    id: 8,
+    heading: 'Mentorship',
+    para1:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+    para2:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+  {
+    id: 9,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
+  },
+  {
+    id: 10,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
 ];
 
 const blogBlogInterface = [
@@ -293,6 +327,40 @@ const blogBlogInterface = [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
     para2:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+  {
+    id: 7,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+  },
+
+  {
+    id: 8,
+    heading: 'Mentorship',
+    para1:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+    para2:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
+  },
+  {
+    id: 9,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
+    para2:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minus libero blanditiis ratione amet architecto ullam quae oluptate temporibus recusandae.',
+  },
+  {
+    id: 10,
+    heading: 'Title of Blog',
+    para1:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti? Inventore quos debitis, ut incidunt nemo repellat modi! Non culpa quae, nesciunt ad aliquam quibusdam facilis deleniti ut?',
+    para2:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, repudiandae aliquid consequuntur necessitatibus in voluptatem quia, nostrum laboriosam quaerat optio autem doloribus, reiciendis expedita.',
   },
 ];
 
