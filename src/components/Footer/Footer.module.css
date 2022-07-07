@@ -4,7 +4,6 @@
 }
 
 .footer {
-  height: 150px;
   color: #474747;
   display: flex;
   justify-content: center;
@@ -12,9 +11,8 @@
 }
 
 .content {
-  width: 100%;
-  margin-left: 10%;
-  margin-right: calc(10% + 5px);
+  width: 90%;
+  margin: auto;
 }
 
 .media {
@@ -61,7 +59,7 @@
 .foot hr {
   border: 1px solid #0073a6;
   border-bottom: 0;
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
