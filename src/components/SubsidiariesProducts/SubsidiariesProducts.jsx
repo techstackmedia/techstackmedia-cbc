@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSubsidiariesProductsInterface as CardSubsidiariesProducts } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
-import Card from '../../Shared/Card';
+import Card from '../../shared/Card';
 
 const SubsidiariesProducts = ({ linkText }) => {
   const cardList = CardSubsidiariesProducts.map((item) => {

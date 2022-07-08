@@ -1,4 +1,4 @@
-import Card from '../../Shared/Card';
+import Card from '../../shared/Card';
 import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Interfaces';
 import coperate from './CoperateClients.module.css';
 

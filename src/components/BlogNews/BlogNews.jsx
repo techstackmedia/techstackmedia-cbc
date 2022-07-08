@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import blognews from './BlogNews.module.css';
 import Pagination from '../PagePagination/PagePagination';
-import Card from '../../Shared/Card';
+import Card from '../../shared/Card';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 

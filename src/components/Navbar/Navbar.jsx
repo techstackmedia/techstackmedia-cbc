@@ -7,7 +7,7 @@ import {
 } from '../../Interfaces/Interfaces';
 import navbar from './Navbar.module.css';
 import logo from '../../logo.svg';
-import NavBar from '../../Shared/NavBar';
+import NavBar from '../../shared/NavBar';
 
 const Navbar = () => {
   /*
