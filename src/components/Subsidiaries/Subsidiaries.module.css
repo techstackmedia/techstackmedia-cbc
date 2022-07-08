@@ -48,6 +48,7 @@
 .item h3 {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .item:nth-child(1) {
