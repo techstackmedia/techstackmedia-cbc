@@ -40,8 +40,8 @@
   height: 256px;
   width: auto !important; /*override the width below*/
   width: 100%;
-  float: left;
-  clear: both;
+  /* float: left; */
+  /* clear: both; */
 }
 
 .para {
