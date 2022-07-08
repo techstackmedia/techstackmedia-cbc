@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSchoolInterface as cardSchool } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
-import Card from '../../Custom/Card';
+import Card from '../../Shared/Card';
 
 const School = ({ linkText }) => {
   const cardList = cardSchool.map((item) => {

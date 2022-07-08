@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import leadership from './LeaderShip.module.css';
-import Card from '../../Custom/Card';
+import Card from '../../Shared/Card';
 import { leadershipBDInterface as leadershipBD } from '../../Interfaces/Interfaces';
 import { leadershipSMInterface as leadershipSM } from '../../Interfaces/Interfaces';
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardBusinessInterface as cardBusiness } from '../../Interfaces/Interfaces';
-import Card from '../../Custom/Card';
+import Card from '../../Shared/Card';
 import business from './Business.module.css';
 
 const Business = () => {

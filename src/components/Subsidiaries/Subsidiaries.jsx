@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../../Custom/Card';
+import Card from '../../Shared/Card';
 import { subsidiariesInterface as subSidiaries } from '../../Interfaces/Interfaces';
 import subsidiaries from './Subsidiaries.module.css';
 

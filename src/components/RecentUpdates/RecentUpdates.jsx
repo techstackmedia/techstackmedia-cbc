@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import Card from '../../Custom/Card';
+import Card from '../../Shared/Card';
 import { CardRecentUpdateInterface as cardRecent } from '../../Interfaces/Interfaces';
 import recentUpdates from './RecentUpdates.module.css';
 const RecentUpdates = () => {
