@@ -24,7 +24,7 @@ const Subsidiaries = () => {
   const flipped = cardFlip.isFlip
     ? subSidiaries.map((item) => {
         return (
-          <div
+          <Card
             key={item.id}
             className={subsidiaries.item}
             style={cardFlip}
@@ -35,24 +35,24 @@ const Subsidiaries = () => {
               <p>{item.para}</p>
               <Link to="">Read More...</Link>
             </div>
-          </div>
+          </Card>
         );
       })
     : subSidiaries.map((item) => {
         return (
-          <div
+          <Card
             key={item.id}
             className={subsidiaries.item}
             onClick={() => handleCardClick(item.id)}
           >
             <h3>{item.subHeading}</h3>
-          </div>
+          </Card>
         );
       });
 
   return (
     <section className={subsidiaries.section}>
-      <Card className={subsidiaries.subsidiaries}>{flipped}</Card>
+      <div className={subsidiaries.subsidiaries}>{flipped}</div>
     </section>
   );
 };

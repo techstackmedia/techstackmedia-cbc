@@ -46,7 +46,7 @@ const LeaderShip = () => {
       // marginRight: leadershipItem.id % 2 === 1 ? undefined : 'auto',
     };
     return (
-      <div className={leadership.card} key={leadershipItem.id}>
+      <Card className={leadership.card} key={leadershipItem.id}>
         <div className={leadership.leadership}>
           <img
             src={require(`../../images/leadershipBD${leadershipItem.id}.jpg`)}
@@ -61,7 +61,7 @@ const LeaderShip = () => {
             <p>{leadershipItem.para}</p>
           </div>
         </div>
-      </div>
+      </Card>
     );
   });
 

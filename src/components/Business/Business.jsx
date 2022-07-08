@@ -7,7 +7,7 @@ import business from './Business.module.css';
 const Business = () => {
   const cardList = cardBusiness.map((item) => {
     return (
-      <div className={business.card} key={item.id}>
+      <Card className={business.card} key={item.id}>
         <div className="img">
           <img
             src={require(`../../images/business${item.id}.jpg`)}
@@ -23,14 +23,14 @@ const Business = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Card>
     );
   });
 
   return (
     <div className={business.title}>
       <h2>For Business</h2>
-      <Card className={business.business}>{cardList}</Card>
+      <div className={business.business}>{cardList}</div>
     </div>
   );
 };
