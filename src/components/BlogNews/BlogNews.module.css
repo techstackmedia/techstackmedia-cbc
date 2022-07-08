@@ -38,10 +38,8 @@
 .board img {
   border-radius: 6px 6px 0 0;
   height: 256px;
-  width: auto !important; /*override the width below*/
+  width: auto !important;
   width: 100%;
-  /* float: left; */
-  /* clear: both; */
 }
 
 .para {
@@ -49,7 +47,6 @@
   background-color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  /* height: 60%; */
   overflow-y: auto;
   position: relative;
   top: -5px;
