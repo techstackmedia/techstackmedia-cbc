@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import Card from '../../shared/Card';
 import { CardRecentUpdateInterface as cardRecent } from '../../Interfaces/Interfaces';
 import recentUpdates from './RecentUpdates.module.css';
+
 const RecentUpdates = () => {
   const { pathname } = useLocation();
   const styleSubTopic = {
