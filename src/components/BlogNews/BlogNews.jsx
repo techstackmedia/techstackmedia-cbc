@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
-import blognews from './BlogNews.module.css';
 import Pagination from '../PagePagination/PagePagination';
 import Card from '../../shared/Card';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
+import blognews from './BlogNews.module.css';
 
 let BlogPageSize = 6;
 let NewsPageSize = 6;
@@ -72,7 +72,7 @@ const BlogNews = () => {
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
-          <p>{item.para2}</p>
+          <p>{item.para2}...</p>
         </div>
       </Card>
     );
@@ -92,7 +92,7 @@ const BlogNews = () => {
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
-          <p>{item.para2}</p>
+          <p>{item.para2}...</p>
         </div>
       </Card>
     );
