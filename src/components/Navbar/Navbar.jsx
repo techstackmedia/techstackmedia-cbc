@@ -7,6 +7,7 @@ import {
 } from '../../Interfaces/Interfaces';
 import navbar from './Navbar.module.css';
 import logo from '../../logo.svg';
+import NavBar from '../../Custom/NavBar';
 
 const Navbar = () => {
   /*
@@ -36,7 +37,7 @@ const Navbar = () => {
   });
 
   return (
-    <div
+    <NavBar
       className={navbar.navbar}
       // style={{ backgroundColor: pathname !== '/' ? 'transparent' : undefined }}
     >
@@ -59,7 +60,7 @@ const Navbar = () => {
         </ul>
         <Outlet />
       </nav>
-    </div>
+    </NavBar>
   );
 };
 

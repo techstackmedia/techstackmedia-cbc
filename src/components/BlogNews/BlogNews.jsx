@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import blognews from './BlogNews.module.css';
 import Pagination from '../PagePagination/PagePagination';
+import Card from '../../Custom/Card';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 
@@ -59,7 +60,7 @@ const BlogNews = () => {
 
   const leaderBDList = currentBlogTableData.map((item) => {
     return (
-      <div className={blognews.board} key={item.id}>
+      <Card className={blognews.board} key={item.id}>
         <div className={blognews.img}>
           <img
             src={require(`../../images/blogBlog${item.id}.jpg`)}
@@ -73,13 +74,13 @@ const BlogNews = () => {
           <p>{item.para1}</p>
           <p>{item.para2}</p>
         </div>
-      </div>
+      </Card>
     );
   });
 
   const leaderSMList = currentNewsTableData.map((item) => {
     return (
-      <div className={blognews.board} key={item.id}>
+      <Card className={blognews.board} key={item.id}>
         <div className={blognews.img}>
           <img
             src={require(`../../images/blogNews${item.id}.jpg`)}
@@ -93,7 +94,7 @@ const BlogNews = () => {
           <p>{item.para1}</p>
           <p>{item.para2}</p>
         </div>
-      </div>
+      </Card>
     );
   });
 

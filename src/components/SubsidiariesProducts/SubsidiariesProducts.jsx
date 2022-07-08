@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSubsidiariesProductsInterface as CardSubsidiariesProducts } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
+import Card from '../../Custom/Card';
 
 const SubsidiariesProducts = ({ linkText }) => {
   const cardList = CardSubsidiariesProducts.map((item) => {
     return (
-      <div className={business.card} key={item.id} /*style={{ width: '15%' }}*/>
+      <Card className={business.card} key={item.id} /*style={{ width: '15%' }}*/>
         <div className={business.img}>
           <img
             src={require(`../../images/subsidiariesProducts${item.id}.jpg`)}
@@ -22,7 +23,7 @@ const SubsidiariesProducts = ({ linkText }) => {
             </Link>
           </div>
         </div>
-      </div>
+      </Card>
     );
   });
 

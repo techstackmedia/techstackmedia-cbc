@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardBusinessInterface as cardBusiness } from '../../Interfaces/Interfaces';
+import Card from '../../Custom/Card';
 import business from './Business.module.css';
 
 const Business = () => {
@@ -29,7 +30,7 @@ const Business = () => {
   return (
     <div className={business.title}>
       <h2>For Business</h2>
-      <div className={business.business}>{cardList}</div>
+      <Card className={business.business}>{cardList}</Card>
     </div>
   );
 };

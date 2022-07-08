@@ -1,5 +1,6 @@
-import coperate from './CoperateClients.module.css';
+import Card from '../../Custom/Card';
 import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Interfaces';
+import coperate from './CoperateClients.module.css';
 
 const CoperateClienet = () => {
   const images = coperateClient.map((img) => {
@@ -18,7 +19,7 @@ const CoperateClienet = () => {
   return (
     <section className={coperate.section}>
       <h2 className={coperate.clients}>Our Corporate Clients</h2>
-      <div className={coperate.coperate}>{images}</div>
+      <Card className={coperate.coperate}>{images}</Card>
     </section>
   );
 };
