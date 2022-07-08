@@ -22,24 +22,26 @@
 
 .board {
   width: 30%;
-  /* height: 600px; */
-  /* position: relative; */
   border-radius: 4px;
   margin-bottom: 70px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .board .img {
-  width: fit-content;
   width: -moz-fit-content;
+  width: fit-content;
 }
 
 .board img {
   border-radius: 6px 6px 0 0;
   height: 256px;
+  width: auto !important; /*override the width below*/
   width: 100%;
-  height: 100%;
-  /* height: auto; */
+  float: left;
+  clear: both;
 }
 
 .para {
@@ -47,12 +49,11 @@
   background-color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  /* margin-top: -4px; */
-  height: 60%;
+  /* height: 60%; */
   overflow-y: auto;
   position: relative;
   top: -5px;
-  height: 384.750px;
+  height: 384.75px;
 }
 
 .para::-webkit-scrollbar {
@@ -83,7 +84,8 @@
   display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
-  min-width:0;word-wrap:
+  min-width:0;
+  word-wrap:
   break-word;background-color:#fff;
   background-clip:border-box;
   border:1px solid rgba(0,0,0,.125);

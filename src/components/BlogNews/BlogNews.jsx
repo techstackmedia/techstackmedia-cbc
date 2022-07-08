@@ -37,7 +37,7 @@ const BlogNews = () => {
   const handleClickBorderBD = () => {
     if (borderBD === '') {
       setBorderBD('3px solid #0073a6') || setBorderSM('');
-      setDisplayBD('block') || setDisplaySM('none');
+      setDisplayBD('flex') || setDisplaySM('none');
     }
   };
 
