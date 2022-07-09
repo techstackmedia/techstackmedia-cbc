@@ -72,7 +72,7 @@ const BlogNews = () => {
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
-          <p>{item.para2}...</p>
+          <p>{item.para2.replace('.', '')}...</p>
         </div>
       </Card>
     );
@@ -92,7 +92,7 @@ const BlogNews = () => {
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
           <p>{item.para1}</p>
-          <p>{item.para2}...</p>
+          <p>{item.para2.replace('.', '')}..</p>
         </div>
       </Card>
     );
