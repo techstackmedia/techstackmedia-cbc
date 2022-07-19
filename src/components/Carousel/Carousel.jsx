@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import './Carousel.css';
+
+// import 'slick-carousel/slick/slick'
+// import 'slick-carousel/slick/slick.css'
 
 export default class SimpleSlider extends Component {
   render() {
@@ -11,26 +15,20 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div>
-        <h2> Single Item</h2>
+      <div className="carousel">
+        <h2>Build responsive website that fits your taste</h2>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
+          <div className="bg bg1">
+            <h3>Get Ready Made Website</h3>
           </div>
-          <div>
-            <h3>2</h3>
+          <div className="bg bg2">
+            <h3>Customize with ease</h3>
           </div>
-          <div>
-            <h3>3</h3>
+          <div className="bg bg3">
+            <h3>Get Help from our trusted developers</h3>
           </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
+          <div className="bg bg4">
+            <h3>Need help, we gat you</h3>
           </div>
         </Slider>
       </div>

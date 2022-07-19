@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@types/slick-carousel": "^1.6.37",
     "gh-pages": "^4.0.0"
   }
 }

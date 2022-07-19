@@ -24,9 +24,6 @@
 }
 
 .jumbotron {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
