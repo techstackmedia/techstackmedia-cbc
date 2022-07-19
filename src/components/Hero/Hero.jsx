@@ -22,6 +22,8 @@ const Hero = ({ heading, title, para }) => {
     backgroundImage:
       pathname === '/contact'
         ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215281/christina-wocintechchat-com-0Nfqp0WiJqc-unsplash_a9u9mu.jpg)'
+        : pathname === '/products'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215641/austin-distel-wD1LRb9OeEo-unsplash_paa6dm.jpg)'
         : pathname === '/leadership'
         ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658214825/smartworks-coworking-Uz8THWPXwhI-unsplash_vc6of0.jpg)'
         : pathname === '/subsidiaries'
