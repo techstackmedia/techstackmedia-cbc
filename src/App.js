@@ -6,6 +6,7 @@ import Subsidiaries from './pages/Subsidiaries';
 import Products from './pages/Products';
 import Leadership from './pages/Leadership';
 import Contact from './pages/Contact';
+import Shopping from './pages/Shopping/Shopping';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/store" element={<Shopping />} />
       </Routes>
     </BrowserRouter>
   );

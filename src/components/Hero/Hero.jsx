@@ -18,13 +18,26 @@ const Hero = ({ heading, title, para }) => {
     bottom: pathname !== '/' ? 30 : undefined,
   };
 
+  const styleHero = {
+    backgroundImage:
+      pathname === '/contact'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215281/christina-wocintechchat-com-0Nfqp0WiJqc-unsplash_a9u9mu.jpg)'
+        : pathname === '/leadership'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658214825/smartworks-coworking-Uz8THWPXwhI-unsplash_vc6of0.jpg)'
+        : pathname === '/subsidiaries'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215071/jason-goodman-6awfTPLGaCE-unsplash_r8waq3.jpg)'
+        : pathname === '/blog'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658214377/hero4_zebnxu.jpg)'
+        : pathname === '/about'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658213762/hero2_a2jxsp.jpg)'
+        : pathname === '/store'
+        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658213752/hero1_byitvb.jpg)'
+        : undefined,
+    height: pathname !== '/' ? 300 : undefined,
+  };
+
   return (
-    <div
-      className={hero.hero}
-      style={{
-        height: pathname !== '/' ? 300 : undefined,
-      }}
-    >
+    <div className={hero.hero} style={styleHero}>
       <div
         className={hero.jumbotron}
         style={{
