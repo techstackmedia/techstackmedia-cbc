@@ -1,4 +1,3 @@
-import Card from '../../shared/Card';
 import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Interfaces';
 import coperate from './CoperateClients.module.css';
 
@@ -19,7 +18,7 @@ const CoperateClienet = () => {
   return (
     <section className={coperate.section}>
       <h2 className={coperate.clients}>Our Corporate Clients</h2>
-      <Card className={coperate.coperate}>{images}</Card>
+      <div className={coperate.coperate}>{images}</div>
     </section>
   );
 };

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../../shared/Card';
 import { subsidiariesInterface as subSidiaries } from '../../Interfaces/Interfaces';
 import subsidiaries from './Subsidiaries.module.css';
 
@@ -24,7 +23,7 @@ const Subsidiaries = () => {
   const flipped = cardFlip.isFlip
     ? subSidiaries.map((item) => {
         return (
-          <Card
+          <div
             key={item.id}
             className={subsidiaries.item}
             style={cardFlip}
@@ -35,18 +34,18 @@ const Subsidiaries = () => {
               <p>{item.para}</p>
               <Link to="">Read More...</Link>
             </div>
-          </Card>
+          </div>
         );
       })
     : subSidiaries.map((item) => {
         return (
-          <Card
+          <div
             key={item.id}
             className={subsidiaries.item}
             onClick={() => handleCardClick(item.id)}
           >
             <h3>{item.subHeading}</h3>
-          </Card>
+          </div>
         );
       });
 

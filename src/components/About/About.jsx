@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { AboutFocusInterface as aboutFocus } from '../../Interfaces/Interfaces';
 import RecentUpdates from '../RecentUpdates/RecentUpdates';
-import Card from '../../shared/Card';
 import about from './About.module.css';
 
 const About = () => {
@@ -15,12 +14,9 @@ const About = () => {
       borderTopLeftRadius: aboutItem % 2 === 0 ? undefined : 8,
       borderBottomRightRadius: aboutItem % 2 === 0 ? undefined : 8,
     };
-
-    // const styleFocus = {
-    //   borderRadius: 8,
-    // };
+    
     return (
-      <Card className={about.about} key={aboutItem.id}>
+      <div className={about.about} key={aboutItem.id}>
         <div className={about.img} style={styleImg}>
           <img
             src={require(`../../images/about${aboutItem.id}.png`)}
@@ -42,7 +38,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </Card>
+      </div>
     );
   });
   const removed = aboutList.pop();

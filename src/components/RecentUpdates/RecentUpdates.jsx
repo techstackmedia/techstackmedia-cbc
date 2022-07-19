@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import Card from '../../shared/Card';
 import { CardRecentUpdateInterface as cardRecent } from '../../Interfaces/Interfaces';
 import recentUpdates from './RecentUpdates.module.css';
 
@@ -14,7 +13,7 @@ const RecentUpdates = () => {
 
   const cardList = cardRecent.map((item) => {
     return (
-      <Card className={recentUpdates.cards} key={item.id}>
+      <div className={recentUpdates.cards} key={item.id}>
         <div>
           <img
             src={require(`../../images/rectangle${item.id}.png`)}
@@ -22,7 +21,7 @@ const RecentUpdates = () => {
           />
         </div>
         <p>{item.text}</p>
-      </Card>
+      </div>
     );
   });
 

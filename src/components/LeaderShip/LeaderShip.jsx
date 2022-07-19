@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import leadership from './LeaderShip.module.css';
-import Card from '../../shared/Card';
 import { leadershipBDInterface as leadershipBD } from '../../Interfaces/Interfaces';
 import { leadershipSMInterface as leadershipSM } from '../../Interfaces/Interfaces';
 
@@ -43,10 +42,9 @@ const LeaderShip = () => {
   const leadershipList1 = leadershipBD.map((leadershipItem) => {
     const styles = {
       order: leadershipItem.id % 2 === 1 ? 0 : 1,
-      // marginRight: leadershipItem.id % 2 === 1 ? undefined : 'auto',
     };
     return (
-      <Card className={leadership.card} key={leadershipItem.id}>
+      <div className={leadership.card} key={leadershipItem.id}>
         <div className={leadership.leadership}>
           <img
             src={require(`../../images/leadershipBD${leadershipItem.id}.jpg`)}
@@ -61,7 +59,7 @@ const LeaderShip = () => {
             <p>{leadershipItem.para}</p>
           </div>
         </div>
-      </Card>
+      </div>
     );
   });
 
@@ -70,7 +68,7 @@ const LeaderShip = () => {
       order: leadershipItem.id % 2 === 1 ? 0 : 1,
     };
     return (
-      <Card className={leadership.card} key={leadershipItem.id}>
+      <div className={leadership.card} key={leadershipItem.id}>
         <div className={leadership.leadership}>
           <img
             src={require(`../../images/leadershipSM${leadershipItem.id}.jpg`)}
@@ -85,7 +83,7 @@ const LeaderShip = () => {
             <p>{leadershipItem.para}</p>
           </div>
         </div>
-      </Card>
+      </div>
     );
   });
 
