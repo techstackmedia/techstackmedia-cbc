@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Grab the link at https://nimble-marigold-6faef6.netlify.app/
+Grap the link at https://techstackmedia-cbc.vercel.app/
 
 ## Available Scripts
 
