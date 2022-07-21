@@ -82,6 +82,7 @@
 
 .slick-dots li button::before {
   background-color: #fff !important;
+  border-radius: 50%;
 }
 
 .slick-next:before,

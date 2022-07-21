@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
-import { MdSearch } from 'react-icons/md';
+// import { MdSearch } from 'react-icons/md';
+import { MdShoppingCart } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import {
   NavbarLeftInterface as navLeft,
@@ -43,7 +44,9 @@ const Navbar = () => {
           </div>
           <div>
             <li>
-              <MdSearch className={navbar.search} />
+              <Link to="/store">
+                <MdShoppingCart className={navbar.search} />
+              </Link>
             </li>
             {nL}
           </div>
