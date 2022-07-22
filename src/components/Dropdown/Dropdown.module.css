@@ -20,12 +20,12 @@
   margin-left: 20px;
   line-height: 1.9;
   position: absolute;
-  width: 30vw;
-  /* padding: 30px 0 30px 40px; */
-  background: rgba(0, 0, 0, 0.668);
+  width: 26vw;
+  background: rgba(255, 255, 255, 0.668);
   position: absolute;
   right: 0;
   border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 .tooltiptext li {
@@ -34,7 +34,7 @@
 }
 
 .tooltiptext a {
-  color: #fff;
+  color: #000;
   line-height: 1.9;
   padding: 10px 0 10px 40px;
 }
