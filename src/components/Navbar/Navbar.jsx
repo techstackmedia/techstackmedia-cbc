@@ -109,12 +109,12 @@ const Navbar = () => {
             {nR}
           </div>
           <div>
-            <li>
+            {nL}
+            <li style={{ marginLeft: 40 }}>
               <Link to="/store">
-                <MdShoppingCart className={navbar.search} />
+                <span>SHOPPING</span> <MdShoppingCart className={navbar.cart} />
               </Link>
             </li>
-            {nL}
           </div>
         </ul>
         <Outlet />

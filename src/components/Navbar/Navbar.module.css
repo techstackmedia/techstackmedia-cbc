@@ -35,7 +35,7 @@
 }
 
 .arrow,
-.search {
+.cart {
   margin-right: 50px;
   position: relative;
   display: inline-block;
@@ -58,8 +58,7 @@
   position: relative;
 }
 
-.search {
-  width: 27px;
-  height: 27px;
-  margin-top: 5px;
+.cart {
+  width: 24px;
+  height: 24px;
 }
