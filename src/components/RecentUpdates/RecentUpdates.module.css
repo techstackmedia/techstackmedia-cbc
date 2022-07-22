@@ -8,6 +8,8 @@
 .text {
   margin-top: 20px;
   color: #474747;
+  font-size: 24px;
+  font-weight: bold;
 }
 .cards {
   width: 200px;
