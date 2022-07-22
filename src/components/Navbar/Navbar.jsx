@@ -1,5 +1,4 @@
 import { Link, Outlet } from 'react-router-dom';
-// import { MdSearch } from 'react-icons/md';
 import { MdShoppingCart } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import {
@@ -13,20 +12,47 @@ import DropdownSubsidiaries from '../Dropdown/DropdownSubsidiaries';
 import { useState } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);
 
-  const handleClick = () => {
-    setIsOpen((prev) => {
-      return !prev;
-    });
+  const handleClick1 = () => {
+    if (isOpen1 === true) {
+      setIsOpen2(false);
+    }
   };
 
-  const styles = {
-    display: isOpen ? 'none' : 'block',
+  const handleClick2 = () => {
+    if (isOpen2 === true) {
+      setIsOpen1(false);
+    }
   };
 
-  const rotateStyle = {
-    transform: isOpen ? 'rotate(0)' : 'rotate(180deg)',
+  const handleMouseLeave1 = () => {
+    if (isOpen1 === false) {
+      setIsOpen1(true);
+    }
+  };
+
+  const handleMouseLeave2 = () => {
+    if (isOpen2 === false) {
+      setIsOpen2(true);
+    }
+  };
+
+  const styles1 = {
+    display: isOpen1 ? 'none' : 'block',
+  };
+
+  const styles2 = {
+    display: isOpen2 ? 'none' : 'block',
+  };
+
+  const rotateStyle1 = {
+    transform: isOpen1 ? 'rotate(0)' : 'rotate(180deg)',
+  };
+
+  const rotateStyle2 = {
+    transform: isOpen2 ? 'rotate(0)' : 'rotate(180deg)',
   };
 
   const nR = navLeft.map((item) => {
@@ -40,11 +66,11 @@ const Navbar = () => {
   const nL = navRight.map((item, index) => {
     const dropdownLinks =
       index === 1 ? (
-        <div style={styles} id={index}>
+        <div style={styles1} id={index} onMouseLeave={handleMouseLeave1}>
           <DropdownProducts />
         </div>
       ) : (
-        <div style={styles} id={index}>
+        <div style={styles2} id={index} onMouseLeave={handleMouseLeave2}>
           <DropdownSubsidiaries />
         </div>
       );
@@ -61,8 +87,8 @@ const Navbar = () => {
         >
           <MdKeyboardArrowDown
             className={navbar.arrowDown}
-            onClick={handleClick}
-            style={rotateStyle}
+            onClick={index === 0 ? handleClick1 : handleClick2}
+            style={index === 1 ? rotateStyle1 : rotateStyle2}
           />
           {dropdownLinks}
         </div>
