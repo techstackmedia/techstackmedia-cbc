@@ -8,8 +8,27 @@ import {
 } from '../../Interfaces/Interfaces';
 import navbar from './Navbar.module.css';
 import logo from '../../logo.svg';
+import DropdownProducts from '../Dropdown/DropdownProducts';
+import DropdownSubsidiaries from '../Dropdown/DropdownSubsidiaries';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleClick = () => {
+    setIsOpen((prev) => {
+      return !prev;
+    });
+  };
+
+  const styles = {
+    display: isOpen ? 'none' : 'block',
+  };
+
+  const rotateStyle = {
+    transform: isOpen ? 'rotate(0)' : 'rotate(180deg)',
+  };
+
   const nR = navLeft.map((item) => {
     return (
       <li key={item} className={navbar.navLeft}>
@@ -17,14 +36,35 @@ const Navbar = () => {
       </li>
     );
   });
+
   const nL = navRight.map((item, index) => {
+    const dropdownLinks =
+      index === 1 ? (
+        <div style={styles} id={index}>
+          <DropdownProducts />
+        </div>
+      ) : (
+        <div style={styles} id={index}>
+          <DropdownSubsidiaries />
+        </div>
+      );
     return (
       <div key={item} style={{ position: 'relative', left: 40 }}>
         <li>
           <Link to={`/${item}`}>{item.toUpperCase()}</Link>
         </li>
-        <div key={index} className={navbar.arrow}>
-          <MdKeyboardArrowDown className={navbar.arrowDown} />
+
+        <div
+          key={index}
+          className={navbar.arrow}
+          style={{ position: 'relative' }}
+        >
+          <MdKeyboardArrowDown
+            className={navbar.arrowDown}
+            onClick={handleClick}
+            style={rotateStyle}
+          />
+          {dropdownLinks}
         </div>
       </div>
     );

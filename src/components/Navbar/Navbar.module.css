@@ -1,12 +1,6 @@
 .navbar {
   height: 97px;
   background-color: #fff;
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 2; */
   position: relative;
   z-index: 2;
 }
@@ -43,6 +37,8 @@
 .arrow,
 .search {
   margin-right: 50px;
+  position: relative;
+  display: inline-block;
 }
 
 .navLeft {
@@ -59,6 +55,7 @@
 .arrowDown {
   width: 24px;
   height: 24px;
+  position: relative;
 }
 
 .search {
