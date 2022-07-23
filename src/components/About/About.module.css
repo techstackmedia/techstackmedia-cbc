@@ -1,8 +1,6 @@
 .about {
   display: flex;
-  /* width: calc(100% - 40px); */
   margin: 40px auto;
-  /* width: 90%; */
 }
 
 .about a {
@@ -16,7 +14,6 @@
   flex-direction: column;
   justify-content: space-between;
   background: #afe7ff33;
-  /* border-radius: 0 8px 8px 0; */
 }
 
 .focus p,
@@ -28,8 +25,6 @@
 .img {
   width: 50%;
 }
-
-/* .img {} */
 
 .img img,
 .focus {

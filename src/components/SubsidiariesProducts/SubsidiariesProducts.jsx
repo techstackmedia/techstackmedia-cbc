@@ -6,7 +6,7 @@ import business from '../Business/Business.module.css';
 const SubsidiariesProducts = ({ linkText }) => {
   const cardList = CardSubsidiariesProducts.map((item) => {
     return (
-      <div className={business.card} key={item.id} /*style={{ width: '15%' }}*/>
+      <div className={business.card} key={item.id}>
         <div className={business.img}>
           <img
             src={require(`../../images/subsidiariesProducts${item.id}.jpg`)}
