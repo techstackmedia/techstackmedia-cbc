@@ -19,7 +19,7 @@ const Navbar = () => {
       setIsOpen2(false);
     } else if (isOpen1 === false) {
       setIsOpen1(true);
-      setIsOpen2(false)
+      setIsOpen2(false);
     }
   };
 
@@ -28,8 +28,7 @@ const Navbar = () => {
       setIsOpen1(false);
     } else if (isOpen2 === false) {
       setIsOpen2(true);
-      setIsOpen1(false)
-
+      setIsOpen1(false);
     }
   };
 
@@ -118,7 +117,8 @@ const Navbar = () => {
             {nL}
             <li style={{ marginLeft: 40 }}>
               <Link to="/store">
-                <span>STORE</span> <MdShoppingCart className={navbar.cart} />
+                <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
+                <MdShoppingCart className={navbar.cart} />
               </Link>
             </li>
           </div>

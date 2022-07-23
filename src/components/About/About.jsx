@@ -11,12 +11,25 @@ const About = () => {
     };
 
     const styleImage = {
-      borderTopLeftRadius: aboutItem % 2 === 0 ? undefined : 8,
-      borderBottomRightRadius: aboutItem % 2 === 0 ? undefined : 8,
+      borderTopRightRadius: aboutItem.id % 2 === 0 ? 8 : undefined,
+      borderBottomRightRadius: aboutItem.id % 2 === 0 ? 8 : undefined,
+      borderBottomLeftRadius: aboutItem.id % 2 === 1 ? 8 : undefined,
+      borderTopLeftRadius: aboutItem.id % 2 === 1 ? 8 : undefined,
     };
-    
+
+    const styleBlock = {
+      borderTopLeftRadius: aboutItem.id % 2 === 1 ? 0 : undefined,
+      borderBottomLeftRadius: aboutItem.id % 2 === 1 ? 0 : undefined,
+      borderTopRightRadius: aboutItem.id % 2 === 0 ? 0 : undefined,
+      borderBottomRightRadius: aboutItem.id % 2 === 0 ? 0 : undefined,
+    };
+
     return (
-      <div className={about.about} key={aboutItem.id}>
+      <div
+        className={about.about}
+        key={aboutItem.id}
+        style={{ border: '1px solid #ccc', borderRadius: 8 }}
+      >
         <div className={about.img} style={styleImg}>
           <img
             src={require(`../../images/about${aboutItem.id}.png`)}
@@ -26,7 +39,7 @@ const About = () => {
             style={styleImage}
           />
         </div>
-        <div className={about.focus}>
+        <div className={about.focus} style={styleBlock}>
           <h2>{aboutItem.subHeading}</h2>
           <div>
             <p>{aboutItem.para1}</p>
