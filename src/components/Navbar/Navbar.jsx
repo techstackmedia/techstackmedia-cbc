@@ -14,16 +14,22 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
-
   const handleClick1 = () => {
     if (isOpen1 === true) {
       setIsOpen2(false);
+    } else if (isOpen1 === false) {
+      setIsOpen1(true);
+      setIsOpen2(false)
     }
   };
 
   const handleClick2 = () => {
     if (isOpen2 === true) {
       setIsOpen1(false);
+    } else if (isOpen2 === false) {
+      setIsOpen2(true);
+      setIsOpen1(false)
+
     }
   };
 
