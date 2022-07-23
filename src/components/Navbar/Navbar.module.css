@@ -39,6 +39,7 @@
   margin-right: 50px;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .navLeft {
@@ -61,4 +62,10 @@
 .cart {
   width: 24px;
   height: 24px;
+}
+
+.navbar svg {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }

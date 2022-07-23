@@ -88,11 +88,11 @@ const Navbar = () => {
         <div
           key={index}
           className={navbar.arrow}
-          style={{ position: 'relative' }}
+          onClick={index === 0 ? handleClick1 : handleClick2}
+
         >
           <MdKeyboardArrowDown
             className={navbar.arrowDown}
-            onClick={index === 0 ? handleClick1 : handleClick2}
             style={index === 1 ? rotateStyle1 : rotateStyle2}
           />
           {dropdownLinks}
