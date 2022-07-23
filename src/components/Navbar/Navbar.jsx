@@ -112,7 +112,7 @@ const Navbar = () => {
             {nL}
             <li style={{ marginLeft: 40 }}>
               <Link to="/store">
-                <span>SHOPPING</span> <MdShoppingCart className={navbar.cart} />
+                <span>STORE</span> <MdShoppingCart className={navbar.cart} />
               </Link>
             </li>
           </div>
