@@ -109,6 +109,11 @@
 
 .about a {
   color: #fff;
+  text-decoration: none;
+}
+
+.about a {
+  border-bottom: 1px solid #fff;
 }
 
 .tower {
