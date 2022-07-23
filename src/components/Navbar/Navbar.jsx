@@ -108,7 +108,7 @@ const Navbar = () => {
           <div className={navbar.item}>
             <li>
               <Link to="/">
-                <img width={100} height={100} src={logo} alt="cbc logo" />
+                <img width={100} height={50} src={logo} alt="cbc logo" />
               </Link>
             </li>
             {nR}
