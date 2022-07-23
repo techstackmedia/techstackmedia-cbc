@@ -25,7 +25,7 @@
 }
 
 .email input {
-  height: 43px;
+  height: 45px;
   border-radius: 15.34px;
   text-indent: 20px;
   border: 1px solid #f0f0f0;
@@ -40,7 +40,7 @@
   align-items: center;
   position: absolute;
   right: 5px;
-  margin-top: 1.2px;
+  margin-top: 2.2px;
   border-radius: 12.6783px;
   background-color: #0099dc;
   border: 1px solid #0099dc;
@@ -48,6 +48,7 @@
   padding: 7px;
   box-shadow: 0px 3.18501px 3.18501px rgba(0, 0, 0, 0.25);
   font-family: 'Montserrat';
+  margin-left: 5px;
 }
 
 .email button svg {
