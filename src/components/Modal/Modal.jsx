@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import modal from './Modal.module.css';
 const Modal = ({ videoToggleStyle }) => {
   const [isControlled, setIsControlled] = useState(false);
