@@ -4,9 +4,27 @@ import { IoIosArrowDropright } from 'react-icons/io';
 import { MdPlayArrow } from 'react-icons/md';
 import cbcTower from '../../images/cbc.png';
 import hero from './Hero.module.css';
-// import {Button} from 'flowbite-react'
+import Modal from '../Modal/Modal';
+import { useState } from 'react';
 
 const Hero = ({ heading, title, para }) => {
+  const [isPlayed, setIsPlayed] = useState(true);
+  const handleVideoClick = () => {
+    if (isPlayed === true) {
+      setIsPlayed(false);
+    }
+  };
+
+  const handleVideoMouseLeave = () => {
+    if (isPlayed === false) {
+      setIsPlayed(true);
+    }
+  };
+
+  const videoToggleStyle = {
+    display: isPlayed ? 'none' : 'block',
+  };
+
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const handleButtonClick = () => {
@@ -71,7 +89,9 @@ const Hero = ({ heading, title, para }) => {
             className={hero.about}
             style={{ display: pathname !== '/' ? 'none' : 'flex' }}
           >
-            <MdPlayArrow color="#0099DC" />
+            <div onClick={handleVideoClick} style={{ cursor: 'pointer' }}>
+              <MdPlayArrow color="#0099DC" />
+            </div>
             <Link to="/about">What's CBC about?</Link>
           </div>
         </div>
@@ -82,6 +102,9 @@ const Hero = ({ heading, title, para }) => {
             height={604.85}
             alt="cbc tower building"
           />
+        </div>
+        <div style={videoToggleStyle} onMouseLeave={handleVideoMouseLeave}>
+          <Modal style={videoToggleStyle} />
         </div>
       </div>
     </div>

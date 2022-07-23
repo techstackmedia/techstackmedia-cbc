@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   position: relative;
   height: calc(100vh - 97px);
-  position: relative;
 }
 
 .hero::after {
