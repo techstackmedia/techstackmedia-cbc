@@ -33,6 +33,8 @@
   margin-left: 7%;
   display: flex;
   flex-direction: column;
+  /*current change*/
+  align-items: center;
   justify-content: center;
   margin-top: -97px;
 }
@@ -53,6 +55,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 50%;
+  /*current change*/
+  text-align: center;
 }
 
 .subsidiaries {

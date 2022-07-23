@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { MdPlayArrow } from 'react-icons/md';
 import cbcTower from '../../images/cbc.png';
 import hero from './Hero.module.css';
+// import {Button} from 'flowbite-react'
 
 const Hero = ({ heading, title, para }) => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate('/subsidiaries');
+  };
 
   const styleCBC = {
     marginLeft: pathname === '/' ? '5%' : undefined,
@@ -52,13 +57,16 @@ const Hero = ({ heading, title, para }) => {
           <h3 style={styleH3}>{title}</h3>
           <p>{para}</p>
 
-          <Link
+          <button
             className={hero.subsidiaries}
-            to="/subsidiaries"
-            style={{ display: pathname !== '/' ? 'none' : 'inline-flex' }}
+            onClick={handleButtonClick}
+            style={{
+              display: pathname !== '/' ? 'none' : 'inline-flex',
+              width: 250,
+            }}
           >
             Explore our Solution <IoIosArrowDropright />
-          </Link>
+          </button>
           <div
             className={hero.about}
             style={{ display: pathname !== '/' ? 'none' : 'flex' }}
