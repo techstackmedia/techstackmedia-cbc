@@ -104,7 +104,7 @@ const Hero = ({ heading, title, para }) => {
           />
         </div>
         <div style={videoToggleStyle} onMouseLeave={handleVideoMouseLeave}>
-          <Modal style={videoToggleStyle} />
+          <Modal />
         </div>
       </div>
     </div>
