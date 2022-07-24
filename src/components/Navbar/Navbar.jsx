@@ -3,7 +3,7 @@ import {
   MdKeyboardArrowDown,
   MdShoppingCart,
   MdMenu,
-  MdCancel,
+  MdClose,
 } from 'react-icons/md';
 import {
   NavbarLeftInterface as navLeft,
@@ -119,7 +119,7 @@ const Navbar = () => {
   return (
     <>
       <div className={navbar.menu} onClick={handleMenuClick}>
-        {isMenuOpen ? <MdMenu color='#fff'/> : <MdCancel />}
+        {isMenuOpen ? <MdMenu color="#fff" /> : <MdClose />}
       </div>
       <div className={navbar.navbar}>
         <nav style={styleMenu}>
