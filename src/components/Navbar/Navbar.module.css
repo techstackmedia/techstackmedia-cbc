@@ -94,7 +94,6 @@
 @media (max-width: 1070px) {
   .navbar {
     height: auto;
-    /* width: 70%; */
     margin: 0 auto 0 auto;
     position: relative;
     overflow-x: hidden;
@@ -102,6 +101,7 @@
 
   .menu {
     z-index: 3;
+    cursor: pointer;
   }
 
   .logo img {
