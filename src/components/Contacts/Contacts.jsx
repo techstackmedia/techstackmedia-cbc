@@ -1,7 +1,5 @@
 import { useId } from 'react';
-import { MdLocationPin } from 'react-icons/md';
-import { MdEmail } from 'react-icons/md';
-import { MdLocalPhone } from 'react-icons/md';
+import { MdLocationPin, MdEmail, MdLocalPhone } from 'react-icons/md';
 import contacts from './Contacts.module.css';
 import facebook from '../../images/media1.svg';
 import linkedin from '../../images/media2.svg';
