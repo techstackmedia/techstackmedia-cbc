@@ -104,6 +104,10 @@
     cursor: pointer;
   }
 
+  .navbar nav {
+    /* height: 0; */
+  }
+
   .logo img {
     width: 0;
   }
