@@ -1,5 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
-import { MdKeyboardArrowDown, MdShoppingCart, MdMenu } from 'react-icons/md';
+import {
+  MdKeyboardArrowDown,
+  MdShoppingCart,
+  MdMenu,
+  MdCancel,
+} from 'react-icons/md';
 import {
   NavbarLeftInterface as navLeft,
   NavbarRightInterface as navRight,
@@ -53,10 +58,6 @@ const Navbar = () => {
 
   const styleMenu = {
     display: isMenuOpen ? 'none' : 'block',
-  };
-
-  const styMenuColor = {
-    color: isMenuOpen ? '#fff' : '#000',
   };
 
   const styles1 = {
@@ -118,7 +119,7 @@ const Navbar = () => {
   return (
     <>
       <div className={navbar.menu} onClick={handleMenuClick}>
-        <MdMenu style={styMenuColor} />
+        {isMenuOpen ? <MdMenu color='#fff'/> : <MdCancel />}
       </div>
       <div className={navbar.navbar}>
         <nav style={styleMenu}>

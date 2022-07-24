@@ -88,6 +88,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1070px) {
@@ -145,5 +146,8 @@
 @media (min-width: 1070.1px) {
   .menu {
     z-index: -1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 }
