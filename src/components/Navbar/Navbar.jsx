@@ -58,8 +58,15 @@ const Navbar = () => {
 
   const styleMenu = {
     height: isMenuOpen ? 0 : 'auto',
-    position: 'relative'
+    position: 'relative',
   };
+
+  // const styleLogo = {
+  //   position: isMenuOpen ? 'absolute' : undefined,
+  //   left: isMenuOpen ? '4%' : undefined,
+  //   top: isMenuOpen ? 11 : undefined,
+  //   zIndex: isMenuOpen ? 2 : undefined,
+  // };
 
   const styles1 = {
     display: isOpen1 ? 'none' : 'block',
@@ -123,19 +130,19 @@ const Navbar = () => {
         {isMenuOpen ? <MdMenu color="#fff" /> : <MdClose />}
       </div>
       <div className={navbar.logo1}>
-                <Link to="/">
-                  <img width={100} height={50} src={logo} alt="cbc logo" />
-                </Link>
-              </div>
+        <Link to="/">
+          <img width={100} height={50} src={logo} alt="cbc logo" />
+        </Link>
+      </div>
       <div className={navbar.navbar}>
         <nav style={styleMenu}>
           <ul>
             <div className={navbar.item}>
-              <li className={navbar.logo}>
+              <div className={navbar.logo} /*style={styleLogo}*/>
                 <Link to="/">
                   <img width={100} height={50} src={logo} alt="cbc logo" />
                 </Link>
-              </li>
+              </div>
               {nR}
             </div>
             <div>
