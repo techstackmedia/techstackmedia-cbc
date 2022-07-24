@@ -18,7 +18,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => {
@@ -57,7 +57,8 @@ const Navbar = () => {
   };
 
   const styleMenu = {
-    display: isMenuOpen ? 'none' : 'block',
+    height: isMenuOpen ? 0 : 'auto',
+    position: 'relative'
   };
 
   const styles1 = {
