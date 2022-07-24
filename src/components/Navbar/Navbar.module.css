@@ -5,6 +5,17 @@
   z-index: 2;
 }
 
+.menu {
+  position: absolute;
+  right: 4vw;
+  top: 20px;
+}
+.menu svg {
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+
 .navbar nav {
   display: flex;
   justify-content: center;
@@ -83,9 +94,13 @@
   .navbar {
     height: auto;
     /* width: 70%; */
-    margin: auto;
+    margin: 0 auto 0 auto;
     position: relative;
     overflow-x: hidden;
+  }
+
+  .menu {
+    z-index: 3;
   }
 
   .logo img {
@@ -125,11 +140,10 @@
   .last {
     margin-left: 0;
   }
+}
 
-  /* .navbar nav::after {
-    position: absolute;
-    content: url('../../logo.svg');
-    top: -20px;
-    left: 4vw;
-  } */
+@media (min-width: 1070.1px) {
+  .menu {
+    z-index: -1;
+  }
 }

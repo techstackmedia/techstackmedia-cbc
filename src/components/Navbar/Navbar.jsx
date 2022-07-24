@@ -1,6 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import { MdShoppingCart } from 'react-icons/md';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { MdKeyboardArrowDown, MdShoppingCart, MdMenu } from 'react-icons/md';
 import {
   NavbarLeftInterface as navLeft,
   NavbarRightInterface as navRight,
@@ -14,6 +13,14 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen((prev) => {
+      return !prev;
+    });
+  };
+
   const handleClick1 = () => {
     if (isOpen1 === true) {
       setIsOpen2(false);
@@ -42,6 +49,14 @@ const Navbar = () => {
     if (isOpen2 === false) {
       setIsOpen2(true);
     }
+  };
+
+  const styleMenu = {
+    display: isMenuOpen ? 'none' : 'block',
+  };
+
+  const styMenuColor = {
+    color: isMenuOpen ? '#fff' : '#000',
   };
 
   const styles1 = {
@@ -101,30 +116,35 @@ const Navbar = () => {
   });
 
   return (
-    <div className={navbar.navbar}>
-      <nav>
-        <ul>
-          <div className={navbar.item}>
-            <li className={navbar.logo}>
-              <Link to="/">
-                <img width={100} height={50} src={logo} alt="cbc logo" />
-              </Link>
-            </li>
-            {nR}
-          </div>
-          <div>
-            {nL}
-            <li className={navbar.last}>
-              <Link to="/store">
-                <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
-                <MdShoppingCart className={navbar.cart} />
-              </Link>
-            </li>
-          </div>
-        </ul>
-        <Outlet />
-      </nav>
-    </div>
+    <>
+      <div className={navbar.menu} onClick={handleMenuClick}>
+        <MdMenu style={styMenuColor} />
+      </div>
+      <div className={navbar.navbar}>
+        <nav style={styleMenu}>
+          <ul>
+            <div className={navbar.item}>
+              <li className={navbar.logo}>
+                <Link to="/">
+                  <img width={100} height={50} src={logo} alt="cbc logo" />
+                </Link>
+              </li>
+              {nR}
+            </div>
+            <div>
+              {nL}
+              <li className={navbar.last}>
+                <Link to="/store">
+                  <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
+                  <MdShoppingCart className={navbar.cart} />
+                </Link>
+              </li>
+            </div>
+          </ul>
+          <Outlet />
+        </nav>
+      </div>
+    </>
   );
 };
 
