@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
       );
     return (
-      <div key={item} style={{ position: 'relative', left: 40 }}>
+      <div key={item} className={navbar.relaive}>
         <li>
           <Link to={`/${item}`}>{item.toUpperCase()}</Link>
         </li>
@@ -89,7 +89,6 @@ const Navbar = () => {
           key={index}
           className={navbar.arrow}
           onClick={index === 0 ? handleClick1 : handleClick2}
-
         >
           <MdKeyboardArrowDown
             className={navbar.arrowDown}
@@ -106,7 +105,7 @@ const Navbar = () => {
       <nav>
         <ul>
           <div className={navbar.item}>
-            <li>
+            <li className={navbar.logo}>
               <Link to="/">
                 <img width={100} height={50} src={logo} alt="cbc logo" />
               </Link>
@@ -115,7 +114,7 @@ const Navbar = () => {
           </div>
           <div>
             {nL}
-            <li style={{ marginLeft: 40 }}>
+            <li className={navbar.last}>
               <Link to="/store">
                 <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
                 <MdShoppingCart className={navbar.cart} />

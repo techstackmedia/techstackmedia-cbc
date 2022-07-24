@@ -34,6 +34,11 @@
   list-style-type: none;
 }
 
+.relaive {
+  position: relative;
+  left: 40;
+}
+
 .arrow,
 .cart {
   margin-right: 50px;
@@ -64,8 +69,67 @@
   height: 24px;
 }
 
+.last {
+  margin-left: 40px;
+}
+
 .navbar svg {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@media (max-width: 1070px) {
+  .navbar {
+    height: auto;
+    /* width: 70%; */
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .logo img {
+    width: 0;
+  }
+
+  .logo a::after {
+    position: absolute;
+    content: url('../../logo.svg');
+    top: 10px;
+    left: 4vw;
+  }
+  .navbar ul div:nth-child(1),
+  .navbar ul div:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    line-height: 2.5;
+  }
+
+  .relaive {
+    left: 0;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 96vw;
+  }
+
+  .navLeft {
+    margin-left: 0;
+    display: flex;
+  }
+
+  .last {
+    margin-left: 0;
+  }
+
+  /* .navbar nav::after {
+    position: absolute;
+    content: url('../../logo.svg');
+    top: -20px;
+    left: 4vw;
+  } */
 }
