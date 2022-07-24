@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { IoIosArrowDropright } from 'react-icons/io';
-import { MdPlayArrow } from 'react-icons/md';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { MdKeyboardArrowRight, MdOutlinePlayArrow } from 'react-icons/md';
 import cbcTower from '../../images/cbc.png';
 import hero from './Hero.module.css';
 import Modal from '../Modal/Modal';
@@ -84,7 +83,7 @@ const Hero = ({ heading, title, para }) => {
                 width: 250,
               }}
             >
-              Watch Video <MdPlayArrow />
+              Watch Video <MdOutlinePlayArrow />
             </button>
 
             <button
@@ -95,7 +94,7 @@ const Hero = ({ heading, title, para }) => {
                 width: 250,
               }}
             >
-              Explore our Solution <IoIosArrowDropright />
+              Explore our Solution <MdKeyboardArrowRight />
             </button>
           </div>
 
