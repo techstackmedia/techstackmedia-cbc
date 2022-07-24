@@ -103,7 +103,6 @@ const Hero = ({ heading, title, para }) => {
             className={hero.about}
             style={{ display: pathname !== '/' ? 'none' : 'flex' }}
           >
-            {/* <Link to="/about">What's CBC about?</Link> */}
           </div>
         </div>
         <div className={hero.tower}>
