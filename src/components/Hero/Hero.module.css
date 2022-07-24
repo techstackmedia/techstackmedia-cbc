@@ -1,4 +1,4 @@
-.hero {
+:where(.hero) {
   background-image: url('../../images/Carousel.png');
   color: #fff;
   display: flex;
@@ -18,17 +18,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.303);
+  background-color: rgba(0, 0, 0, 0.215);
   z-index: -1;
 }
 
-.jumbotron {
+:where(.jumbotron) {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.cbc {
+:where(.cbc) {
   margin-left: 7%;
   display: flex;
   flex-direction: column;
@@ -38,38 +38,37 @@
   margin-top: -97px;
 }
 
-.cbc h1 {
+:where(.cbc h1) {
   font-size: 64px;
   margin-top: 97px;
 }
 
-.cbc h3 {
+:where(.cbc h3) {
   font-size: 34px;
   width: 300px;
 }
 
-.cbc p {
+:where(.cbc p) {
   font-size: 24px;
   line-height: 1.7;
   margin-top: 10px;
   width: 50%;
-  /*current change*/
   text-align: center;
 }
 
-.buttons {
+:where(.buttons) {
   display: flex;
 }
 
-.buttons button:nth-child(1) {
+:where(.buttons button:nth-child(1)) {
   margin-right: 10px;
 }
 
-.buttons button:nth-child(2) {
+:where(.buttons button:nth-child(2)) {
   margin-left: 10px;
 }
 
-.subsidiaries {
+:where(.subsidiaries) {
   background-color: #fff;
   color: #000;
   text-decoration: none;
@@ -89,13 +88,13 @@
   cursor: pointer;
 }
 
-.subsidiaries svg {
+:where(.subsidiaries svg) {
   margin-left: 5px;
   width: 24px;
   height: 24px;
 }
 
-.hero img {
+:where(.hero img) {
   width: 0;
   height: 450px;
   width: 100%;
@@ -105,11 +104,11 @@
   visibility: hidden;
 }
 
-.about {
+:where(.about) {
   align-items: center;
 }
 
-.about svg {
+:where(.about svg) {
   margin-right: 5px;
   width: 20px;
   height: 20px;
@@ -118,28 +117,28 @@
   align-items: center;
 }
 
-.about a {
+:where(.about a) {
   color: #fff;
   text-decoration: none;
 }
 
-.about a {
+:where(.about a) {
   border-bottom: 1px solid #fff;
 }
 
-.tower {
+:where(.tower) {
   position: relative;
   display: none;
 }
 
-.bullet {
+:where(.bullet) {
   position: absolute;
   margin-left: calc(50% - 50px);
   margin-top: 20px;
   visibility: hidden;
 }
 
-.bullet div {
+:where(.bullet div) {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -148,6 +147,6 @@
   border: 1px solid #726f6f;
 }
 
-.bullet div:last-child {
+:where(.bullet div:last-child) {
   background-color: #0099dc;
 }

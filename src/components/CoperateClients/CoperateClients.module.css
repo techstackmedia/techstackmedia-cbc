@@ -1,26 +1,26 @@
-.section {
+:where(.section) {
   position: relative;
   top: 30px;
 }
-.coperate {
+:where(.coperate) {
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
 }
 
-.imgs {
+:where(.imgs) {
   width: 20%;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.coperate img {
+:where(.coperate img) {
   height: 70px;
   width: 60%;
   padding: 10px;
 }
 
-.clients {
+:where(.clients) {
   display: flex;
   justify-content: center;
   margin-top: 60px;

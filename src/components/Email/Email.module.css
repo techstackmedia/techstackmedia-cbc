@@ -1,4 +1,4 @@
-.email {
+:where(.email) {
   background-color: #fff;
   width: 60%;
   margin: auto;
@@ -12,19 +12,19 @@
   z-index: 1;
 }
 
-.email h2,
-.email p {
+:where(.email h2),
+:where(.email p) {
   margin-bottom: 10px;
   color: #474747;
 }
 
-.inputButton {
+:where(.inputButton) {
   position: relative;
   width: 60%;
   margin: auto;
 }
 
-.email input {
+:where(.email input) {
   height: 45px;
   border-radius: 15.34px;
   text-indent: 20px;
@@ -35,7 +35,7 @@
   outline: none;
 }
 
-.email button {
+:where(.email button) {
   display: inline-flex;
   align-items: center;
   position: absolute;
@@ -53,6 +53,6 @@
   cursor: pointer;
 }
 
-.email button svg {
+:where(.email button svg) {
   margin-left: 3px;
 }

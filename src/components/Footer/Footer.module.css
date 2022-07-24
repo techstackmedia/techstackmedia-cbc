@@ -1,9 +1,9 @@
-.foot {
+:where(.foot) {
   background: rgba(144, 221, 255, 0.2);
   margin-top: 30px;
 }
 
-.footer {
+:where(.footer) {
   height: 150px;
   color: #474747;
   display: flex;
@@ -11,13 +11,13 @@
   align-items: flex-end;
 }
 
-.content {
+:where(.content) {
   width: 100%;
   margin-left: 10%;
   margin-right: calc(10% + 5px);
 }
 
-.media {
+:where(.media) {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
@@ -25,47 +25,47 @@
   margin-left: 5px;
 }
 
-.item {
+:where(.item) {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.item svg {
+:where(.item svg) {
   margin-right: 5px;
   color: #0099dc;
   width: 20px;
   height: 20px;
 }
 
-.item span {
+:where(.item span) {
   font-size: 13px;
 }
 
-.socialMedia {
+:where(.socialMedia) {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 20px 0;
 }
 
-.socialMedia img {
+:where(.socialMedia img) {
   width: 18px;
   height: 18px;
 }
 
-.footer img {
+:where(.footer img) {
   margin-right: 25px;
 }
 
-.foot hr {
+:where(.foot hr) {
   border: 1px solid #0073a6;
   border-bottom: 0;
   width: 80%;
   margin: auto;
 }
 
-.links {
+:where(.links) {
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -74,12 +74,12 @@
   margin-top: 20px;
 }
 
-.links a {
+:where(.links a) {
   text-decoration: none;
   color: #474747;
 }
 
-.copyright {
+:where(.copyright) {
   text-align: center;
   font-size: 12px;
   padding-bottom: 10px;
