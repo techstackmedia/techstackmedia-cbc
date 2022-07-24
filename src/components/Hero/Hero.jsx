@@ -75,24 +75,35 @@ const Hero = ({ heading, title, para }) => {
           <h3 style={styleH3}>{title}</h3>
           <p>{para}</p>
 
-          <button
-            className={hero.subsidiaries}
-            onClick={handleButtonClick}
-            style={{
-              display: pathname !== '/' ? 'none' : 'inline-flex',
-              width: 250,
-            }}
-          >
-            Explore our Solution <IoIosArrowDropright />
-          </button>
+          <div className={hero.buttons}>
+            <button
+              className={hero.subsidiaries}
+              onClick={handleVideoClick}
+              style={{
+                display: pathname !== '/' ? 'none' : 'inline-flex',
+                width: 250,
+              }}
+            >
+              Watch Video <MdPlayArrow />
+            </button>
+
+            <button
+              className={hero.subsidiaries}
+              onClick={handleButtonClick}
+              style={{
+                display: pathname !== '/' ? 'none' : 'inline-flex',
+                width: 250,
+              }}
+            >
+              Explore our Solution <IoIosArrowDropright />
+            </button>
+          </div>
+
           <div
             className={hero.about}
             style={{ display: pathname !== '/' ? 'none' : 'flex' }}
           >
-            <div onClick={handleVideoClick} style={{ cursor: 'pointer' }}>
-              <MdPlayArrow color="#0099DC" />
-            </div>
-            <Link to="/about">What's CBC about?</Link>
+            {/* <Link to="/about">What's CBC about?</Link> */}
           </div>
         </div>
         <div className={hero.tower}>

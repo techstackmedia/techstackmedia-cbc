@@ -57,6 +57,18 @@
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+}
+
+.buttons button:nth-child(1) {
+  margin-right: 10px;
+}
+
+.buttons button:nth-child(2) {
+  margin-left: 10px;
+}
+
 .subsidiaries {
   background-color: #fff;
   color: #000;
