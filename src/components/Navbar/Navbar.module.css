@@ -104,6 +104,13 @@
     cursor: pointer;
   }
 
+  .logo1 {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    z-index: 2
+  }
+
   .logo img {
     width: 0;
   }
@@ -149,5 +156,9 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  .logo1 {
+    display: none
   }
 }

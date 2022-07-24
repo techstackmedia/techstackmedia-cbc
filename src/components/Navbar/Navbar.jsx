@@ -122,6 +122,11 @@ const Navbar = () => {
       <div className={navbar.menu} onClick={handleMenuClick}>
         {isMenuOpen ? <MdMenu color="#fff" /> : <MdClose />}
       </div>
+      <div className={navbar.logo1}>
+                <Link to="/">
+                  <img width={100} height={50} src={logo} alt="cbc logo" />
+                </Link>
+              </div>
       <div className={navbar.navbar}>
         <nav style={styleMenu}>
           <ul>
