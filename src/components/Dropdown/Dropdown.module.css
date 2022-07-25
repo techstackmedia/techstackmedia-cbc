@@ -54,3 +54,11 @@
     width: 40vw;
   }
 }
+
+@media (max-width: 1070px) {
+  .tooltip ul {
+    width: 91vw;
+    position: relative;
+    top: 40px;
+  }
+}
