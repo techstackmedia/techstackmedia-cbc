@@ -56,3 +56,9 @@
 :where(.email button svg) {
   margin-left: 3px;
 }
+
+@media (max-width: 1003px) {
+  .email {
+    margin-bottom: 20px;
+  }
+}
