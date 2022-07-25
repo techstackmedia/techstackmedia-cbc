@@ -1,7 +1,7 @@
 .recentUpdates {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px auto;
   flex-wrap: wrap;
 }
 
@@ -23,4 +23,10 @@
 .recentUpdates p {
   font-size: 14px;
   margin-bottom: 21px;
+}
+
+@media (max-width: 480px) {
+  .cards {
+    width: auto;
+  }
 }

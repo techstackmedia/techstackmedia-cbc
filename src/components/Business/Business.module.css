@@ -1,7 +1,7 @@
 .business {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 20px auto;
   flex-wrap: wrap;
 }
 
@@ -13,7 +13,8 @@
   justify-content: space-between;
   box-shadow: 0px 4.15245px 4.15245px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .img {
@@ -49,10 +50,7 @@
 }
 
 .title {
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 .title h2 {
@@ -73,4 +71,28 @@
   margin-left: 3px;
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1060px) {
+  .card {
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 96%;
+  }
 }
