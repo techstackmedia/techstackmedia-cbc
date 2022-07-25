@@ -19,13 +19,23 @@
   text-align: left;
   margin-left: 20px;
   line-height: 1.9;
-  position: absolute;
   width: 30vw;
   background: rgb(255, 255, 255);
   position: absolute;
   right: 0;
   border-radius: 8px;
   border: 1px solid #ccc;
+  animation: dropdown 0.3s ease-in;
+  /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 :where(.tooltiptext li) {
