@@ -20,7 +20,7 @@
   margin-left: 20px;
   line-height: 1.9;
   position: absolute;
-  width: 26vw;
+  width: 30vw;
   background: rgb(255, 255, 255);
   position: absolute;
   right: 0;
@@ -41,4 +41,16 @@
 
 .tooltiptext a:hover {
   color: #00f;
+}
+
+@media (max-width: 1252px) {
+  .tooltip ul {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 1078px) {
+  .tooltip ul {
+    width: 40vw;
+  }
 }

@@ -94,7 +94,7 @@
 @media (max-width: 1070px) {
   .navbar {
     height: auto;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     position: relative;
     overflow-x: hidden;
   }
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: 1070.1px) {
+@media (min-width: 1070.01px) {
   .menu {
     z-index: -1;
     -moz-user-select: none;
