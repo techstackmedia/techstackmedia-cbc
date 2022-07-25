@@ -1,5 +1,5 @@
 :where(.hero) {
-  background-image: url('../../images/Carousel.png');
+  background-image: url('../../images/cbc-tower.png');
   color: #fff;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.215);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
