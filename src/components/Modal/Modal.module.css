@@ -18,3 +18,10 @@
     padding: 30px;
     /* border-radius: 8px; */
 }
+
+
+@media (max-width: 1009px) {
+  .modal video {
+    width: 96vw;
+  }
+}

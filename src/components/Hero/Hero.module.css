@@ -150,3 +150,19 @@
 :where(.bullet div:last-child) {
   background-color: #0099dc;
 }
+
+@media (max-width: 615px) {
+  .cbc {
+    font-size: 50px;
+  }
+
+  .cbc p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
