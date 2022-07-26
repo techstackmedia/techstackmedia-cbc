@@ -50,20 +50,6 @@
   left: 40;
 }
 
-.relaive:last-child {
-  background-color: #f0f0f0;
-  border: 1px solid #f0f0f0;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-.relaive:last-child svg {
-  margin-right: auto;
-}
-
 .arrow,
 .cart {
   margin-right: 50px;
@@ -156,6 +142,10 @@
     width: 96vw;
   }
 
+  .relaive a {
+    margin-left: auto;
+  }
+
   .navLeft {
     margin-left: 0;
     display: flex;
@@ -176,5 +166,19 @@
 
   .logo1 {
     display: none;
+  }
+
+  .relaive:last-child {
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  .relaive:last-child svg {
+    margin-right: auto;
   }
 }
