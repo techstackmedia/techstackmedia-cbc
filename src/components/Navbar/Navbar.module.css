@@ -182,6 +182,7 @@
     justify-content: center;
     padding: 5px 10px;
     text-align: center;
+    align-items: center;
   }
 
   .relaive:last-child a {
@@ -190,5 +191,17 @@
 
   .relaive:last-child svg {
     margin-right: auto;
+    margin-left: 5px;
+    animation: store 1s ease-in 5 alternate both;
+  }
+  @keyframes store {
+    from {
+      padding: 5px;
+    }
+    to {
+      border: none;
+      border-radius: 0;
+      padding: auto;
+    }
   }
 }
