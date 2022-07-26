@@ -114,7 +114,7 @@ const Navbar = () => {
         </div>
       ) : (
         <a href="https://fimihan.com/shop/">
-          <MdShoppingCart color="#fff" className={navbar.cart} />
+          <MdShoppingCart className={navbar.cart} />
         </a>
       );
 

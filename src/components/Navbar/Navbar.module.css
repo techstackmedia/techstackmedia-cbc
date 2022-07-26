@@ -59,6 +59,10 @@
   margin-left: auto;
 }
 
+.relaive:last-child svg {
+  color: #000;
+}
+
 .navLeft {
   margin-left: 50px;
 }
@@ -186,5 +190,6 @@
 
   .relaive:last-child svg {
     margin-right: auto;
+    color: #474747;
   }
 }
