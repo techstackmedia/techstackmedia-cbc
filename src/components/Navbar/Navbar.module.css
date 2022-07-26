@@ -192,7 +192,8 @@
   .relaive:last-child svg {
     margin-right: auto;
     margin-left: 5px;
-    animation: store 1s ease-in 5 alternate both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: store 1s ease-in 0s 5 alternate both;
   }
   @keyframes store {
     from {
