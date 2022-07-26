@@ -171,13 +171,17 @@
   }
 
   .relaive:last-child {
-    background-color: #f0f0f0;
-    border: 1px solid #f0f0f0;
+    background-color: #000;
+    border: 1px solid #000;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     padding: 5px 10px;
     text-align: center;
+  }
+
+  .relaive:last-child a {
+    color: #fff;
   }
 
   .relaive:last-child svg {
