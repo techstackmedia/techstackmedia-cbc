@@ -60,7 +60,7 @@
 }
 
 .relaive:last-child svg {
-  color: #000;
+  color: #fff;
 }
 
 .navLeft {
@@ -190,6 +190,5 @@
 
   .relaive:last-child svg {
     margin-right: auto;
-    color: #474747;
   }
 }
