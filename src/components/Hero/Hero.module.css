@@ -41,11 +41,13 @@
 :where(.cbc h1) {
   font-size: 64px;
   margin-top: 97px;
+  text-align: center;
 }
 
 :where(.cbc h3) {
   font-size: 34px;
   width: 300px;
+  text-align: center;
 }
 
 :where(.cbc p) {
@@ -150,19 +152,39 @@
   background-color: #0099dc;
 }
 
+@media (max-width: 837px) {
+  .cbc p {
+    width: 90%;
+  }
+}
+
 @media (max-width: 615px) {
   .cbc {
     font-size: 50px;
-  }
-
-  .cbc p {
-    font-size: 20px;
   }
 }
 
 @media (max-width: 590px) {
   .buttons {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  .cbc h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 478px) {
+  .cbc h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cbc h1 {
+    font-size: 34px;
   }
 }
 

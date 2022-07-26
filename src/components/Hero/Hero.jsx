@@ -70,7 +70,7 @@ const Hero = ({ heading, title, para }) => {
         }}
       >
         <div className={hero.cbc} style={styleCBC}>
-          <h1 style={{ textAlign: 'center' }}>{heading}</h1>
+          <h1>{heading}</h1>
           <h3 style={styleH3}>{title}</h3>
           <p>{para}</p>
 
