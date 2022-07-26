@@ -1,6 +1,7 @@
 .about {
   display: flex;
   margin: 40px auto;
+  overflow: hidden;
 }
 
 .about a {
@@ -24,13 +25,14 @@
 
 .img {
   width: 50%;
+  overflow-x: hidden;
 }
 
 .img img,
 .focus {
   height: auto;
-  width: 100%;
   display: flex;
+  width: calc(100% + 10px);
 }
 
 .moments {
@@ -40,4 +42,29 @@
 .removed {
   width: 90%;
   margin: auto;
+}
+
+@media (max-width: 1161px) {
+  .about {
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+  }
+
+  .img {
+    overflow-y: hidden;
+    width: 1029.4px;
+    border-radius: none;
+  }
+
+  .img img {
+    border: none !important;
+    object-fit: cover;
+  }
+
+  @media (max-width: 522px) {
+    .about {
+      height: 600px;
+    }
+  }
 }
