@@ -104,6 +104,10 @@
     cursor: pointer;
   }
 
+  .menu svg {
+    margin-left: auto;
+  }
+
   .logo1 {
     position: absolute;
     left: 4%;
