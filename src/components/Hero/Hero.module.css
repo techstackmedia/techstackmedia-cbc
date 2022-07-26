@@ -75,8 +75,7 @@
   padding: 10px;
   border-radius: 4px;
   color: #0099dc;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 15px 5px;
   font-weight: 600;
   font-size: 15px;
   text-align: center;
@@ -86,6 +85,7 @@
   align-items: center;
   border: none;
   cursor: pointer;
+
 }
 
 :where(.subsidiaries svg) {
@@ -164,5 +164,11 @@
 @media (max-width: 590px) {
   .buttons {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 590px) {
+  .subsidiaries:nth-child(2) {
+    /* margin-left: -5% !important; */
   }
 }
