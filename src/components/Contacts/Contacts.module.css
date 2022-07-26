@@ -36,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   margin: 10px auto 45px auto;
+  flex-wrap: wrap;
 }
 
 .fullname {
@@ -123,4 +124,15 @@
   height: 24px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 1097px) {
+  .forms form {
+    width: 100vw;
+    margin-bottom: 45px;
+  }
+
+  .contact {
+    width: 100vw;
+  }
 }
