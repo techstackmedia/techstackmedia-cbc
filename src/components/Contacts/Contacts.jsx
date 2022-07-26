@@ -6,7 +6,6 @@ import linkedin from '../../images/media2.svg';
 import instagram from '../../images/media3.svg';
 import twitter from '../../images/media4.svg';
 import youtube from '../../images/media5.svg';
-import { Link } from 'react-router-dom';
 
 const Contacts = () => {
   const id = useId();

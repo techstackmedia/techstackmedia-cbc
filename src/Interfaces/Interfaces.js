@@ -1,5 +1,5 @@
 const NavbarLeftInterface = ['about', 'blog', 'contact'];
-const NavbarRightInterface = ['subsidiaries', 'products'];
+const NavbarRightInterface = ['subsidiaries', 'products', 'store'];
 const CardBusinessInterface = [
   {
     id: 1,

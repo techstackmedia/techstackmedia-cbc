@@ -61,13 +61,6 @@ const Navbar = () => {
     position: 'relative',
   };
 
-  // const styleLogo = {
-  //   position: isMenuOpen ? 'absolute' : undefined,
-  //   left: isMenuOpen ? '4%' : undefined,
-  //   top: isMenuOpen ? 11 : undefined,
-  //   zIndex: isMenuOpen ? 2 : undefined,
-  // };
-
   const styles1 = {
     display: isOpen1 ? 'none' : 'block',
   };
@@ -103,12 +96,9 @@ const Navbar = () => {
           <DropdownSubsidiaries />
         </div>
       );
-    return (
-      <div key={item} className={navbar.relaive}>
-        <li>
-          <Link to={`/${item}`}>{item.toUpperCase()}</Link>
-        </li>
 
+    const icons =
+      index === 0 || index === 1 ? (
         <div
           key={index}
           className={navbar.arrow}
@@ -117,9 +107,19 @@ const Navbar = () => {
           <MdKeyboardArrowDown
             className={navbar.arrowDown}
             style={index === 1 ? rotateStyle1 : rotateStyle2}
-          />
-          {dropdownLinks}
+          />{' '}
         </div>
+      ) : (
+        <MdShoppingCart color="#474747" className={navbar.cart} />
+      );
+
+    return (
+      <div key={item} className={navbar.relaive}>
+        <li>
+          <Link to={`/${item}`}>{item.toUpperCase()}</Link>
+        </li>
+        {icons}
+        {dropdownLinks}
       </div>
     );
   });
@@ -138,26 +138,14 @@ const Navbar = () => {
         <nav style={styleMenu}>
           <ul>
             <div className={navbar.item}>
-              <div className={navbar.logo} /*style={styleLogo}*/>
+              <div className={navbar.logo}>
                 <Link to="/">
                   <img width={100} height={50} src={logo} alt="cbc logo" />
                 </Link>
               </div>
               {nR}
             </div>
-            <div>
-              {nL}
-              <li className={navbar.last}>
-                <a
-                  href="https://fimihan.com/shop/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
-                  <MdShoppingCart className={navbar.cart} />
-                </a>
-              </li>
-            </div>
+            <div>{nL}</div>
           </ul>
           <Outlet />
         </nav>
