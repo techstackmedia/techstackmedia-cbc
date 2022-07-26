@@ -156,6 +156,10 @@
   .cbc p {
     width: 90%;
   }
+
+  .hero {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 615px) {
