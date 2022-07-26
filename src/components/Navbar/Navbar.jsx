@@ -112,7 +112,9 @@ const Navbar = () => {
           />{' '}
         </div>
       ) : (
-        <MdShoppingCart color="#474747" className={navbar.cart} />
+        <a href="https://fimihan.com/shop/">
+          <MdShoppingCart color="#474747" className={navbar.cart} />
+        </a>
       );
 
     return (
