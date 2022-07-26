@@ -61,6 +61,13 @@ const Navbar = () => {
     position: 'relative',
   };
 
+  // const styleLogo = {
+  //   position: isMenuOpen ? 'absolute' : undefined,
+  //   left: isMenuOpen ? '4%' : undefined,
+  //   top: isMenuOpen ? 11 : undefined,
+  //   zIndex: isMenuOpen ? 2 : undefined,
+  // };
+
   const styles1 = {
     display: isOpen1 ? 'none' : 'block',
   };
@@ -91,11 +98,17 @@ const Navbar = () => {
         <div style={styles1} id={index} onMouseLeave={handleMouseLeave1}>
           <DropdownProducts />
         </div>
-      ) : (
+      ) : index === 0 ? (
         <div style={styles2} id={index} onMouseLeave={handleMouseLeave2}>
           <DropdownSubsidiaries />
         </div>
-      );
+      ) : index === 2 ? (
+        <span></span>
+        // <div>
+        //   <a href="https://fimihan.com/shop/" target="_blank" rel="noreferrer"> Shop
+        //   </a>
+        // </div>
+      ) : undefined;
 
     const icons =
       index === 0 || index === 1 ? (
