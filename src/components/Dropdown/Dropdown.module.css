@@ -69,7 +69,7 @@
   .tooltip ul {
     width: 93vw;
     position: relative;
-    top: 10px;
+    top: 5px;
     z-index: 10;
     left: -40px;
   }

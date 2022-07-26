@@ -105,10 +105,11 @@ const Navbar = () => {
           key={index}
           className={navbar.arrow}
           onClick={index === 0 ? handleClick1 : handleClick2}
+          style={index === 1 ? rotateStyle1 : rotateStyle2}
         >
           <MdKeyboardArrowDown
             className={navbar.arrowDown}
-            style={index === 1 ? rotateStyle1 : rotateStyle2}
+            
           />{' '}
         </div>
       ) : (
