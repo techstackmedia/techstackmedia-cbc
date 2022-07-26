@@ -85,7 +85,6 @@
   align-items: center;
   border: none;
   cursor: pointer;
-
 }
 
 :where(.subsidiaries svg) {
@@ -168,7 +167,8 @@
 }
 
 @media (min-width: 590px) {
-  .subsidiaries:nth-child(2) {
-    /* margin-left: -5% !important; */
+  .subsidiaries {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

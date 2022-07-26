@@ -148,10 +148,14 @@ const Navbar = () => {
             <div>
               {nL}
               <li className={navbar.last}>
-                <Link to="/store">
+                <a
+                  href="https://fimihan.com/shop/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span style={{ position: 'relative', bottom: 5 }}>STORE</span>{' '}
                   <MdShoppingCart className={navbar.cart} />
-                </Link>
+                </a>
               </li>
             </div>
           </ul>
