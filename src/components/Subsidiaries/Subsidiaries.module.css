@@ -6,8 +6,7 @@
 .subsidiaries {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  perspective: 2000px;
+  perspective: 3000px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -42,7 +41,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #04040453;
+  background-color: #040404aa;
 }
 
 .item h3 {
@@ -79,6 +78,8 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 300px;
+  padding: 10px;
 }
 
 .flipped h4 {
@@ -117,13 +118,16 @@
 
   @media (max-width: 722px) {
     .item {
-      width: calc(40% + 40px)
+      width: calc(40% + 40px);
     }
   }
 
   @media (max-width: 603px) {
     .item {
-      width: 100%
+      width: 100%;
+    }
+    .subsidiaries {
+      perspective: 6000px;
     }
   }
 }
