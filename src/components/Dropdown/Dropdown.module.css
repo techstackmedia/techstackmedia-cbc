@@ -67,7 +67,7 @@
 
 @media (max-width: 1070px) {
   .tooltip ul {
-    width: 91.5vw;
+    width: 93vw;
     position: relative;
     top: 40px;
     z-index: 10;

@@ -62,11 +62,11 @@ const Navbar = () => {
   };
 
   const styles1 = {
-    display: isOpen1 ? 'none' : 'block',
+    display: isOpen1 ? 'none' : undefined,
   };
 
   const styles2 = {
-    display: isOpen2 ? 'none' : 'block',
+    display: isOpen2 ? 'none' : undefined,
   };
 
   const rotateStyle1 = {
