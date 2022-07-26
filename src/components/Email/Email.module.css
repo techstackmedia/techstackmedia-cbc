@@ -59,6 +59,7 @@
 
 @media (max-width: 1003px) {
   .email {
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 150px;
   }
 }
