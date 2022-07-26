@@ -109,3 +109,21 @@
   display: block;
   margin: 0 5px;
 }
+
+@media (max-width: 950px) {
+  .item {
+    width: 40%;
+  }
+
+  @media (max-width: 722px) {
+    .item {
+      width: calc(40% + 40px)
+    }
+  }
+
+  @media (max-width: 603px) {
+    .item {
+      width: 100%
+    }
+  }
+}
