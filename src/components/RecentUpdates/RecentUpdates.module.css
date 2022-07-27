@@ -12,12 +12,12 @@
   font-weight: bold;
 }
 .cards {
-  width: 200px;
+  width: 300px;
 }
 
 .cards img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 63px;
 }
 
 .recentUpdates p {
