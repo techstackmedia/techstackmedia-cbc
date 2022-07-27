@@ -32,8 +32,8 @@
   margin: auto;
 }
 
-.active {
-  color: blue;
+.navbar nav a:hover {
+  color: #0073A6 !important;
 }
 
 .navbar div {

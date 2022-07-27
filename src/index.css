@@ -32,3 +32,17 @@ section {
   width: 90%;
   margin: auto;
 }
+
+button:hover {
+  animation: button 0.2s ease-out 1 alternate both;
+}
+
+@keyframes button {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-3px);
+  }
+}

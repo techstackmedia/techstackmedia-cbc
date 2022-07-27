@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import {
   MdKeyboardArrowDown,
   MdShoppingCart,
@@ -19,6 +19,7 @@ const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const { pathname } = useLocation();
 
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => {
@@ -61,14 +62,6 @@ const Navbar = () => {
     position: 'relative',
   };
 
-  const styles1 = {
-    display: isOpen1 ? 'none' : undefined,
-  };
-
-  const styles2 = {
-    display: isOpen2 ? 'none' : undefined,
-  };
-
   const rotateStyle1 = {
     transform: isOpen1 ? 'rotate(0)' : 'rotate(180deg)',
   };
@@ -78,14 +71,29 @@ const Navbar = () => {
   };
 
   const nR = navLeft.map((item) => {
+    const activeLink = {
+      color: pathname === `/${item}` ? '#0099DC' : undefined,
+    };
+
     return (
       <li key={item} className={navbar.navLeft}>
-        <Link to={`/${item}`}>{item.toUpperCase()}</Link>
+        <Link to={`/${item}`} style={activeLink}>
+          {item.toUpperCase()}
+        </Link>
       </li>
     );
   });
 
   const nL = navRight.map((item, index) => {
+    const styles1 = {
+      display: isOpen1 ? 'none' : undefined,
+      color: pathname === `/${item}` ? '#0099DC' : undefined,
+    };
+
+    const styles2 = {
+      display: isOpen2 ? 'none' : undefined,
+    };
+
     const dropdownLinks =
       index === 1 ? (
         <div style={styles1} id={index} onMouseLeave={handleMouseLeave1}>
@@ -107,10 +115,7 @@ const Navbar = () => {
           onClick={index === 0 ? handleClick1 : handleClick2}
           style={index === 1 ? rotateStyle1 : rotateStyle2}
         >
-          <MdKeyboardArrowDown
-            className={navbar.arrowDown}
-            
-          />{' '}
+          <MdKeyboardArrowDown className={navbar.arrowDown} />{' '}
         </div>
       ) : (
         <a href="https://fimihan.com/shop/">
@@ -118,10 +123,23 @@ const Navbar = () => {
         </a>
       );
 
+    let activeLink;
+    if (index === 0) {
+      activeLink = {
+        color: pathname === `/subsidiaries` ? '#0099DC' : undefined,
+      };
+    } else if (index === 1) {
+      activeLink = {
+        color: pathname === `/products` ? '#0099DC' : undefined,
+      };
+    }
+
     return (
       <div key={item} className={navbar.relaive}>
         <li>
-          <Link to={`/${item}`}>{item.toUpperCase()}</Link>
+          <Link to={`/${item}`} style={activeLink}>
+            {item.toUpperCase()}
+          </Link>
         </li>
         {icons}
         {dropdownLinks}
