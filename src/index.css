@@ -34,7 +34,7 @@ section {
 }
 
 button:hover {
-  animation: button 0.2s ease-out 1 alternate both;
+  animation: button 0.3s ease-out 1 alternate both;
 }
 
 @keyframes button {
