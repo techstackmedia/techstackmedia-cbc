@@ -9,13 +9,15 @@
 }
 
 .card {
-  width: 48%;
+  width: 45%;
   height: 300px;
   overflow: hidden;
   background-color: #e2f7ff;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
+  height: 250px;
+  box-shadow: 0 1px 2px rgb(132, 131, 131);
 }
 
 .card h3 {
@@ -33,4 +35,5 @@
   justify-content: center;
   align-items: center;
   height: auto;
+  margin: 0 auto;
 }
