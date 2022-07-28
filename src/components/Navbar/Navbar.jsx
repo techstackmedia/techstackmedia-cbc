@@ -14,7 +14,6 @@ import logo from '../../logo.svg';
 import DropdownProducts from '../Dropdown/DropdownProducts';
 import DropdownSubsidiaries from '../Dropdown/DropdownSubsidiaries';
 import { useState } from 'react';
-import { subsidiariesInterface as sub } from '../../Interfaces/Interfaces';
 
 const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
