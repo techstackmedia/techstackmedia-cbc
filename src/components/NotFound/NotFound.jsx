@@ -16,9 +16,7 @@ const NotFound = () => {
             This page you are looking for does not exist
           </h3>
           <div>
-            <button onClick={navHome}>
-              Back to Home Page
-            </button>
+            <button onClick={navHome}>Back to Home Page</button>
           </div>
         </div>
       </div>
