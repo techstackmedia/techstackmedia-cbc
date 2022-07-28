@@ -12,7 +12,9 @@ const Gedu = () => {
         title="Gedu Technologies"
         para="We are dedicated to providing the best Information Technology, Telecoms, Energy, Security and Surveillance Solutions in Nigeria."
       />
-      <SubsidiariesProducts linkText="Explore" />
+      <div style={{ width: '92%', margin: 'auto' }}>
+        <SubsidiariesProducts linkText="Explore" />
+      </div>
       <Management />
       <Footer />
     </>
