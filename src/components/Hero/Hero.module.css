@@ -46,7 +46,6 @@
 :where(.cbc h3) {
   font-size: 34px;
   width: 400px;
-  text-align: center;
 }
 
 :where(.cbc p) {
