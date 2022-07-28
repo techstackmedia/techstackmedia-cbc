@@ -5,6 +5,13 @@ import cbcTower from '../../images/cbc.png';
 import hero from './Hero.module.css';
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
+import contactImage from '../../images/contact.jpeg';
+import productsImage from '../../images/products.jpeg';
+import leadershipImage from '../../images/leadership.jpeg';
+import subsidiariesImage from '../../images/subsidiaries.jpeg';
+import blogImage from '../../images/blog.jpeg';
+import aboutImage from '../../images/about.jpeg';
+import storeImage from '../../images/store.jpeg';
 
 const Hero = ({ heading, title, para }) => {
   const [isPlayed, setIsPlayed] = useState(true);
@@ -48,19 +55,19 @@ const Hero = ({ heading, title, para }) => {
   const styleHero = {
     backgroundImage:
       pathname === '/contact'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215281/christina-wocintechchat-com-0Nfqp0WiJqc-unsplash_a9u9mu.jpg)'
+        ? `url(${contactImage})`
         : pathname === '/products'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215641/austin-distel-wD1LRb9OeEo-unsplash_paa6dm.jpg)'
+        ? `url(${productsImage})`
         : pathname === '/leadership'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658214825/smartworks-coworking-Uz8THWPXwhI-unsplash_vc6of0.jpg)'
+        ? `url(${leadershipImage})`
         : pathname === '/subsidiaries'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658215071/jason-goodman-6awfTPLGaCE-unsplash_r8waq3.jpg)'
+        ? `url(${subsidiariesImage})`
         : pathname === '/blog'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658214377/hero4_zebnxu.jpg)'
+        ? `url(${blogImage})`
         : pathname === '/about'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658213762/hero2_a2jxsp.jpg)'
+        ? `url(${aboutImage})`
         : pathname === '/store'
-        ? 'url(https://res.cloudinary.com/bizstak/image/upload/v1658213752/hero1_byitvb.jpg)'
+        ? `url(${storeImage})`
         : undefined,
     height: pathname !== '/' ? 300 : undefined,
   };
