@@ -1,30 +1,19 @@
 import { Link } from 'react-router-dom';
 import dropdown from './Dropdown.module.css';
+import { subsidiariesLinkInterface as subLinks } from '../../Interfaces/Interfaces';
 
 const Dropdown = () => {
+  const subsidiariesLink = subLinks.map((item) => {
+    return (
+      <li key={item}>
+        <Link to={`subsidiaries/${item}`}>CBC {item.toUpperCase()}</Link>
+      </li>
+    );
+  });
   return (
     <div className={dropdown.tooltip}>
       <div className={dropdown.tooltiptext}>
-        <ul>
-          <li>
-            <Link to="/">CBC Energy</Link>
-          </li>
-          <li>
-            <Link to="/subsidiaries/gedu">CBC Gedu Technologies</Link>
-          </li>
-          <li>
-            <Link to="/">CBC Properties</Link>
-          </li>
-          <li>
-            <Link to="/">CBC Netcomms</Link>
-          </li>
-          <li>
-            <Link to="/">CBC Infrastructure</Link>
-          </li>
-          <li>
-            <Link to="/">CBC Surveillance</Link>
-          </li>
-        </ul>
+        <ul>{subsidiariesLink}</ul>
       </div>
     </div>
   );

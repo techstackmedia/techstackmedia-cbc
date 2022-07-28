@@ -1,51 +1,23 @@
 import { Link } from 'react-router-dom';
 import dropdown from './Dropdown.module.css';
+import { productsLinkInterface as proLink } from '../../Interfaces/Interfaces';
 
 const Dropdown = () => {
+  const productLink = proLink.map((item) => {
+    return (
+      <li key={item}>
+        <Link
+          to={`/${item.toLowerCase().replace(' - ', ' ').replaceAll(' ', '-')}`}
+        >
+          {item}
+        </Link>
+      </li>
+    );
+  });
   return (
     <div className={dropdown.tooltip}>
       <div className={dropdown.tooltiptext}>
-        <ul>
-          <li>
-            <Link to="/">GDPR - Certified Data Protection Officier</Link>
-          </li>
-          <li>
-            <Link to="/">Data Protection (NDPR)</Link>
-          </li>
-          <li>
-            <Link to="/">Veritas Solution</Link>
-          </li>
-          <li>
-            <Link to="/">ClickSAT Satellite Internet Service</Link>
-          </li>
-          <li>
-            <Link to="/">CBC Digital Office Worker</Link>
-          </li>
-          <li>
-            <Link to="/">Educational Technology Innovation</Link>
-          </li>
-          <li>
-            <Link to="/">Priviledged Access Solution</Link>
-          </li>
-          <li>
-            <Link to="/">Smash Protect</Link>
-          </li>
-          <li>
-            <Link to="/">Sensaphone</Link>
-          </li>
-          <li>
-            <Link to="/">iCOM</Link>
-          </li>
-          <li>
-            <Link to="/">Servision</Link>
-          </li>
-          <li>
-            <Link to="/">Blunet</Link>
-          </li>
-          <li>
-            <Link to="/">IBM Solutions</Link>
-          </li>
-        </ul>
+        <ul>{productLink}</ul>
       </div>
     </div>
   );

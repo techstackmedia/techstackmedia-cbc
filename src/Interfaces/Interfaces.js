@@ -130,6 +130,31 @@ const FooterLinkInterface = [
   'Privacy Policy',
   'Terms and Conditions',
 ];
+const subsidiariesLinkInterface = [
+  'energy',
+  'gedu',
+  'properties',
+  'netcomms',
+  'infrastructure',
+  'survellience',
+];
+
+const productsLinkInterface = [
+  'CDPR - Certified Data Protection Officier',
+  'Data Protection',
+  'Veritas Solution',
+  'ClickSAT Satellite Internet Service',
+  'Digital Office Worker',
+  'Educational Technology Innovation',
+  'Priviledged Access Solution',
+  'Smash Proptect',
+  'Sensaphone',
+  'iCOM',
+  'Servision',
+  'Blunet',
+  'IBM Solutions',
+];
+
 const AboutFocusInterface = [
   {
     id: 1,
@@ -467,6 +492,8 @@ const subsidiariesInterface = [
 
 export {
   NavbarLeftInterface,
+  subsidiariesLinkInterface,
+  productsLinkInterface,
   NavbarRightInterface,
   CardBusinessInterface,
   CardSchoolInterface,
