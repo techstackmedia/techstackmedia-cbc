@@ -98,15 +98,7 @@
     margin: 0 auto;
     position: relative;
     overflow-x: hidden;
-    animation: navbar 0.2 ease-out delay 1 alternate both;
   }
-
-  @keyframes navbar {
-    from {
-      height: 0;
-    }
-  }
-
   .menu {
     z-index: 3;
     cursor: pointer;
