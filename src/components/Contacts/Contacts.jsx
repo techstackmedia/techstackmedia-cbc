@@ -99,10 +99,10 @@ const Contacts = () => {
           width="100%"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="CBC Map"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="CBC Emea Map"
         ></iframe>
       </div>
     </section>
