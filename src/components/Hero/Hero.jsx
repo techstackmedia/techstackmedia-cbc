@@ -34,6 +34,10 @@ const Hero = ({ heading, title, para }) => {
     marginLeft: pathname === '/' ? '5%' : undefined,
   };
 
+  const styleP = {
+    marginTop: pathname !== '/' ? 200 : undefined,
+  };
+
   const styleH3 = {
     position: pathname !== '/' ? 'absolute' : undefined,
     left: pathname !== '/' ? '5%' : undefined,
@@ -73,7 +77,7 @@ const Hero = ({ heading, title, para }) => {
         <div className={hero.cbc} style={styleCBC}>
           <h1>{heading}</h1>
           <h3 style={styleH3}>{title}</h3>
-          <p>{para}</p>
+          <p style={styleP}>{para}</p>
 
           <div className={hero.buttons}>
             <button
