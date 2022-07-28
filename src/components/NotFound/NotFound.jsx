@@ -17,7 +17,7 @@ const NotFound = () => {
           </h3>
           <div>
             <button onClick={navHome}>
-              Back to Home Page <MdHome />
+              Back to Home Page
             </button>
           </div>
         </div>
