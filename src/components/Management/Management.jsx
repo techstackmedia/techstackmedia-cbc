@@ -18,7 +18,7 @@ const Management = () => {
         </div>
         <div className={management.card}>
           <div className={management.deputygeneralmanager}>
-            <h3>OLUWAFUNMIKE ALAWODE</h3>
+            <h3>FUNMIKE ALAWODE</h3>
             <p>Deputy General Manager</p>
           </div>
           <div>

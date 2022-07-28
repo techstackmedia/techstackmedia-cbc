@@ -36,4 +36,16 @@
   align-items: center;
   height: auto;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (max-width: 1160px) {
+  .management {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card:nth-child(1) {
+    margin-bottom: 40px;
+  }
 }
