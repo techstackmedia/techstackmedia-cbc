@@ -10,7 +10,7 @@ const Dropdown = () => {
             <Link to="/">CBC Energy</Link>
           </li>
           <li>
-            <Link to="/">CBC Gedu Technologies</Link>
+            <Link to="/subsidiaries/gedu">CBC Gedu Technologies</Link>
           </li>
           <li>
             <Link to="/">CBC Properties</Link>

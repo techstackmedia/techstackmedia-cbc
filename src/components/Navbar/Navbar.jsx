@@ -72,7 +72,7 @@ const Navbar = () => {
 
   const nR = navLeft.map((item) => {
     const activeLink = {
-      color: pathname === `/${item}` ? '#0099DC' : undefined,
+      color: pathname === `/${item}` ? '#0073A6' : undefined,
     };
 
     return (
@@ -87,7 +87,7 @@ const Navbar = () => {
   const nL = navRight.map((item, index) => {
     const styles1 = {
       display: isOpen1 ? 'none' : undefined,
-      color: pathname === `/${item}` ? '#0099DC' : undefined,
+      color: pathname === `/${item}` ? '#0073A6' : undefined,
     };
 
     const styles2 = {
@@ -123,14 +123,14 @@ const Navbar = () => {
         </a>
       );
 
-    let activeLink;
+      let activeLink
     if (index === 0) {
       activeLink = {
-        color: pathname === `/subsidiaries` ? '#0099DC' : undefined,
+        color: pathname === `/subsidiaries` ? '#0073A6' : undefined,
       };
     } else if (index === 1) {
       activeLink = {
-        color: pathname === `/products` ? '#0099DC' : undefined,
+        color: pathname === `/products` ? '#0073A6' : undefined,
       };
     }
 

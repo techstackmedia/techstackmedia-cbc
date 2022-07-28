@@ -1,0 +1,36 @@
+.management {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section h2 {
+    margin-bottom: 5px;
+}
+
+.card {
+  width: 48%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #e2f7ff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.deputygeneralmanager,
+.generalmanager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}

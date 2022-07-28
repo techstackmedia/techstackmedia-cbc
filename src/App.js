@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Leadership from './pages/Leadership';
 import Contact from './pages/Contact';
 import Shopping from './pages/Shopping/Shopping';
+import Gedu from './pages/Gedu';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<Shopping />} />
+        <Route path="/subsidiaries/Gedu" element={<Gedu />} />
       </Routes>
     </BrowserRouter>
   );

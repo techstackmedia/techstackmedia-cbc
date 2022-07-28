@@ -16,6 +16,7 @@ const Footer = () => {
       pathname === '/contact' ? 80 :  
       pathname === '/subsidiaries' ? 80 : 
       pathname === '/products' ? 80 :
+      pathname === '/subsidiaries/gedu' ? 80 :
       undefined
   };
   const styleFooterAbout = {
