@@ -38,6 +38,7 @@ const Hero = ({ heading, title, para }) => {
     position: pathname !== '/' ? 'absolute' : undefined,
     left: pathname !== '/' ? '5%' : undefined,
     bottom: pathname !== '/' ? 30 : undefined,
+    textAlign: pathname === '/' ? 'center' : undefined,
   };
 
   const styleHero = {
