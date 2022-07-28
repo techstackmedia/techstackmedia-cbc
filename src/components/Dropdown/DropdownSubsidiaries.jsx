@@ -7,7 +7,7 @@ const Dropdown = () => {
     return (
       <li key={item}>
         <Link to={`/subsidiaries/${item}`}>
-          {item[0].toUpperCase()}
+          CBC {item[0].toUpperCase()}
           {item.slice(1).toLowerCase()}
         </Link>
       </li>
