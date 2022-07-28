@@ -6,7 +6,10 @@ const Dropdown = () => {
   const subsidiariesLink = subLinks.map((item) => {
     return (
       <li key={item}>
-        <Link to={`subsidiaries/${item}`}>CBC {item.toUpperCase()}</Link>
+        <Link to={`/subsidiaries/${item}`}>
+          {item[0].toUpperCase()}
+          {item.slice(1).toLowerCase()}
+        </Link>
       </li>
     );
   });

@@ -7,7 +7,7 @@ const Dropdown = () => {
     return (
       <li key={item}>
         <Link
-          to={`/${item.toLowerCase().replace(' - ', ' ').replaceAll(' ', '-')}`}
+          to={`/products/${item.toLowerCase().replace(' - ', ' ').replaceAll(' ', '-')}`}
         >
           {item}
         </Link>
