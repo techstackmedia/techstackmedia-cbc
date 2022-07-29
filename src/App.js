@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Shopping from './pages/Shopping/Shopping';
 import Gedu from './pages/Gedu';
 import NotFound from './pages/NotFound';
+import Career from './pages/Career';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/store" element={<Shopping />} />
         <Route path="/subsidiaries/gedu" element={<Gedu />} />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/careers" element={<Career />} />
       </Routes>
     </BrowserRouter>
   );

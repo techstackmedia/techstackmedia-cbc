@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import { MdOutlinePlayArrow } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import careerHeroImg from '../../images/hero.png';
-import careerHero from './Hero.module.css';
+import heroImg from '../../images/hero.png';
+import hero from './CareerHero.module.css';
 
 const CareerHero = () => {
   return (
-    <section className={careerHero.careerHero}>
-      <div className={careerHero.jumbotron}>
+    <section className={hero.hero}>
+      <div className={hero.jumbotron}>
         <div>
           <h1>Technology Solution Provider</h1>
           <p>
@@ -15,11 +15,11 @@ const CareerHero = () => {
             telecommunication, energy, power, security and surveillance
             solutions provider in Nigeria.
           </p>
-          <div className={careerHero.store}>
+          <div className={hero.store}>
             <div>
-              <Link to="https://www.youtube.com/watch?v=NfTUnsK_-2I">
+              <a href="https://www.youtube.com/watch?v=NfTUnsK_-2I" target="_blank" rel="noreferrer">
                 <MdOutlinePlayArrow /> Watch Video
-              </Link>
+              </a>
             </div>
             <div>
               <Link to="/about">
@@ -29,10 +29,10 @@ const CareerHero = () => {
             </div>
           </div>
         </div>
-        <div className={careerHero.careerHeroImg}>
+        <div className={hero.heroImg}>
           <img
-            src={careerHeroImg}
-            alt="careerHero section of cbc"
+            src={heroImg}
+            alt="hero section of cbc"
             width={300}
             height={300}
           />
