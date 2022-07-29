@@ -118,12 +118,12 @@ const Navbar = () => {
           <MdKeyboardArrowDown className={navbar.arrowDown} />{' '}
         </div>
       ) : (
-        <a href="https://fimihan.com/shop/">
+        <a href="https://fimihan.com/shop/" target="_blank" rel="noreferrer">
           <MdShoppingCart className={navbar.cart} />
         </a>
       );
 
-      let activeLink
+    let activeLink;
     if (index === 0) {
       activeLink = {
         color: pathname === `/subsidiaries` ? '#0073A6' : undefined,
