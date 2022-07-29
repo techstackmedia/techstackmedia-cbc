@@ -47,7 +47,10 @@ const Footer = () => {
     return (
       <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
         <Link
-          style={{ color: pathname === `/${footer.toLowerCase()}` ? '#0073A6' : undefined }}
+          style={{
+            color:
+              pathname === `/${footer.toLowerCase()}` ? '#0073A6' : undefined,
+          }}
           to={`/${footer
             .toLowerCase()
             .replace('privacy policy', 'privacy')
