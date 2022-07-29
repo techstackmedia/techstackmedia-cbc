@@ -58,8 +58,8 @@ const ProductsCareer = () => {
         </div>
       </div>
       <div className={product.productLink}>
-        <Link to="/product">
-          More Products <MdOutlineArrowRightAlt />
+        <Link to="">
+          Apply <MdOutlineArrowRightAlt />
         </Link>
       </div>
     </section>
