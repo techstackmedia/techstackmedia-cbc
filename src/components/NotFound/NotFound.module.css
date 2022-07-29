@@ -39,3 +39,15 @@
   position: relative;
   top: 104px;
 }
+
+@media (max-width: 1003px) and (min-width: 989px) {
+  .h3 {
+    top: 75px;
+  }
+}
+
+@media (max-width: 988px) {
+    .h3 {
+        top: 0;
+    }
+}
