@@ -8,7 +8,7 @@ const NotFound = () => {
   };
 
   return (
-    <section>
+    <section className={notfound.section}>
       <div className={notfound.notfound}>
         <div className={notfound.notify}>
           <h2>404</h2>
@@ -18,20 +18,12 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      <h1
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'flex-end',
-          position: 'relative',
-          top: '104px',
-        }}
-      >
-        Refer back to the home page {' '}
+      <h3 className={notfound.h3}>
+        Let's not jump into conclusion, but I think the URL is wrong
         <span role="img" aria-label="wrong page">
           🤔
         </span>
-      </h1>
+      </h3>
     </section>
   );
 };

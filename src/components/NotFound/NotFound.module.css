@@ -26,9 +26,16 @@
   box-shadow: -8px 6px 36px -12px rgba(84, 81, 81, 0.75);
 }
 
-
 .notify {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 104px;
 }
