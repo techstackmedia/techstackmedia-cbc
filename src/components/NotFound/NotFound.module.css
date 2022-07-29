@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 382px);
+  height: calc(100vh - 397px);
 }
 
 .text {
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 988px) {
-    .h3 {
-        top: 0;
-    }
+  .h3 {
+    top: 0;
+  }
 }

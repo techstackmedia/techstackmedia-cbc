@@ -19,7 +19,7 @@ const NotFound = () => {
         </div>
       </div>
       <h3 className={notfound.h3}>
-        Let's not jump into conclusion, but I think the URL is wrong
+        Let's not jump into conclusion, but I think the URL is misspelt or wrong
         <span role="img" aria-label="wrong page">
           🤔
         </span>
