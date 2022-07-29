@@ -10,14 +10,21 @@ const Footer = () => {
   const { pathname } = useLocation();
   const styleFooterHeight = {
     height:
-      pathname === '/about' ? 80 : 
-      pathname === '/leadership'? 80 : 
-      pathname === '/blog' ? 80 :
-      pathname === '/contact' ? 80 :  
-      pathname === '/subsidiaries' ? 80 : 
-      pathname === '/products' ? 80 :
-      pathname === '/subsidiaries/gedu' ? 80 :
-      undefined
+      pathname === '/about'
+        ? 80
+        : pathname === '/leadership'
+        ? 80
+        : pathname === '/blog'
+        ? 80
+        : pathname === '/contact'
+        ? 80
+        : pathname === '/subsidiaries'
+        ? 80
+        : pathname === '/products'
+        ? 80
+        : pathname === '/subsidiaries/gedu'
+        ? 80
+        : undefined,
   };
   const styleFooterAbout = {
     marginTop: pathname === '/' ? 0 : undefined,
@@ -40,6 +47,7 @@ const Footer = () => {
     return (
       <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
         <Link
+          style={{ color: pathname === `/${footer.toLowerCase()}` ? '#0073A6' : undefined }}
           to={`/${footer
             .toLowerCase()
             .replace('privacy policy', 'privacy')
@@ -77,7 +85,7 @@ const Footer = () => {
       <div className={footer.links}>{footerLinks}</div>
       <div className={footer.socialMedia}>{images}</div>
       <div className={footer.copyright}>
-        &copy; 2022 CBC emea. All Rights Reserved
+        &copy; {new Date().getFullYear()} CBC emea. All Rights Reserved
       </div>
     </footer>
   );

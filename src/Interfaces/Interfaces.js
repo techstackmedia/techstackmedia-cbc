@@ -115,10 +115,6 @@ const CardRecentUpdateInterface = [
     id: 4,
     text: 'CBC Towers welcomes PACE to its building. MD Pace, CFO Pace with MD CBC Properties.',
   },
-  // {
-  //   id: 5,
-  //   text: 'CBC Towers welcomes PACE to its building. MD Pace, CFO Pace with MD CBC Properties.',
-  // },
 ];
 const CoperateClientsInerface = Array.from({ length: 19 }, (_, i) => i + 1);
 const SocialMediaInterface = Array.from({ length: 4 }, (_, i) => i + 1);
