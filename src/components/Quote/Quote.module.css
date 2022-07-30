@@ -1,0 +1,48 @@
+.section {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+
+.quote h1 {
+    font-size: 40px;
+    width: 450px;
+    text-align: center;
+    color: rgba(0, 123, 255, 0.868);
+}
+.quote svg {
+    width: 100px;
+    height: 100px;
+    color: rgba(0, 123, 255, 0.426);
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.right {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 10px;
+}
+
+.section p {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    line-height: 1.9;
+    font-size: 18px;
+    font-weight: 500;
+}

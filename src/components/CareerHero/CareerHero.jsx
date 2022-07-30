@@ -16,7 +16,11 @@ const CareerHero = () => {
           </p>
           <div className={hero.store}>
             <div>
-              <a href="https://www.youtube.com/watch?v=NfTUnsK_-2I" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.youtube.com/watch?v=NfTUnsK_-2I"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <MdOutlinePlayArrow /> Watch Video
               </a>
             </div>

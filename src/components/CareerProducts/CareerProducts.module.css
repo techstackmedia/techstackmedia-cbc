@@ -1,12 +1,19 @@
 .product {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(44, 77, 167);
+}
+
+.productList {
   width: 85%;
   margin: auto;
+
 }
 
 .product h1 {
   text-align: center;
-  margin-top: 35px;
   font-size: 30px;
+  color: #fff;
 }
 
 .product h2 {
@@ -34,6 +41,15 @@
   border: 1px solid #fff;
   width: 350px;
   height: 300px;
+}
+
+.fact {
+  line-height: 1.9;
+  width: 45%;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .productAds svg {
@@ -86,7 +102,8 @@
 }
 
 .vacancies h1 {
-  margin-bottom: 20px;
+  margin: 40px 0 10px 0;
+  text-align: center;
 }
 
 .table::-webkit-scrollbar {
@@ -95,6 +112,7 @@
 
 .table {
   box-shadow: 0 1px 2px #ccc;
+  margin-bottom: 60px;
 }
 
 .table,
