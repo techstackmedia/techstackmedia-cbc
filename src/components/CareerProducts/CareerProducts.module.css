@@ -113,6 +113,7 @@
 .body {
   background-color: #fff;
   padding: 15px 0;
+  max-height: 500px;
 }
 
 .headRow,
