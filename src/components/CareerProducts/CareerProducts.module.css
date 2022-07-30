@@ -137,7 +137,8 @@
   color: #fff;
   font-size: 16px;
   width: 200px;
-  height: 30px;
+  height: 35px;
+  border-radius: 4px;
   margin-left: auto;
   cursor: pointer;
 }
