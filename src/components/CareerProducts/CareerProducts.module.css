@@ -141,3 +141,9 @@
     width: 940px;
   }
 }
+
+@media (max-width: 839px) {
+  .productAds {
+    justify-content: center;
+  }
+}

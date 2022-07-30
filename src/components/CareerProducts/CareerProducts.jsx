@@ -108,14 +108,7 @@ const ProductsCareer = () => {
         <div className={product.body}>
           <div className={product.bodyRow}>
             <div>Front end</div>
-            <div>Onsite</div>
-            <div>
-              <button>Apply</button>
-            </div>
-          </div>
-          <div className={product.bodyRow}>
-            <div>Backend end</div>
-            <div>Onsite</div>
+            <div>Remote</div>
             <div>
               <button>Apply</button>
             </div>
@@ -123,6 +116,13 @@ const ProductsCareer = () => {
           <div className={product.bodyRow}>
             <div>Backend end</div>
             <div>Remote</div>
+            <div>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div className={product.bodyRow}>
+            <div>Fullstack</div>
+            <div>Onsite</div>
             <div>
               <button>Apply</button>
             </div>
