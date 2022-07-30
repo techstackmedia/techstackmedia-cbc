@@ -36,12 +36,6 @@
   height: 300px;
 }
 
-@media (max-width: 956px) {
-  .productAds {
-    justify-content: center;
-  }
-}
-
 .productAds svg {
   width: 30px;
   height: 30px;
@@ -142,4 +136,10 @@
   height: 30px;
   margin-left: auto;
   cursor: pointer;
+}
+
+@media (max-width: 956px) {
+  .productAds {
+    justify-content: center;
+  }
 }
