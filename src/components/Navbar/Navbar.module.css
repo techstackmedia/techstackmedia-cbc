@@ -1,17 +1,14 @@
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
-  z-index: 10;
 }
 
 .navbar {
   height: 97px;
-  background-color: rgba(255, 255, 255, 0.477);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255);
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.477);
+  border-bottom: 1px solid rgb(237, 233, 233);
 }
 
 .menu {
@@ -219,8 +216,10 @@
   }
 }
 
-@media (max-height: 400px) {
+@media (max-width: 1070px) {
   .header {
-    background-color: red;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
   }
 }
