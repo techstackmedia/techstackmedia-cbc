@@ -118,6 +118,7 @@ const CardRecentUpdateInterface = [
 ];
 const CoperateClientsInerface = Array.from({ length: 19 }, (_, i) => i + 1);
 const SocialMediaInterface = Array.from({ length: 4 }, (_, i) => i + 1);
+//   // let subIndex = [...Array(4).keys()];
 const FooterLinkInterface = [
   'About',
   'Leadership',

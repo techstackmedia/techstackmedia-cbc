@@ -4,40 +4,13 @@ import { MdEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
 import { SocialMediaInterface as socialMedia } from '../../Interfaces/Interfaces';
 import { FooterLinkInterface as footerLink } from '../../Interfaces/Interfaces';
-import { subsidiariesLinkInterface as sub } from '../../Interfaces/Interfaces';
-import { FooterLinkInterface as foot } from '../../Interfaces/Interfaces';
 import footer from './Footer.module.css';
 
 const Footer = () => {
   const { pathname } = useLocation();
 
-  // let subIndex = [...Array(sub.length).keys()];
-  // let footIndex = [...Array(foot.length).keys()];
-  const footList = foot.map(
-    (item) => `/${item.toLowerCase().replaceAll(' ', '-')}`
-  );
-  const footItem = footList.map((item) => item);
-  console.log(footItem);
-  const subList = sub.map((item) => `/subsidiaries/${item}`);
-  const subItem = subList.map((item) => item);
-
   const styleFooterHeight = {
-    height:
-      pathname === footItem[0] ||
-      pathname === footItem[1] ||
-      pathname === footItem[2] ||
-      pathname === footItem[3] ||
-      pathname === footItem[4] ||
-      pathname === footItem[5]
-        ? 80
-        : pathname === subItem[0] ||
-          pathname === subItem[1] ||
-          pathname === subItem[2] ||
-          pathname === subItem[3] ||
-          pathname === subItem[4] ||
-          pathname === subItem[5]
-        ? 80
-        : undefined,
+    height: pathname !== '/' ? 80 : undefined,
   };
 
   const styleFooterAbout = {
