@@ -21,7 +21,7 @@ const CareerHero = () => {
               </a>
             </div>
             <div>
-              <Link to="/about">
+              <Link to="/apply">
                 Apply
                 <MdKeyboardArrowDown />
               </Link>

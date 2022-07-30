@@ -90,3 +90,25 @@
 .productLink a:hover {
   background-color: #0078d4;
 }
+
+.vacancies {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.item {
+  width: 300px;
+  text-align: center;
+}
+
+.offer {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}

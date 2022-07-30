@@ -94,6 +94,19 @@ const ProductsCareer = () => {
           Apply <MdOutlineArrowRightAlt />
         </Link>
       </div>
+
+      <h1>Available Vacancies</h1>
+      <div className={product.vacancies}>
+        <div className={product.item}>
+          <h2>Position</h2>
+        </div>
+        <div className={product.item}>
+          <h2>Onsite / Remote</h2>
+        </div>
+        <div className={product.item}>
+          <h2>Apply</h2>
+        </div>
+      </div>
     </section>
   );
 };
