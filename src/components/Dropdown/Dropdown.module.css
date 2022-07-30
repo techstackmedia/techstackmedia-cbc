@@ -70,8 +70,11 @@
   .tooltip ul {
     width: 93vw;
     position: relative;
-    top: 5px;
-    z-index: 10;
-    left: -40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: 90vw;
+    left: -5vw;
+    z-index: 10000;
   }
 }

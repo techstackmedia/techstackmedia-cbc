@@ -3,12 +3,15 @@
   width: 100%;
   z-index: 10;
 }
+
 .navbar {
   height: 97px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.477);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid rgb(237, 233, 233);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.477);
 }
 
 .menu {
@@ -213,5 +216,11 @@
       border-radius: 0;
       padding: auto;
     }
+  }
+}
+
+@media (max-height: 400px) {
+  .header {
+    background-color: red;
   }
 }
