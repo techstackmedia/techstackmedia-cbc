@@ -1,11 +1,13 @@
 import { CoperateClientsInerface as coperateClient } from '../../Interfaces/Interfaces';
 import coperate from './CoperateClients.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const CoperateClienet = () => {
   const images = coperateClient.map((img) => {
     return (
       <div className={coperate.imgs} key={img}>
-        <img
+        <LazyLoadImage
           src={require(`../../images/image${img}.svg`)}
           alt={`logo ${img.id}`}
           width={60}

@@ -5,6 +5,8 @@ import { MdLocalPhone } from 'react-icons/md';
 import { SocialMediaInterface as socialMedia } from '../../Interfaces/Interfaces';
 import { FooterLinkInterface as footerLink } from '../../Interfaces/Interfaces';
 import footer from './Footer.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -20,7 +22,7 @@ const Footer = () => {
     return (
       <div className={footer.media} key={media}>
         <Link to="">
-          <img
+          <LazyLoadImage
             src={require(`../../images/media${media}.svg`)}
             alt={`logo ${media}`}
             width={60}

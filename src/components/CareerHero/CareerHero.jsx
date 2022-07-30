@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MdOutlinePlayArrow, MdKeyboardArrowDown } from 'react-icons/md';
 import heroImg from '../../images/hero.png';
 import hero from './CareerHero.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const CareerHero = () => {
   return (
@@ -33,7 +34,7 @@ const CareerHero = () => {
           </div>
         </div>
         <div className={hero.heroImg}>
-          <img
+          <LazyLoadImage
             src={heroImg}
             alt="hero section of cbc"
             width={300}

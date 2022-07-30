@@ -12,6 +12,7 @@ import subsidiariesImage from '../../images/subsidiaries.jpeg';
 import blogImage from '../../images/blog.jpeg';
 import aboutImage from '../../images/about.jpeg';
 import storeImage from '../../images/store.jpeg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Hero = ({ heading, title, para }) => {
   const [isPlayed, setIsPlayed] = useState(true);
@@ -116,7 +117,7 @@ const Hero = ({ heading, title, para }) => {
           ></div>
         </div>
         <div className={hero.tower}>
-          <img
+          <LazyLoadImage
             src={cbcTower}
             width={960.38}
             height={604.85}

@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { AboutFocusInterface as aboutFocus } from '../../Interfaces/Interfaces';
 import RecentUpdates from '../RecentUpdates/RecentUpdates';
 import about from './About.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const About = () => {
   const aboutList = aboutFocus.map((aboutItem) => {
@@ -31,7 +33,7 @@ const About = () => {
         style={{ border: '1px solid #ccc', borderRadius: 8 }}
       >
         <div className={about.img} style={styleImg}>
-          <img
+          <LazyLoadImage
             src={require(`../../images/about${aboutItem.id}.png`)}
             alt="about"
             width={70}

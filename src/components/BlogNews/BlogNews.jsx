@@ -3,6 +3,7 @@ import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 import blognews from './BlogNews.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 let BlogPageSize = 6;
 let NewsPageSize = 6;
@@ -61,7 +62,7 @@ const BlogNews = () => {
     return (
       <div className={blognews.board} key={item.id}>
         <div className={blognews.img}>
-          <img
+          <LazyLoadImage
             src={require(`../../images/blogBlog${item.id}.jpg`)}
             alt=""
             width={250}
@@ -81,7 +82,7 @@ const BlogNews = () => {
     return (
       <div className={blognews.board} key={item.id}>
         <div className={blognews.img}>
-          <img
+          <LazyLoadImage
             src={require(`../../images/blogNews${item.id}.jpg`)}
             alt=""
             width={250}

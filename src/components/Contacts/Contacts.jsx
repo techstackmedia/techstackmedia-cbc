@@ -6,6 +6,8 @@ import linkedin from '../../images/media2.svg';
 import instagram from '../../images/media3.svg';
 import twitter from '../../images/media4.svg';
 import youtube from '../../images/media5.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const Contacts = () => {
   const id = useId();
@@ -76,19 +78,19 @@ const Contacts = () => {
           </div>
           <div className={contacts.socialMedia}>
             <div>
-              <img src={facebook} alt="facebook log" />
+              <LazyLoadImage src={facebook} alt="facebook log" />
             </div>
             <div>
-              <img src={linkedin} alt="linkedin logo" />
+              <LazyLoadImage src={linkedin} alt="linkedin logo" />
             </div>
             <div>
-              <img src={instagram} alt="instagram logo" />
+              <LazyLoadImage src={instagram} alt="instagram logo" />
             </div>
             <div>
-              <img src={twitter} alt="twitter logo" />
+              <LazyLoadImage src={twitter} alt="twitter logo" />
             </div>
             <div>
-              <img src={youtube} alt="youtube logo" />
+              <LazyLoadImage src={youtube} alt="youtube logo" />
             </div>
           </div>
         </div>
