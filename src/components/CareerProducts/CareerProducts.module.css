@@ -7,7 +7,6 @@
 .productList {
   width: 85%;
   margin: auto;
-
 }
 
 .product h1 {
@@ -145,6 +144,7 @@
 .bodyRow div {
   text-align: center;
   width: 300px;
+  font-weight: 500;
 }
 .headRow h2 {
   width: 30%;
@@ -159,6 +159,7 @@
   border-radius: 4px;
   height: 40px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 @media (max-width: 1111px) {
