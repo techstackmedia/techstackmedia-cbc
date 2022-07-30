@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 397px);
+  height: calc(100vh - 370px);
 }
 
 .text {
@@ -37,17 +37,4 @@
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  top: 104px;
-}
-
-@media (max-width: 1003px) and (min-width: 989px) {
-  .h3 {
-    top: 75px;
-  }
-}
-
-@media (max-width: 988px) {
-  .h3 {
-    top: 0;
-  }
 }

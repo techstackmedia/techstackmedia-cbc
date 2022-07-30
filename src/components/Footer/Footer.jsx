@@ -4,28 +4,32 @@ import { MdEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
 import { SocialMediaInterface as socialMedia } from '../../Interfaces/Interfaces';
 import { FooterLinkInterface as footerLink } from '../../Interfaces/Interfaces';
+import { subsidiariesLinkInterface as sub } from '../../Interfaces/Interfaces';
+import { FooterLinkInterface as foot } from '../../Interfaces/Interfaces';
 import footer from './Footer.module.css';
 
 const Footer = () => {
   const { pathname } = useLocation();
+
+  // let subIndex = [...Array(sub.length).keys()];
+  // let footIndex = [...Array(foot.length).keys()];
+  const footList = foot.map(
+    (item) => `/${item.toLowerCase().replaceAll(' ', '-')}`
+  );
+  const footItem = footList.map((item) => item);
+  console.log(footItem);
+  const subList = sub.map((item) => `/subsidiaries/${item}`);
+  const subItem = subList.map((item) => item);
+
   const styleFooterHeight = {
     height:
-      pathname === '/about'
+      pathname === `${footItem[0]}` || `${footItem[1]}` || `${footItem[2]}` || `${footItem[3]}` || `${footItem[4]}` || `${footItem[5]}`
         ? 80
-        : pathname === '/leadership'
-        ? 80
-        : pathname === '/blog'
-        ? 80
-        : pathname === '/contact'
-        ? 80
-        : pathname === '/subsidiaries'
-        ? 80
-        : pathname === '/products'
-        ? 80
-        : pathname === '/subsidiaries/gedu'
+        : pathname === `${subItem[0]}` || `${subItem[1]}` || `${subItem[2]}` || `${subItem[3]}` || `${subItem[4]}` || `${subItem[5]}`
         ? 80
         : undefined,
   };
+
   const styleFooterAbout = {
     marginTop: pathname === '/' ? 0 : undefined,
   };
@@ -45,16 +49,13 @@ const Footer = () => {
   });
   const footerLinks = footerLink.map((footer) => {
     return (
-      <div key={footer} style={{ position: 'relative', zIndex: 10 }}>
+      <div key={footer}>
         <Link
           style={{
             color:
               pathname === `/${footer.toLowerCase()}` ? '#0073A6' : undefined,
           }}
-          to={`/${footer
-            .toLowerCase()
-            .replace('privacy policy', 'privacy')
-            .replace(' and conditions', '')}`}
+          to={`/${footer.toLowerCase().replaceAll(' ', '-')}`}
         >
           {footer}
         </Link>
