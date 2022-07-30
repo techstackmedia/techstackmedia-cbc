@@ -197,3 +197,9 @@
     margin-bottom: 5px;
   }
 }
+
+@media (min-width: 1070px) {
+  .hero {
+    margin-top: 97px;
+  }
+}
