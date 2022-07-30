@@ -95,6 +95,7 @@ const ProductsCareer = () => {
         </Link>
       </div>
 
+      <div className={product.vacancies}>
       <h1>Available Vacancies</h1>
       <div className={product.table}>
         <div className={product.head}>
@@ -127,6 +128,7 @@ const ProductsCareer = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

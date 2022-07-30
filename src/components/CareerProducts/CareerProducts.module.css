@@ -85,6 +85,10 @@
   background-color: #0078d4;
 }
 
+.vacancies h1 {
+  margin-bottom: 20px;
+}
+
 .table::-webkit-scrollbar {
   display: none;
 }
@@ -128,6 +132,7 @@
   border: 1px solid #000;
   border-radius: 4px;
   height: 40px;
+  cursor: pointer;
 }
 
 @media (max-width: 1111px) {
