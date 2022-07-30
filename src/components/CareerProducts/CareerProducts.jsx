@@ -120,9 +120,15 @@ const ProductsCareer = () => {
           <div>Onsite</div>
         </div>
         <div className={product.items}>
-          <button>Apply</button>
-          <button>Appy</button>
-          <button>Apply</button>
+          <div>
+            <button>Apply</button>
+          </div>
+          <div>
+            <button>Apply</button>
+          </div>
+          <div>
+            <button>Apply</button>
+          </div>
         </div>
       </div>
     </section>
