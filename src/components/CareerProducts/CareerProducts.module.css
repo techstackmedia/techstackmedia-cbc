@@ -124,11 +124,13 @@
   height: 50px;
 }
 
-.headRow div,
 .bodyRow div {
   text-align: center;
-  flex: 1;
   width: 300px;
+}
+.headRow h2 {
+  width: 30%;
+  text-align: center;
 }
 
 .bodyRow button {
