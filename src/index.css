@@ -32,6 +32,13 @@ section {
   margin: auto;
 }
 
+button,
+input {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+}
+
 button:hover {
   animation: button 0.3s ease-out 1 alternate both;
 }
