@@ -14,8 +14,6 @@ import logo from '../../logo.svg';
 import DropdownProducts from '../Dropdown/DropdownProducts';
 import DropdownSubsidiaries from '../Dropdown/DropdownSubsidiaries';
 import { useState } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 
 const Navbar = () => {
   const [isOpen1, setIsOpen1] = useState(true);
@@ -158,7 +156,7 @@ const Navbar = () => {
       </div>
       <div className={navbar.logo1}>
         <Link to="/">
-          <LazyLoadImage width={100} height={50} src={logo} alt="cbc logo" />
+          <img width={100} height={50} src={logo} alt="cbc logo" />
         </Link>
       </div>
       <div className={navbar.navbar}>
@@ -167,7 +165,7 @@ const Navbar = () => {
             <div className={navbar.item}>
               <div className={navbar.logo}>
                 <Link to="/">
-                  <LazyLoadImage width={100} height={50} src={logo} alt="cbc logo" />
+                  <img width={100} height={50} src={logo} alt="cbc logo" />
                 </Link>
               </div>
               {nR}

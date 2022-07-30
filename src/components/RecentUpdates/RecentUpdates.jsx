@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { CardRecentUpdateInterface as cardRecent } from '../../Interfaces/Interfaces';
 import recentUpdates from './RecentUpdates.module.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const RecentUpdates = () => {
   const { pathname } = useLocation();
@@ -16,7 +15,7 @@ const RecentUpdates = () => {
     return (
       <div className={recentUpdates.cards} key={item.id}>
         <div>
-          <LazyLoadImage
+          <img
             src={require(`../../images/rectangle${item.id}.png`)}
             alt={`avatar ${item.id}`}
           />

@@ -2,14 +2,13 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 import { CardSubsidiariesProductsInterface as CardSubsidiariesProducts } from '../../Interfaces/Interfaces';
 import business from '../Business/Business.module.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SubsidiariesProducts = ({ linkText }) => {
   const cardList = CardSubsidiariesProducts.map((item) => {
     return (
       <div className={business.card} key={item.id}>
         <div className={business.img}>
-          <LazyLoadImage
+          <img
             src={require(`../../images/subsidiariesProducts${item.id}.jpg`)}
             alt={`${item.title} cbc avatar`}
           />

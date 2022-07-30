@@ -1,7 +1,6 @@
 import generalmanager from '../../images/generalmanager.png';
 import deputygeneralmanager from '../../images/deputygeneralmanager.png';
 import management from './Management.module.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Management = () => {
   return (
@@ -10,7 +9,7 @@ const Management = () => {
       <div className={management.management}>
         <div className={management.card}>
           <div>
-            <LazyLoadImage src={generalmanager} alt="" />
+            <img src={generalmanager} alt="" />
           </div>
           <div className={management.generalmanager}>
             <h3>OPEYEMI ADESINA</h3>
@@ -23,7 +22,7 @@ const Management = () => {
             <p>Deputy General Manager</p>
           </div>
           <div>
-            <LazyLoadImage src={deputygeneralmanager} alt="" />
+            <img src={deputygeneralmanager} alt="" />
           </div>
         </div>
       </div>

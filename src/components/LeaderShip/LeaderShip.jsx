@@ -2,7 +2,6 @@ import { useState } from 'react';
 import leadership from './LeaderShip.module.css';
 import { leadershipBDInterface as leadershipBD } from '../../Interfaces/Interfaces';
 import { leadershipSMInterface as leadershipSM } from '../../Interfaces/Interfaces';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const LeaderShip = () => {
   const [borderBD, setBorderBD] = useState('3px solid #0073a6');
@@ -47,7 +46,7 @@ const LeaderShip = () => {
     return (
       <div className={leadership.card} key={leadershipItem.id}>
         <div className={leadership.leadership}>
-          <LazyLoadImage
+          <img
             src={require(`../../images/leadershipBD${leadershipItem.id}.jpg`)}
             alt={`CBC ${leadershipItem.office}`}
             style={styles}
@@ -71,7 +70,7 @@ const LeaderShip = () => {
     return (
       <div className={leadership.card} key={leadershipItem.id}>
         <div className={leadership.leadership}>
-          <LazyLoadImage
+          <img
             src={require(`../../images/leadershipSM${leadershipItem.id}.jpg`)}
             alt={`CBC ${leadershipItem.office}`}
             style={styles}
