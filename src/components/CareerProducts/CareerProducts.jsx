@@ -96,38 +96,35 @@ const ProductsCareer = () => {
       </div>
 
       <h1>Available Vacancies</h1>
-      <div className={product.vacancies1}>
-        <div className={product.items}>
-          <h2>Position</h2>
-        </div>
-        <div className={product.items}>
-          <h2>Onsite / Remote</h2>
-        </div>
-        <div className={product.items}>
-          <h2>Apply</h2>
-        </div>
-      </div>
-
-      <div className={product.vacancies2}>
-        <div className={product.items}>
-          <div>Frontend</div>
-          <div>Backend</div>
-          <div>FullStack</div>
-        </div>
-        <div className={product.items}>
-          <div>Remote</div>
-          <div>Remote</div>
-          <div>Onsite</div>
-        </div>
-        <div className={product.items}>
-          <div>
-            <button>Apply</button>
+      <div className={product.table}>
+        <div className={product.head}>
+          <div className={product.headRow}>
+            <h2>Position</h2>
+            <h2>Onsite / Remote</h2>
+            <h2>Apply</h2>
           </div>
-          <div>
-            <button>Apply</button>
+        </div>
+        <div className={product.body}>
+          <div className={product.bodyRow}>
+            <div>Front end</div>
+            <div>Onsite</div>
+            <div>
+              <button>Apply</button>
+            </div>
           </div>
-          <div>
-            <button>Apply</button>
+          <div className={product.bodyRow}>
+            <div>Backend end</div>
+            <div>Onsite</div>
+            <div>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div className={product.bodyRow}>
+            <div>Backend end</div>
+            <div>Remote</div>
+            <div>
+              <button>Apply</button>
+            </div>
           </div>
         </div>
       </div>
