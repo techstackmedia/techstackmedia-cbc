@@ -23,9 +23,19 @@ const Footer = () => {
 
   const styleFooterHeight = {
     height:
-      pathname === `${footItem[0]}` || `${footItem[1]}` || `${footItem[2]}` || `${footItem[3]}` || `${footItem[4]}` || `${footItem[5]}`
+      pathname === footItem[0] ||
+      pathname === footItem[1] ||
+      pathname === footItem[2] ||
+      pathname === footItem[3] ||
+      pathname === footItem[4] ||
+      pathname === footItem[5]
         ? 80
-        : pathname === `${subItem[0]}` || `${subItem[1]}` || `${subItem[2]}` || `${subItem[3]}` || `${subItem[4]}` || `${subItem[5]}`
+        : pathname === subItem[0] ||
+          pathname === subItem[1] ||
+          pathname === subItem[2] ||
+          pathname === subItem[3] ||
+          pathname === subItem[4] ||
+          pathname === subItem[5]
         ? 80
         : undefined,
   };
