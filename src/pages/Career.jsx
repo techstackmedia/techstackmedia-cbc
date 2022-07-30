@@ -7,14 +7,14 @@ import { useEffect } from 'react';
 import CareerTable from '../components/CareerProducts/CareerTable';
 
 const Career = () => {
-    useEffect(() => {
-        document.title = 'CBC | Careers'
-    })
+  useEffect(() => {
+    document.title = 'CBC | Careers';
+  });
   return (
     <>
       <Navbar />
       <CareerHero />
-      <Quote />
+      <Quote quotes="Together we will solve some of the biggest challenges in the world." />
       <CareerProducts />
       <CareerTable />
       <Footer />
