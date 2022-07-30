@@ -78,6 +78,10 @@
   line-height: 2;
 }
 
+:where(.links div) {
+  padding: 5px;
+}
+
 :where(.links a) {
   text-decoration: none;
   color: #474747;
