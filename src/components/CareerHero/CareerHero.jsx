@@ -22,7 +22,7 @@ const CareerHero = () => {
             </div>
             <div>
               <Link to="/apply">
-                Apply
+                Join Us
                 <MdKeyboardArrowDown />
               </Link>
             </div>
