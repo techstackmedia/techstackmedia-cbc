@@ -91,24 +91,55 @@
   background-color: #0078d4;
 }
 
-.vacancies {
+.vacancies1 {
+  display: flex;
+  justify-content: center;
+  background-color: #0078d4;
+  color: #fff;
+  align-items: center;
+  height: 60px;
+  margin-top: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+}
+
+.vacancies2 {
   display: flex;
   justify-content: center;
   background-color: #fff;
   align-items: center;
-  height: 50px;
-  margin-top: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
 }
 
-.item {
+.vacancies1::-webkit-scrollbar,
+.vacancies2::-webkit-scrollbar {
+  display: none;
+}
+
+.items h2,
+.vacancies2 div {
   width: 300px;
-  text-align: center;
+  font-size: 20px;
+  padding: 5px;
 }
 
-.offer {
+.items {
   display: flex;
-  width: 300px;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+}
+
+.items button {
+  background-color: #000;
+  margin: 3px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  width: 200px;
+  height: 30px;
+  margin-left: auto;
+  cursor: pointer;
 }

@@ -96,15 +96,33 @@ const ProductsCareer = () => {
       </div>
 
       <h1>Available Vacancies</h1>
-      <div className={product.vacancies}>
-        <div className={product.item}>
+      <div className={product.vacancies1}>
+        <div className={product.items}>
           <h2>Position</h2>
         </div>
-        <div className={product.item}>
+        <div className={product.items}>
           <h2>Onsite / Remote</h2>
         </div>
-        <div className={product.item}>
+        <div className={product.items}>
           <h2>Apply</h2>
+        </div>
+      </div>
+
+      <div className={product.vacancies2}>
+        <div className={product.items}>
+          <div>Frontend</div>
+          <div>Backend</div>
+          <div>FullStack</div>
+        </div>
+        <div className={product.items}>
+          <div>Remote</div>
+          <div>Remote</div>
+          <div>Onsite</div>
+        </div>
+        <div className={product.items}>
+          <button>Apply</button>
+          <button>Appy</button>
+          <button>Apply</button>
         </div>
       </div>
     </section>
