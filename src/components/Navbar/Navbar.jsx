@@ -147,10 +147,12 @@ const Navbar = () => {
     );
   });
 
+  const icon = pathname !== '/careers' ? <MdMenu color="fff" /> : <MdMenu />;
+
   return (
     <>
       <div className={navbar.menu} onClick={handleMenuClick}>
-        {isMenuOpen ? <MdMenu color="#fff" /> : <MdClose />}
+        {isMenuOpen ? icon : <MdClose />}
       </div>
       <div className={navbar.logo1}>
         <Link to="/">

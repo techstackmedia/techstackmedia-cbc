@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MdOutlinePlayArrow } from 'react-icons/md';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { MdOutlinePlayArrow, MdKeyboardArrowDown } from 'react-icons/md';
 import heroImg from '../../images/hero.png';
 import hero from './CareerHero.module.css';
 
@@ -8,7 +7,7 @@ const CareerHero = () => {
   return (
     <section className={hero.hero}>
       <div className={hero.jumbotron}>
-        <div>
+        <div className={hero.text}>
           <h1>Technology Solution Provider</h1>
           <p>
             CBC EMEA Group is the largest Information technology,
@@ -23,7 +22,7 @@ const CareerHero = () => {
             </div>
             <div>
               <Link to="/about">
-                Learn More
+                Apply
                 <MdKeyboardArrowDown />
               </Link>
             </div>

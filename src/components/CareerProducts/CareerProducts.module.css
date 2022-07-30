@@ -3,6 +3,18 @@
   margin: auto;
 }
 
+.product h1 {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 30px;
+}
+
+.product h2 {
+  max-width: 90%;
+  margin: auto;
+  font-size: 20px;
+}
+
 .productAds {
   display: flex;
   justify-content: space-between;
@@ -21,7 +33,7 @@
   border-radius: 8px;
   border: 1px solid #fff;
   width: 350px;
-  height: 400px;
+  height: 300px;
 }
 
 @media (max-width: 956px) {
