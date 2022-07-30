@@ -151,29 +151,31 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={navbar.menu} onClick={handleMenuClick}>
-        {isMenuOpen ? icon : <MdClose />}
-      </div>
-      <div className={navbar.logo1}>
-        <Link to="/">
-          <img width={100} height={50} src={logo} alt="cbc logo" />
-        </Link>
-      </div>
-      <div className={navbar.navbar}>
-        <nav style={styleMenu}>
-          <ul>
-            <div className={navbar.item}>
-              <div className={navbar.logo}>
-                <Link to="/">
-                  <img width={100} height={50} src={logo} alt="cbc logo" />
-                </Link>
+      <div className={navbar.header}>
+        <div className={navbar.menu} onClick={handleMenuClick}>
+          {isMenuOpen ? icon : <MdClose />}
+        </div>
+        <div className={navbar.logo1}>
+          <Link to="/">
+            <img width={100} height={50} src={logo} alt="cbc logo" />
+          </Link>
+        </div>
+        <div className={navbar.navbar}>
+          <nav style={styleMenu}>
+            <ul>
+              <div className={navbar.item}>
+                <div className={navbar.logo}>
+                  <Link to="/">
+                    <img width={100} height={50} src={logo} alt="cbc logo" />
+                  </Link>
+                </div>
+                {nR}
               </div>
-              {nR}
-            </div>
-            <div>{nL}</div>
-          </ul>
-          <Outlet />
-        </nav>
+              <div>{nL}</div>
+            </ul>
+            <Outlet />
+          </nav>
+        </div>
       </div>
     </>
   );
