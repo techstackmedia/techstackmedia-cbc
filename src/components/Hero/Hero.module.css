@@ -217,6 +217,25 @@
   }
 }
 
+@media (max-width: 379px) {
+  .cbc {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 5%;
+  }
+  .hero h3 {
+    margin-left: -28%;
+  }
+
+  .hero p {
+    text-align: left !important;
+  }
+
+  .buttons button:nth-child(1) {
+    margin-bottom: -6px;
+  }
+}
+
 @media (min-width: 590px) {
   .subsidiaries {
     margin-top: 5px;
