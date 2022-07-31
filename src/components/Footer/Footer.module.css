@@ -107,11 +107,11 @@
 }
 
 
-@media (min-width: 1151px) {
+/* @media (min-width: 1151px) {
   .foot {
     margin-top: -50px !important;
   }
-}
+} */
 
 @media (max-width: 412px) {
   .foot {
