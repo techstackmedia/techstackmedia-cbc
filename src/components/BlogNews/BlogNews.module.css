@@ -87,6 +87,7 @@
 
   .board {
     width: 47%;
+    margin-bottom: -50px;
   }
 
   .para {
@@ -102,6 +103,7 @@
   .board {
     width: 80%;
     margin: auto;
+    margin-bottom: -200px;
   }
 }
 

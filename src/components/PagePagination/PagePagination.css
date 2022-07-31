@@ -59,3 +59,23 @@
   background-color: transparent;
   cursor: default;
 }
+
+@media (max-width: 1150px) {
+  .pagination-container {
+    position: relative;
+    top: 185px;
+  }
+}
+
+@media (min-width: 1151px) {
+  .pagination-container {
+    position: relative;
+    top: -60px !important;
+  }
+}
+
+@media (max-width: 412px) {
+  .pagination-container {
+    top: -40px !important;
+  }
+}

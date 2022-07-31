@@ -105,3 +105,16 @@
     height: 150px !important;
   }
 }
+
+
+@media (min-width: 1151px) {
+  .foot {
+    margin-top: -50px !important;
+  }
+}
+
+@media (max-width: 412px) {
+  .foot {
+    margin-top: -20px !important;
+  }
+}

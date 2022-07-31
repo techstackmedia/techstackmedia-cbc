@@ -14,7 +14,8 @@ const Footer = () => {
   };
 
   const styleFooterAbout = {
-    marginTop: pathname === '/' ? 0 : undefined
+    marginTop: pathname === '/' ? 0  :
+               pathname === '/blog' ? 200 : undefined
   };
   const images = socialMedia.map((media) => {
     return (
