@@ -40,6 +40,15 @@
   right: 80px;
 }
 
+.section p {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    line-height: 1.9;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
 @media (max-width: 1122px) {
   .left {
     left: 0;
@@ -100,13 +109,4 @@
   .right {
     bottom: 40px;
   }
-}
-
-.section p {
-  text-align: center;
-  margin: auto;
-  width: 40%;
-  line-height: 1.9;
-  font-size: 18px;
-  font-weight: 500;
 }
