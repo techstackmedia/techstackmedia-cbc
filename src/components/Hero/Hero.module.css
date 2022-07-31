@@ -203,3 +203,9 @@
     margin-top: 97px;
   }
 }
+
+@media (max-width: 435px) {
+  .hero {
+    overflow-x: hidden;
+  }
+}
