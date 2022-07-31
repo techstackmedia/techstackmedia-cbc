@@ -3,7 +3,7 @@ import Pagination from '../PagePagination/PagePagination';
 import { blogBlogInterface as blogBlog } from '../../Interfaces/Interfaces';
 import { blogNewsInterface as blogNews } from '../../Interfaces/Interfaces';
 import blognews from './BlogNews.module.css';
-import Search from '../../Search/Search';
+import Search from '../Search/Search';
 
 let BlogPageSize = 6;
 let NewsPageSize = 6;
