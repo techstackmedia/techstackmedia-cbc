@@ -119,7 +119,6 @@
   }
 }
 
-
 @media (max-width: 920px) {
   .ul {
     margin-bottom: -120px;
@@ -147,5 +146,12 @@
 
   .board {
     margin: 40px auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .section1,
+  .section2 {
+    margin-bottom: -250px;
   }
 }
