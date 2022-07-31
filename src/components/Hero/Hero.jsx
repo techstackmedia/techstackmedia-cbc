@@ -37,10 +37,6 @@ const Hero = ({ heading, title, para }) => {
     navigate('/subsidiaries');
   };
 
-  const styleCBC = {
-    marginLeft: pathname === '/' ? '5%' : undefined,
-  };
-
   const styleP = {
     marginTop: pathname !== '/' ? 200 : undefined,
   };
@@ -81,7 +77,7 @@ const Hero = ({ heading, title, para }) => {
           marginTop: pathname !== '/' ? -207 : undefined,
         }}
       >
-        <div className={hero.cbc} style={styleCBC}>
+        <div className={hero.cbc}>
           <h1>{heading}</h1>
           <h3 style={styleH3}>{title}</h3>
           <p style={styleP}>{para}</p>
