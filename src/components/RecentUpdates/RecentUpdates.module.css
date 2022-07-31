@@ -7,12 +7,19 @@
 
 .text {
   margin-top: 20px;
+  margin-bottom: -50px;
   color: #474747;
   font-size: 24px;
   font-weight: bold;
 }
 .cards {
   width: 300px;
+  margin-top: 50px;
+}
+
+.cards p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .cards img {
@@ -28,5 +35,15 @@
 @media (max-width: 480px) {
   .cards {
     width: auto;
+  }
+}
+
+@media (max-width: 681px)  {
+  .recentUpdates {
+    justify-content: center;
+  }
+
+  .cards {
+    width: 100%;
   }
 }
