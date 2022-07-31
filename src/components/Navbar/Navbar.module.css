@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: relative;
   z-index: 10;
   width: 100%;
   top: 0;
@@ -218,7 +218,7 @@
   }
 }
 
-@media (max-width: 1070px) {
+@media (min-width: 1070px) {
   .header {
     position: fixed;
     z-index: 10;
