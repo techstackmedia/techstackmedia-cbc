@@ -50,7 +50,7 @@
   overflow-y: auto;
   position: relative;
   top: -5px;
-  height: 300.75px;
+  max-height: 300px;
 }
 
 .para::-webkit-scrollbar {
@@ -65,4 +65,36 @@
 .para h3,
 .para p {
   padding: 15px;
+}
+
+@media (max-width: 1150px) {
+  /* .board {
+    position: relative;
+    top: -400px;
+  } */
+
+  .ul {
+    margin-bottom: -100px;
+  }
+  .img {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .img img {
+    width: 100vw !important;
+    height: 100vh;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .board {
+    width: 47%;
+  }
+}
+
+@media (max-width: 752px) {
+  .board {
+    width: 80%;
+    margin: auto;
+  }
 }

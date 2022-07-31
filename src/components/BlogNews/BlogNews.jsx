@@ -58,6 +58,13 @@ const BlogNews = () => {
   };
 
   const leaderBDList = currentBlogTableData.map((item) => {
+    const reduceText1 = item.para1.split(' ');
+    reduceText1.splice(18, reduceText1.length - 18, '...');
+    const para1 = reduceText1.join(' ').replace(' ...', '...');
+
+    const reduceText2 = item.para2.split(' ');
+    reduceText2.splice(18, reduceText2.length - 18, '...');
+    const para2 = reduceText2.join(' ').replace(' ...', '...');
     return (
       <div className={blognews.board} key={item.id}>
         <div className={blognews.img}>
@@ -70,14 +77,22 @@ const BlogNews = () => {
         </div>
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
-          <p>{item.para1}</p>
-          <p>{item.para2.replace('.', '')}...</p>
+          <p>{para1}</p>
+          <p>{para2}</p>
         </div>
       </div>
     );
   });
 
   const leaderSMList = currentNewsTableData.map((item) => {
+    const reduceText1 = item.para1.split(' ');
+    reduceText1.splice(18, reduceText1.length - 18, '...');
+    const para1 = reduceText1.join(' ').replace(' ...', '...');
+
+    const reduceText2 = item.para2.split(' ');
+    reduceText2.splice(18, reduceText2.length - 18, '...');
+    const para2 = reduceText2.join(' ').replace(' ...', '...');
+
     return (
       <div className={blognews.board} key={item.id}>
         <div className={blognews.img}>
@@ -88,10 +103,11 @@ const BlogNews = () => {
             height={250}
           />
         </div>
+
         <div className={blognews.para}>
           <h3>{item.heading}</h3>
-          <p>{item.para1}</p>
-          <p>{item.para2.replace('.', '')}..</p>
+          <p>{para1}</p>
+          <p>{para2}</p>
         </div>
       </div>
     );
