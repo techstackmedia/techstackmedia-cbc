@@ -136,3 +136,21 @@
     width: 100vw;
   }
 }
+
+@media (max-width: 383px) {
+  .enquiries p {
+    width: 300px;
+  }
+}
+
+@media (max-width: 332px) {
+  .enquiries p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 276px) {
+  .enquiries p {
+    display: none;
+  }
+}
