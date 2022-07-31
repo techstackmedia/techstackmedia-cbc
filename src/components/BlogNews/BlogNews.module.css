@@ -117,13 +117,6 @@
   }
 }
 
-.board {
-  margin: 40px auto;
-}
-
-.para {
-  border-radius: 8px;
-}
 
 @media (max-width: 920px) {
   .ul {
@@ -142,7 +135,15 @@
     display: none;
   }
 
+  .para {
+    border-radius: 8px;
+  }
+
   .ul {
     margin-bottom: 0;
+  }
+
+  .board {
+    margin: 40px auto;
   }
 }
