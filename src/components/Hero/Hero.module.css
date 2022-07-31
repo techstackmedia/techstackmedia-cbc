@@ -191,6 +191,33 @@
   }
 }
 
+@media (max-width: 400px) {
+  .cbc h1,
+  .cbc h3 {
+    font-size: 30px;
+  }
+
+  .cbc p {
+    font-size: 20px;
+  }
+
+  .subsidiaries {
+    width: 200px !important;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 397px) {
+  .cbc h1,
+  .cbc h3 {
+    font-size: 26px;
+  }
+
+  .cbc p {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 590px) {
   .subsidiaries {
     margin-top: 5px;
