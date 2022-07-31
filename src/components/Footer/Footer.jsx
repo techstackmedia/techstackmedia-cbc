@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   const styleFooterAbout = {
-    marginTop: pathname === '/' ? 0 : undefined,
+    marginTop: pathname === '/' ? 0 : undefined
   };
   const images = socialMedia.map((media) => {
     return (
