@@ -80,7 +80,7 @@
 
   .img img {
     width: 100vw !important;
-    height: 100vh;
+    height: 130vh;
     border-radius: 8px 8px 0 0;
   }
 
@@ -113,5 +113,23 @@
 @media (max-width: 680px) {
   .ul {
     margin-bottom: -150px;
+  }
+}
+
+@media (max-width: 280px) {
+  .img {
+    display: none;
+  }
+
+  .ul {
+    margin-bottom: 0;
+  }
+
+  .board {
+    margin: 40px auto;
+  }
+
+  .para {
+    border-radius: 8px;
   }
 }
