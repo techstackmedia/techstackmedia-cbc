@@ -38,8 +38,8 @@
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid #fff;
-  width: 350px;
   height: 300px;
+  width: 350px;
 }
 
 .ads svg {
@@ -48,7 +48,7 @@
 
 .fact {
   line-height: 1.9;
-  width: 45%;
+  width: 50%;
   font-size: 18px;
   font-weight: 500;
   margin: 30px auto;
@@ -174,5 +174,35 @@
 @media (max-width: 839px) {
   .productAds {
     justify-content: center;
+  }
+}
+
+@media (max-width: 436px) {
+  .productItems {
+    width: 300px;
+  }
+}
+
+@media (max-width: 359px) {
+  .productItems {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .fact {
+    width: 60%;
+  }
+}
+
+@media (max-width: 615px) {
+  .fact {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fact {
+    width: 100%;
   }
 }
