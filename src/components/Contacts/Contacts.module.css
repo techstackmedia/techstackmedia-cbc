@@ -150,7 +150,13 @@
 }
 
 @media (max-width: 276px) {
-  .enquiries p {
+  .contact {
+    overflow-x: auto;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+  }
+
+  .contact::-webkit-scrollbar {
     display: none;
   }
 }
