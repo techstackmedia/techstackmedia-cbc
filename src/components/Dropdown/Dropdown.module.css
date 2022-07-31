@@ -72,9 +72,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
     width: 90vw;
-    left: -5vw;
     z-index: 10000;
+    left: -58px;
   }
 }
