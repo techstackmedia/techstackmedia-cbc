@@ -134,6 +134,13 @@
   .hero {
     height: 100vh;
   }
+  .text p {
+    font-size: 16px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1070px) {
