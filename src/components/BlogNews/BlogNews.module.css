@@ -155,3 +155,10 @@
     margin-bottom: -250px;
   }
 }
+
+@media (min-width: 753px) and (max-width: 1150px) {
+  .section1,
+  .section2 {
+    margin-bottom:  -130px;
+  }
+}

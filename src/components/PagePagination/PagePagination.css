@@ -79,3 +79,9 @@
     top: -40px !important;
   }
 }
+
+@media (min-width: 753px) and (max-width: 1150px) {
+  .pagination-container {
+    top:  50px;
+  }
+}
