@@ -1,6 +1,8 @@
 .ul {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 9;
 }
 
 .ul li {
@@ -69,7 +71,7 @@
 
 @media (max-width: 1150px) {
   .ul {
-    margin-bottom: -100px;
+    margin-bottom: -30px;
   }
   .img {
     height: 450px;
@@ -93,8 +95,23 @@
 }
 
 @media (max-width: 752px) {
+  .ul {
+    margin-bottom: -100px;
+  }
   .board {
     width: 80%;
     margin: auto;
+  }
+}
+
+@media (max-width: 733px) {
+  .img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 680px) {
+  .ul {
+    margin-bottom: -150px;
   }
 }
