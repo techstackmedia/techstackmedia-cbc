@@ -12,6 +12,7 @@ import subsidiariesImage from '../../images/subsidiaries.jpeg';
 import blogImage from '../../images/blog.jpeg';
 import aboutImage from '../../images/about.jpeg';
 import storeImage from '../../images/store.jpeg';
+// import { subsidiariesInterface as sub, productsLinkInterface as pro } from '../../Interfaces/Interfaces';
 const Hero = ({ heading, title, para }) => {
   const [isPlayed, setIsPlayed] = useState(true);
   const handleVideoClick = () => {

@@ -126,12 +126,16 @@ const Navbar = () => {
     let activeLink;
     if (index === 0) {
       activeLink = {
-        color: pathname === `/subsidiaries` ? '#0073A6' : undefined,
+        color: pathname === `/${navRight[0]}` ? '#0073A6' : undefined,
       };
     } else if (index === 1) {
       activeLink = {
-        color: pathname === `/products` ? '#0073A6' : undefined,
-      };
+        color: pathname === `/${navRight[1]}` ? '#0073A6' : undefined,
+      }; 
+    } else {
+      activeLink = {
+        color: pathname === `/${navRight[2]}` ? 'yellow': undefined
+      }
     }
 
     return (

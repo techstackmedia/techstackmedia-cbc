@@ -254,3 +254,8 @@
     overflow-x: hidden;
   }
 }
+
+.black {
+  background-color: #000;
+  border-radius: 8px;
+}
