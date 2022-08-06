@@ -131,12 +131,32 @@ const Navbar = () => {
     } else if (index === 1) {
       activeLink = {
         color: pathname === `/${navRight[1]}` ? '#0073A6' : undefined,
-      }; 
+      };
     } else {
       activeLink = {
-        color: pathname === `/${navRight[2]}` ? 'yellow': undefined
-      }
+        color:
+          pathname === `/${navRight[navRight.length - 1]}`
+            ? 'yellow'
+            : undefined,
+      };
     }
+
+    // var activeLink;
+
+    // for (let i = 0; i < navRight.length; i++) {
+    //   const element = navRight[i];
+    //   const lastElement = navRight[navRight.length - 1]
+    //   if (i < navRight.length) {
+    //     activeLink = {
+    //       color: pathname === element ? '#0073A6':undefined
+    //     }
+    //   } else {
+    //     activeLink = {
+    //       color: pathname === lastElement ? 'yellow':undefined
+    //     }
+    //   }
+
+    // }
 
     return (
       <div key={item} className={navbar.relaive}>

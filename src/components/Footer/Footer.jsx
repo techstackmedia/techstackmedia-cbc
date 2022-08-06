@@ -1,9 +1,9 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { MdLocationPin } from 'react-icons/md';
-import { MdEmail } from 'react-icons/md';
-import { MdLocalPhone } from 'react-icons/md';
-import { SocialMediaInterface as socialMedia } from '../../Interfaces/Interfaces';
-import { FooterLinkInterface as footerLink } from '../../Interfaces/Interfaces';
+import { MdEmail, MdLocalPhone, MdLocationPin } from 'react-icons/md';
+import {
+  SocialMediaInterface as socialMedia,
+  FooterLinkInterface as footerLink,
+} from '../../Interfaces/Interfaces';
 import footer from './Footer.module.css';
 
 const Footer = () => {
@@ -14,8 +14,7 @@ const Footer = () => {
   };
 
   const styleFooterAbout = {
-    marginTop: pathname === '/' ? 0  :
-               pathname === '/blog' ? 200 : undefined
+    marginTop: pathname === '/' ? 0 : pathname === '/blog' ? 200 : undefined,
   };
   const images = socialMedia.map((media) => {
     return (
@@ -32,14 +31,14 @@ const Footer = () => {
     );
   });
   const footerLinks = footerLink.map((footer) => {
+    const footerItem = `/${footer.toLowerCase().replaceAll(' ', '-')}`;
     return (
       <div key={footer}>
         <Link
           style={{
-            color:
-              pathname === `/${footer.toLowerCase()}` ? '#0073A6' : undefined,
+            color: pathname === footerItem ? '#0073A6' : undefined,
           }}
-          to={`/${footer.toLowerCase().replaceAll(' ', '-')}`}
+          to={footerItem}
         >
           {footer}
         </Link>

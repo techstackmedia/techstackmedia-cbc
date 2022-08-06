@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <Hero title="Contact us" />
+      <Hero title="Contact Us" />
       <Contacts />
       <Footer />
     </>

@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 // import Carousel from '../../components/Carousel/Carousel';
 // import ShoppingCards from '../../components/ShoppingCards/ShoppingCards';
+import ShopHero from '../../components/ShopHero/ShopHero';
 const About = () => {
   useEffect(() => {
     document.title = 'Store | CBC';
@@ -13,6 +14,7 @@ const About = () => {
       <header>
         <Navbar />
       </header>
+      <ShopHero />
       {/* <Carousel /> */}
       {/* <ShoppingCards /> */}
       <Footer />

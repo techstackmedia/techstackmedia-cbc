@@ -5,7 +5,8 @@
 }
 
 .section h2 {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  color: #474747;
 }
 
 .card {
@@ -28,8 +29,11 @@
   font-size: 13px;
 }
 
-.deputygeneralmanager,
-.generalmanager {
+.order {
+  order: 1;
+}
+
+.manager {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -7,13 +7,14 @@ import RecentUpdates from '../../components/RecentUpdates/RecentUpdates';
 import CoperateClienet from '../../components/CoperateClients/CoperateClients';
 import Email from '../../components/Email/Email';
 import Footer from '../../components/Footer/Footer';
+import './Hero.css';
 
 const Home = () => {
   useEffect(() => {
     document.title = 'Home | CBC';
   });
   return (
-    <>
+    <div className="Hero">
       <header>
         <Navbar />
         <Hero
@@ -23,14 +24,16 @@ const Home = () => {
         />
       </header>
       <section>
-        <Business />
+        <div>
+          <Business />
+        </div>
         <RecentUpdates />
-        <School linkText="Explore"/>
+        <School linkText="Explore" />
       </section>
       <CoperateClienet />
       <Email />
       <Footer />
-    </>
+    </div>
   );
 };
 

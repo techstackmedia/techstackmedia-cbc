@@ -15,7 +15,7 @@ const SubsidiariesProducts = ({ linkText }) => {
         </div>
         <div className={business.text}>
           <h4>{item.title}</h4>
-          <p style={{ height: '60%', overflowY: 'auto' }}>{item.text}</p>
+          <p>{item.text}</p>
           <div>
             <Link to="/">
               {linkText} <IoIosArrowDropright />

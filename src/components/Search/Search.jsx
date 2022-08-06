@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <section>
       <div className={search.section}>
-        <label for='search' className={search.seachIcon}>
+        <label htmlFor='search' className={search.seachIcon}>
           <MdSearch />
         </label>
         <div className={search.search}>

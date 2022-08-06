@@ -93,7 +93,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div style={{marginBottom: 50}}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.592075515401!2d3.4691603148222177!3d6.446388325843297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf44e3436a36f%3A0x5fcd2ccadf869fd3!2sCBC%20emea%20Group!5e0!3m2!1sen!2sng!4v1658825788816!5m2!1sen!2sng"
           width="100%"

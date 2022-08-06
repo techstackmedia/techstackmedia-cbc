@@ -256,6 +256,11 @@
 }
 
 .black {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.382);
   border-radius: 8px;
+  padding: 15px;
+}
+
+.transparent {
+  background-color: transparent;
 }

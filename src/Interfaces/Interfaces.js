@@ -125,7 +125,7 @@ const FooterLinkInterface = [
   'Subsidiaries',
   'Careers',
   'Privacy Policy',
-  'Terms and Conditions',
+  /*'Terms and Conditions',*/
 ];
 const subsidiariesLinkInterface = [
   'energy',
@@ -224,7 +224,7 @@ const blogNewsInterface = [
 
   {
     id: 2,
-    heading: 'Mentorship',
+    heading: 'Title of Blog',
     para1:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus nemo, quaerat incidunt, porro sed consequuntur vero veritatis similique ullam earum inventore temporibus eum fugiat quam ipsum magni vel vitae nisi?',
     para2:
@@ -487,6 +487,21 @@ const subsidiariesInterface = [
   },
 ];
 
+const managementGeduInterface = [
+  {
+    id: 1,
+    image: 'images/generalmanager.png',
+    position: 'Managing Director',
+    name: 'opeyemi adesina',
+  },
+  {
+    id: 2,
+    image: 'images/deputygeneralmanager.png',
+    position: 'Deputy General Manager',
+    name: 'FUNMIKE ALAWODE',
+  },
+];
+
 export {
   NavbarLeftInterface,
   subsidiariesLinkInterface,
@@ -506,4 +521,5 @@ export {
   subsidiariesInterface,
   CardSubsidiariesProductsInterface,
   CardPartnerProductsInterface,
+  managementGeduInterface,
 };

@@ -24,6 +24,14 @@ const About = () => {
       borderBottomRightRadius: aboutItem.id % 2 === 0 ? 0 : undefined,
     };
 
+    const para1Array = aboutItem.para1.split(' ');
+    para1Array.splice(18, para1Array.length - 18, '...');
+    const para1 = para1Array.join(' ');
+
+    const para2Array = aboutItem.para2.split(' ');
+    para2Array.splice(18, para2Array.length - 18, '...');
+    const para2 = para2Array.join(' ');
+
     return (
       <div
         className={about.about}
@@ -42,8 +50,8 @@ const About = () => {
         <div className={about.focus} style={styleBlock}>
           <h2>{aboutItem.subHeading}</h2>
           <div>
-            <p>{aboutItem.para1}</p>
-            <p>{aboutItem.para2}</p>
+            <p>{para1.replace(' ...', '...').replace('....', '...')}</p>
+            <p>{para2.replace(' ...', '...').replace('....', '...')}</p>
           </div>
           <div>
             <div className={about.link}>

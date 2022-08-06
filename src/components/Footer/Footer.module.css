@@ -1,5 +1,5 @@
 :where(.foot) {
-  background: rgba(144, 221, 255, 0.2);
+  background: rgba(143, 221, 255, 0.2);
   margin-top: 30px;
 }
 
@@ -100,15 +100,55 @@
   }
 }
 
+@media (max-width: 557px) {
+  :where(.item:first-child svg) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 438px) {
+  :where(.item:first-child svg) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
 @media (max-width: 428px) {
   .footer {
     height: 150px !important;
   }
 }
 
-
 @media (max-width: 412px) {
   .foot {
     margin-top: -20px !important;
+  }
+}
+
+@media (max-width: 388px) {
+  :where(.item:first-child svg) {
+    width: 33px;
+    height: 33px;
+  }
+  footer {
+    height: max-content;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  :where(.item:first-child svg) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  :where(.item:first-child svg) {
+    width: 60px;
+    height: 60px;
   }
 }

@@ -1,31 +1,30 @@
-import generalmanager from '../../images/generalmanager.png';
-import deputygeneralmanager from '../../images/deputygeneralmanager.png';
 import management from './Management.module.css';
+import { managementGeduInterface as gedu } from '../../Interfaces/Interfaces';
 
 const Management = () => {
+  const geduList = gedu.map((geduItem) => {
+    // const geduStyles = {
+    //   order: geduItem.id % 2 === 0 ? 1 : undefined,
+    // };
+    return (
+      <div className={management.card} key={geduItem.id}>
+        <div className={geduItem.id % 2 === 0 && management.order}>
+          <img
+            src={require(`../../${geduItem.image}`)}
+            alt={`${geduItem.position} avatar`}
+          />
+        </div>
+        <div className={management.manager}>
+          <h3>{geduItem.name.toUpperCase()}</h3>
+          <p>{geduItem.position}</p>
+        </div>
+      </div>
+    );
+  });
   return (
     <section className={management.section}>
       <h2>Management</h2>
-      <div className={management.management}>
-        <div className={management.card}>
-          <div>
-            <img src={generalmanager} alt="" />
-          </div>
-          <div className={management.generalmanager}>
-            <h3>OPEYEMI ADESINA</h3>
-            <p>Managing Director</p>
-          </div>
-        </div>
-        <div className={management.card}>
-          <div className={management.deputygeneralmanager}>
-            <h3>FUNMIKE ALAWODE</h3>
-            <p>Deputy General Manager</p>
-          </div>
-          <div>
-            <img src={deputygeneralmanager} alt="" />
-          </div>
-        </div>
-      </div>
+      <div className={management.management}>{geduList}</div>
     </section>
   );
 };

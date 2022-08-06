@@ -4,7 +4,6 @@
 }
 :where(.coperate) {
   display: flex;
-  justify-content: stretch;
   flex-wrap: wrap;
 }
 

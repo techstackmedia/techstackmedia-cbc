@@ -12,7 +12,6 @@ import subsidiariesImage from '../../images/subsidiaries.jpeg';
 import blogImage from '../../images/blog.jpeg';
 import aboutImage from '../../images/about.jpeg';
 import storeImage from '../../images/store.jpeg';
-// import { subsidiariesInterface as sub, productsLinkInterface as pro } from '../../Interfaces/Interfaces';
 const Hero = ({ heading, title, para }) => {
   const [isPlayed, setIsPlayed] = useState(true);
   const handleVideoClick = () => {
@@ -80,7 +79,12 @@ const Hero = ({ heading, title, para }) => {
         <div className={hero.cbc}>
           <h1>{heading}</h1>
           <h3 style={styleH3}>{title}</h3>
-          <p style={styleP}>{para}</p>
+          <p
+            className={pathname === '/subsidiaries/gedu' ? hero.black : null}
+            style={styleP}
+          >
+            {para}
+          </p>
 
           <div className={hero.buttons}>
             <button

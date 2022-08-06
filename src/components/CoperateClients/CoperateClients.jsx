@@ -7,7 +7,7 @@ const CoperateClienet = () => {
       <div className={coperate.imgs} key={img}>
         <img
           src={require(`../../images/image${img}.svg`)}
-          alt={`logo ${img.id}`}
+          alt={`logo ${img}`}
           width={60}
           height={60}
         />
