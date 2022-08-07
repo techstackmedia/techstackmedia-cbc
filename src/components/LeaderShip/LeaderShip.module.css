@@ -53,3 +53,24 @@
 .text p {
   line-height: 1.9;
 }
+
+@media (max-width: 1080px) {
+  .leadership {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+  }
+
+  .text h2,
+  .text h3,
+  .text p {
+    text-align: center;
+  }
+
+  .leadership img {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
