@@ -1,0 +1,113 @@
+.fact {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+   
+}
+
+.why,
+.grow {
+  margin-bottom: 20px;
+}
+
+.whyContainer {
+  margin-right: 40px;
+}
+
+.why,
+.whyText {
+  margin-left: 20%;
+}
+
+.whyTextContenter {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.dots span {
+  padding: 10px;
+}
+
+.why,
+.grow {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.why hr,
+.grow hr {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.why hr::before,
+.grow hr::before {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: #fff;
+}
+
+.why hr::before {
+  content: '01';
+}
+
+.growContainer {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% + -140px);
+  padding: 70px;
+  margin-left: 40px;
+  position: relative;
+  background-color: rgba(238, 242, 248, 0.812);
+
+}
+
+.growContainer::after {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(
+    180deg,
+    rgba(32, 87, 169, 0.91),
+    rgba(91, 138, 204, 0.798),
+    rgba(62, 102, 161, 0.679)
+  );
+  width: 270px;
+  height: 320px;
+  filter: blur(10px);
+  left: 120px;
+  top: 50px;
+  z-index: -1;
+}
+
+.grow hr::before {
+  content: '02';
+}
+
+.why h4,
+.grow h4 {
+  text-transform: uppercase;
+}
+
+.whyText,
+.growText {
+  line-height: 1.9;
+  
+}
+
+.growTexSecond {
+  margin-top: 40px;
+}
+
+.dots span {
+  letter-spacing: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}

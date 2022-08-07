@@ -1,0 +1,45 @@
+.towerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 100px auto;
+  width: 85%;
+  margin: 100px auto;
+}
+
+.image {
+  margin-right: 40px;
+}
+
+.text {
+  margin-left: 40px;
+}
+
+.towerAbout img {
+  width: 600px;
+  text-align: center;
+}
+
+.towerAbout h3 {
+  width: 300px;
+  margin: 20px;
+}
+
+.towerAbout p {
+  line-height: 1.9;
+  margin: 20px;
+}
+
+.towerAbout a {
+  background-color: #2196f3;
+  color: #fff;
+  margin: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.towerAbout a:hover {
+  background-color: #0078d4;
+}
