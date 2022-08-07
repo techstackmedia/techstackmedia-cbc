@@ -10,7 +10,7 @@ const Hero = () => {
               <div>
                 <hr />
               </div>
-              <p>About Us</p>
+              <p>Shop anytime</p>
             </div>
             <p className={hero.saas}>Built for SaaS and E-commerce</p>
           </div>

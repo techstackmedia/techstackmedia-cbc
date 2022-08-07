@@ -21,9 +21,9 @@
   background-color: rgba(120, 80, 10, 0.301);
   background-image: linear-gradient(
     180deg,
-    rgba(120, 80, 10, 0.825),
-    rgba(119, 88, 25, 0.749),
-    rgba(23, 16, 3, 0.782)
+    rgba(244, 192, 103, 0.825),
+    rgba(194, 157, 82, 0.749),
+    rgba(173, 146, 95, 0.782)
   );
   filter: blur(10px);
   right: 100px;

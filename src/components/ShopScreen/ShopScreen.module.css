@@ -39,6 +39,8 @@
 
 .intro hr {
   width: 50px;
+  border: none;
+  border-bottom: 1px solid #fff;
 }
 
 .intro p {
@@ -97,5 +99,5 @@
 }
 
 .mainText p {
-    font-size: 34px;
+  font-size: 34px;
 }
