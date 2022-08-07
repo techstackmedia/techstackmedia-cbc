@@ -12,7 +12,7 @@ const Questions = () => {
           marketing tracking software.
         </p>
         <div className={questions.contact}>
-          <Link to="./#contact">
+          <Link to="/contact">
             Contact Us{' '}
             <span>
               <BsArrowRight />
