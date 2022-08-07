@@ -46,6 +46,9 @@
 .intro p {
   margin-left: 8px;
   text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.209);
+  padding: 10px;
 }
 
 .saas {
